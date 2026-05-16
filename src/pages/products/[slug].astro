@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const products = await getCollection('products', ({ data }) => !data.draft);
+  return products.map(p => ({ params: { slug: p.slug }, props: { product: p } }));
+}
+
+const { product } = Astro.props;
+const { title, category, description, image, features, specifications } = product.data;
+---
+
+<BaseLayout title={`${title} | Products`} description={description}>
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <a href="/products/" class="text-primary hover:underline text-sm mb-8 inline-block">&larr; Back to Products</a>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-4">
+        <div>
+          {image && (
+            <div class="aspect-square bg-gray-100 rounded-xl overflow-hidden">
+              <img src={image} alt={title} class="w-full h-full object-cover" />
+            </div>
+          )}
+        </div>
+        
+        <div>
+          <span class="text-sm font-medium text-primary bg-blue-50 px-3 py-1 rounded-full">{category}</span>
+          <h1 class="text-3xl font-bold mt-4 mb-6">{title}</h1>
+          <p class="text-lg text-gray-600 leading-relaxed mb-8">{description}</p>
+          
+          {features && features.length > 0 && (
+            <div class="mb-8">
+              <h3 class="text-lg font-semibold mb-4">Key Features</h3>
+              <ul class="space-y-2">
+                {features.map(f => (
+                  <li class="flex items-start gap-2">
+                    <svg class="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-gray-700">{f}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          
+          {specifications && specifications.length > 0 && (
+            <div>
+              <h3 class="text-lg font-semibold mb-4">Specifications</h3>
+              <div class="border rounded-lg overflow-hidden">
+                {specifications.map((spec, i) => (
+                  <div class={`flex px-4 py-3 ${i % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
+                    <span class="font-medium text-gray-700 w-1/2">{spec.label}</span>
+                    <span class="text-gray-600 w-1/2">{spec.value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          
+          <div class="mt-8">
+            <a href="/contact/" class="btn-primary">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

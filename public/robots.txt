@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yidaotech.cn/sitemap-index.xml
