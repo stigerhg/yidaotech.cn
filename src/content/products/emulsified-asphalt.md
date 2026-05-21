@@ -4,7 +4,7 @@ category: "Emulsified Asphalt"
 description: "Cationic and anionic emulsified asphalt for tack coat, prime coat, chip seal, slurry seal, and micro-surfacing applications. Meets ASTM D2397 and ISSA specifications."
 image: "/images/products/emulsified-asphalt.svg"
 features:
-  - Full range: CSS-1, CSS-1h, SS-1, SS-1h, CRS-2, CRS-2P
+  - "Full range: CSS-1, CSS-1h, SS-1, SS-1h, CRS-2, CRS-2P"
   - Custom formulations for specific climate conditions
   - Stable storage — 30+ days without settlement
   - Compatible with all standard spray equipment
