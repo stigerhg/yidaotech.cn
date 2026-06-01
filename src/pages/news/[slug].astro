@@ -9,16 +9,56 @@ export async function getStaticPaths() {
 
 const { article } = Astro.props;
 const { title, date, description, image, tags } = article.data;
+const slug = article.slug;
 const { Content } = await article.render();
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "datePublished": date.toISOString(),
+  "dateModified": date.toISOString(),
+  "url": `https://yidaotech.xyz/news/${slug}/`,
+  ...(image && { "image": `https://yidaotech.xyz${image}` }),
+  "author": {
+    "@type": "Person",
+    "name": "Shining Road Technology"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shining Road Technology",
+    "url": "https://yidaotech.xyz"
+  },
+  ...(tags?.length > 0 && { "keywords": tags.join(", ") })
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://yidaotech.xyz/" },
+    { "@type": "ListItem", "position": 2, "name": "News", "item": "https://yidaotech.xyz/news/" },
+    { "@type": "ListItem", "position": 3, "name": title }
+  ]
+};
+
+const schemas = [articleSchema, breadcrumbSchema];
 ---
 
-<BaseLayout title={`${title} | News`} description={description}>
+<BaseLayout 
+  title={`${title} | Shining Road Technology`} 
+  description={description}
+  canonicalURL={`https://yidaotech.xyz/news/${slug}/`}
+  ogType="article"
+  schema={schemas}
+>
   <article class="py-16">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <a href="/news/" class="text-primary hover:underline text-sm mb-8 inline-block">&larr; Back to News</a>
       
       <header class="mt-4 mb-8">
-        <time class="text-sm text-gray-500">
+        <time class="text-sm text-gray-500" datetime={date.toISOString()}>
           {date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
         </time>
         <h1 class="text-3xl md:text-4xl font-bold mt-3 mb-4">{title}</h1>

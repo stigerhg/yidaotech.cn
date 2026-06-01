@@ -9,9 +9,52 @@ export async function getStaticPaths() {
 
 const { product } = Astro.props;
 const { title, category, description, image, features, specifications } = product.data;
+const slug = product.slug;
+
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": title,
+  "description": description,
+  "category": category,
+  "url": `https://yidaotech.xyz/products/${slug}/`,
+  ...(image && { "image": `https://yidaotech.xyz${image}` }),
+  "brand": {
+    "@type": "Brand",
+    "name": "Shining Road Technology"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Shenyang Shining Road Technology Co., Ltd."
+  },
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "url": `https://yidaotech.xyz/contact/`,
+    "businessFunction": "https://purl.org/goodrelations/v1#ProvideService"
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://yidaotech.xyz/" },
+    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://yidaotech.xyz/products/" },
+    { "@type": "ListItem", "position": 3, "name": title }
+  ]
+};
+
+const schemas = [productSchema, breadcrumbSchema];
 ---
 
-<BaseLayout title={`${title} | Products`} description={description}>
+<BaseLayout 
+  title={`${title} | Shining Road Technology`} 
+  description={description}
+  canonicalURL={`https://yidaotech.xyz/products/${slug}/`}
+  ogType="product"
+  schema={schemas}
+>
   <section class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <a href="/products/" class="text-primary hover:underline text-sm mb-8 inline-block">&larr; Back to Products</a>
@@ -61,7 +104,9 @@ const { title, category, description, image, features, specifications } = produc
           )}
           
           <div class="mt-8">
-            <a href="/contact/" class="btn-primary">Request Quote</a>
+            <a href="/contact/" class="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+              Request Quote
+            </a>
           </div>
         </div>
       </div>

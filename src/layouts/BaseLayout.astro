@@ -2,7 +2,16 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const { title = 'Shenyang Shining Road Technology', description = 'Professional asphalt crack sealing and pavement maintenance products' } = Astro.props;
+const {
+  title = 'Shining Road Technology — Asphalt Crack Sealing, Cold Mix & Pavement Maintenance',
+  description = 'Manufacturer of hot-applied crack sealant, cold mix asphalt, pavement preservation products, and cold mix production plants. Technology licensing available worldwide.',
+  canonicalURL = 'https://yidaotech.xyz',
+  ogImage = 'https://yidaotech.xyz/og-default.jpg',
+  ogType = 'website',
+  schema = null,
+} = Astro.props;
+
+const currentURL = canonicalURL || Astro.url.href;
 ---
 
 <!doctype html>
@@ -10,12 +19,84 @@ const { title = 'Shenyang Shining Road Technology', description = 'Professional 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content={description} />
+  
+  <!-- Primary Meta -->
   <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href={currentURL} />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={currentURL} />
+  <meta property="og:type" content={ogType} />
+  <meta property="og:site_name" content="Shining Road Technology" />
+  <meta property="og:locale" content="en_US" />
+  {ogImage && <meta property="og:image" content={ogImage} />}
+  {ogImage && <meta property="og:image:width" content="1200" />}
+  {ogImage && <meta property="og:image:height" content="630" />}
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  {ogImage && <meta name="twitter:image" content={ogImage} />}
+
+  <!-- Favicon & Icons -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org: Organization (global) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Shining Road Technology",
+      "alternateName": "Shenyang Shining Road Technology Co., Ltd.",
+      "url": "https://yidaotech.xyz",
+      "description": "Professional manufacturer of asphalt crack sealing, cold mix asphalt, and pavement preservation products. Serving 30+ countries with technology licensing and turnkey production plants available.",
+      "email": "lilei838025@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Shenyang",
+        "addressRegion": "Liaoning",
+        "addressCountry": "CN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "name": "Mark",
+        "email": "lilei838025@gmail.com"
+      },
+      "sameAs": []
+    }
+  </script>
+
+  <!-- Breadcrumb Schema (default for all pages) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Shining Road Technology",
+      "url": "https://yidaotech.xyz",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yidaotech.xyz/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+
+  <!-- Page-specific schema -->
+  {schema && (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  )}
 </head>
 <body class="bg-white text-gray-900 font-sans">
   <Header />
