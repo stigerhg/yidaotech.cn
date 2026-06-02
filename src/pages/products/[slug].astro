@@ -8,7 +8,7 @@ export async function getStaticPaths() {
 }
 
 const { product } = Astro.props;
-const { title, category, description, image, features, specifications } = product.data;
+const { title, category, description, image, gallery, features, specifications } = product.data;
 const slug = product.slug;
 
 const productSchema = {
@@ -112,4 +112,22 @@ const schemas = [productSchema, breadcrumbSchema];
       </div>
     </div>
   </section>
+
+  {gallery && gallery.length > 0 && (
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <h2 class="text-2xl md:text-3xl font-bold mb-3">Packing &amp; Shipping</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">Real product photos — ready to ship to your location</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {gallery.map((img, i) => (
+            <div class="group relative bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all">
+              <img src={img} alt={`${title} — photo ${i + 1}`} class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 </BaseLayout>
