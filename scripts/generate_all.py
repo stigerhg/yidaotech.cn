@@ -1,368 +1,423 @@
+"""
+yidaotech.xyz 推广图片生成器 v2 — 竞品风格：工业产品目录风
+学习 Crafco / SealMaster / RaynGuard / Asphalt Kingdom
+特点：浅色背景 + 产品卡片 + 品牌色点缀 + 专业排版
+"""
+
 from pathlib import Path
 import math
-import re
-import textwrap
 
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
-
-ROOT = Path(__file__).resolve().parent
-OUT = Path("/tmp/output")
+ROOT = Path(__file__).resolve().parent.parent
+OUT = Path("/tmp/output_v2")
 PUBLIC_IMAGES = OUT / "public" / "images"
 PRODUCT_IMAGES = PUBLIC_IMAGES / "products"
-NEWS_IMAGES = PUBLIC_IMAGES / "news"
 
-BRAND_BLUE = (30, 64, 175)
-BRAND_BLUE_DARK = (13, 30, 86)
-BRAND_BLUE_DEEP = (8, 19, 57)
-LIGHT_BLUE = (147, 197, 253)
-ORANGE = (245, 158, 11)
+# ---- Brand Colors ----
+BLUE_DARK = (13, 30, 86)       # #0D1E56
+BLUE = (30, 64, 175)            # #1E40AF
+BLUE_LIGHT = (147, 197, 253)    # #93C5FD
+ORANGE = (245, 158, 11)         # #F59E0B
 WHITE = (255, 255, 255)
-MUTED = (202, 222, 255)
+OFF_WHITE = (248, 250, 252)
+LIGHT_GRAY = (226, 232, 240)
+MED_GRAY = (148, 163, 184)
+DARK_GRAY = (51, 65, 85)
+BLACK = (15, 23, 42)
 
 COMPANY = "Shining Road Technology"
 COMPANY_CN = "依道科技"
 SITE = "yidaotech.xyz"
 TAGLINE = "Professional Pavement Maintenance Solutions"
-PRODUCT_SUBTITLE = "Professional Pavement Maintenance"
 
 PRODUCTS = [
-    ("cold-mix-pothole-repair", "冷拌沥青坑槽修补料"),
-    ("hot-applied-crack-sealer", "热灌缝胶"),
-    ("emulsified-asphalt", "乳化沥青"),
-    ("pavement-sealcoat", "路面封层"),
-    ("crack-sealing-tape", "贴缝带"),
-    ("cold-pour-crack-filler", "冷灌缝胶"),
-    ("cold-mix-production-plant", "冷拌生产设备"),
-    ("technology-licensing", "技术授权"),
+    ("cold-mix-pothole-repair", "Cold Mix Asphalt\nPothole Repair", "Permanent-grade cold mix · No heating · Wet-application"),
+    ("hot-applied-crack-sealer", "Hot-Applied\nCrack Sealer", "ASTM D6690 Type II · Fuel-resistant · Highway-grade"),
+    ("emulsified-asphalt", "Emulsified Asphalt", "CSS-1 / SS-1 / CRS-2 · Tack coat · Chip seal · Slurry"),
+    ("pavement-sealcoat", "Pavement Sealcoat", "Coal tar & asphalt-based · Sand-filled · 5+ year protection"),
+    ("crack-sealing-tape", "Crack Sealing Tape", "Self-adhesive bituminous · Peel & stick · Instant bond"),
+    ("cold-pour-crack-filler", "Cold Pour\nCrack Filler", "Ready-to-use · Self-leveling · No equipment needed"),
+    ("cold-mix-production-plant", "Cold Mix\nProduction Plant", "5-30 TPH · Turnkey · PLC automated · QC lab included"),
+    ("technology-licensing", "Technology\nLicensing", "Formula transfer · Raw material sourcing · 90-day launch"),
 ]
 
 
-def ensure_dirs():
-    for path in (PUBLIC_IMAGES, PRODUCT_IMAGES, NEWS_IMAGES):
-        path.mkdir(parents=True, exist_ok=True)
-
-
+# ---- Font Helpers ----
 def font(size, bold=False):
     candidates = [
+        "/System/Library/Fonts/Helvetica.ttc",
         "/System/Library/Fonts/PingFang.ttc",
         "/System/Library/Fonts/STHeiti Light.ttc",
-        "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
-        "/Library/Fonts/Arial Unicode.ttf",
         "/System/Library/Fonts/Supplemental/Arial Bold.ttf" if bold else "/System/Library/Fonts/Supplemental/Arial.ttf",
-        "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc",
-        "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+        "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
         "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
     ]
-    for candidate in candidates:
-        if candidate and Path(candidate).exists():
+    for c in candidates:
+        fp = Path(c)
+        if fp.exists():
             try:
-                return ImageFont.truetype(candidate, size=size)
+                return ImageFont.truetype(str(fp), size=size)
             except OSError:
                 pass
     return ImageFont.load_default()
 
 
-def parse_frontmatter(path):
-    text = path.read_text(encoding="utf-8")
-    if not text.startswith("---"):
-        return {}
-    parts = text.split("---", 2)
-    if len(parts) < 3:
-        return {}
-    data = {}
-    for line in parts[1].splitlines():
-        if ":" not in line or line.startswith(" "):
-            continue
-        key, value = line.split(":", 1)
-        value = value.strip().strip("\"'")
-        data[key.strip()] = value
-    return data
+def text_size(draw, text, font_obj):
+    bbox = draw.textbbox((0, 0), text, font=font_obj)
+    return bbox[2] - bbox[0], bbox[3] - bbox[1]
 
 
-def gradient_background(width, height):
-    img = Image.new("RGB", (width, height), BRAND_BLUE_DARK)
+def fit_font(draw, text, max_w, start, min_s=18, bold=False):
+    size = start
+    while size >= min_s:
+        f = font(size, bold=bold)
+        if text_size(draw, text, f)[0] <= max_w:
+            return f
+        size -= 2
+    return font(min_s, bold=bold)
+
+
+def draw_centered(draw, text, cx, y, font_obj, fill):
+    """Draw text horizontally centered at cx."""
+    tw, _ = text_size(draw, text, font_obj)
+    draw.text((cx - tw // 2, y), text, font=font_obj, fill=fill)
+
+
+# ---- Background Generators ----
+
+def gradient_bg(width, height, top_color, bottom_color):
+    """Vertical gradient."""
+    img = Image.new("RGB", (width, height), top_color)
     px = img.load()
+    tr, tg, tb = top_color
+    br, bg, bb = bottom_color
+    for y in range(height):
+        t = y / max(1, height - 1)
+        r = int(tr + (br - tr) * t)
+        g = int(tg + (bg - tg) * t)
+        b = int(tb + (bb - tb) * t)
+        for x in range(width):
+            px[x, y] = (r, g, b)
+    return img
+
+
+def studio_bg(width, height):
+    """Light gray-white studio background like product photos."""
+    # Very light gray-to-white gradient
+    img = gradient_bg(width, height, (245, 247, 250), (252, 253, 255))
+    # Add a subtle warm spot (like one soft studio light)
+    px = img.load()
+    cx, cy = width * 0.45, height * 0.35
     for y in range(height):
         for x in range(width):
-            tx = x / max(1, width - 1)
-            ty = y / max(1, height - 1)
-            glow = max(0.0, 1.0 - math.hypot(tx - 0.22, ty - 0.25) * 1.55)
-            edge = (tx * 0.35 + ty * 0.65)
-            r = int(BRAND_BLUE_DEEP[0] * edge + BRAND_BLUE[0] * (1 - edge) + 24 * glow)
-            g = int(BRAND_BLUE_DEEP[1] * edge + BRAND_BLUE[1] * (1 - edge) + 44 * glow)
-            b = int(BRAND_BLUE_DEEP[2] * edge + BRAND_BLUE[2] * (1 - edge) + 72 * glow)
-            px[x, y] = (min(255, r), min(255, g), min(255, b))
+            dist = math.hypot((x - cx) / width, (y - cy) / height)
+            glow = max(0, 1 - dist * 2.5) * 18
+            r, g_val, b = px[x, y]
+            px[x, y] = (
+                min(255, int(r + glow)),
+                min(255, int(g_val + glow)),
+                min(255, int(b + glow)),
+            )
     return img
 
 
-def add_decor(img, seed=0):
-    w, h = img.size
-    layer = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    draw = ImageDraw.Draw(layer, "RGBA")
-
-    draw.polygon(
-        [(w * 0.62, 0), (w, 0), (w, h * 0.72), (w * 0.78, h * 0.56)],
-        fill=(147, 197, 253, 26),
-    )
-    draw.polygon(
-        [(0, h * 0.74), (w * 0.34, h), (0, h)],
-        fill=(245, 158, 11, 34),
-    )
-    draw.rounded_rectangle(
-        (w * 0.70, h * 0.17, w * 1.08, h * 0.29),
-        radius=18,
-        fill=(255, 255, 255, 20),
-        outline=(147, 197, 253, 45),
-        width=2,
-    )
-    draw.rounded_rectangle(
-        (-w * 0.05, h * 0.12, w * 0.32, h * 0.20),
-        radius=14,
-        fill=(255, 255, 255, 13),
-        outline=(255, 255, 255, 25),
-        width=2,
-    )
-
-    for i in range(9):
-        offset = (seed * 31 + i * 79) % int(w)
-        y = h * (0.18 + (i % 5) * 0.14)
-        draw.line(
-            [(offset - w * 0.16, y), (offset + w * 0.12, y + h * 0.10)],
-            fill=(147, 197, 253, 30),
-            width=2,
-        )
-
-    lane_y = int(h * 0.77)
-    draw.line([(0, lane_y), (w, int(h * 0.60))], fill=(255, 255, 255, 42), width=max(3, w // 220))
-    draw.line([(0, lane_y + 34), (w, int(h * 0.60) + 34)], fill=(147, 197, 253, 34), width=max(2, w // 320))
-    for i in range(7):
-        x0 = int(w * (0.12 + i * 0.14))
-        y0 = int(lane_y - i * h * 0.024)
-        draw.line([(x0, y0), (x0 + int(w * 0.045), y0 - int(h * 0.008))], fill=(245, 158, 11, 135), width=max(4, w // 180))
-
-    gdraw = ImageDraw.Draw(layer, "RGBA")
-    gdraw.ellipse((w * 0.58, h * 0.46, w * 1.14, h * 1.20), fill=(147, 197, 253, 38))
-    layer = layer.filter(ImageFilter.GaussianBlur(radius=max(20, w // 35)))
-    sharp = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    sdraw = ImageDraw.Draw(sharp, "RGBA")
-    sdraw.polygon(
-        [(w * 0.62, 0), (w, 0), (w, h * 0.72), (w * 0.78, h * 0.56)],
-        fill=(147, 197, 253, 26),
-    )
-    sdraw.polygon(
-        [(0, h * 0.74), (w * 0.34, h), (0, h)],
-        fill=(245, 158, 11, 34),
-    )
-    sdraw.rounded_rectangle(
-        (w * 0.70, h * 0.17, w * 1.08, h * 0.29),
-        radius=18,
-        fill=(255, 255, 255, 20),
-        outline=(147, 197, 253, 45),
-        width=2,
-    )
-    sdraw.rounded_rectangle(
-        (-w * 0.05, h * 0.12, w * 0.32, h * 0.20),
-        radius=14,
-        fill=(255, 255, 255, 13),
-        outline=(255, 255, 255, 25),
-        width=2,
-    )
-    for i in range(9):
-        offset = (seed * 31 + i * 79) % int(w)
-        y = h * (0.18 + (i % 5) * 0.14)
-        sdraw.line(
-            [(offset - w * 0.16, y), (offset + w * 0.12, y + h * 0.10)],
-            fill=(147, 197, 253, 30),
-            width=2,
-        )
-    lane_y = int(h * 0.77)
-    sdraw.line([(0, lane_y), (w, int(h * 0.60))], fill=(255, 255, 255, 42), width=max(3, w // 220))
-    sdraw.line([(0, lane_y + 34), (w, int(h * 0.60) + 34)], fill=(147, 197, 253, 34), width=max(2, w // 320))
-    for i in range(7):
-        x0 = int(w * (0.12 + i * 0.14))
-        y0 = int(lane_y - i * h * 0.024)
-        sdraw.line([(x0, y0), (x0 + int(w * 0.045), y0 - int(h * 0.008))], fill=(245, 158, 11, 135), width=max(4, w // 180))
-    layer.alpha_composite(sharp)
-    img.alpha_composite(layer)
-
-
-def text_bbox(draw, xy, text, font_obj):
-    return draw.textbbox(xy, text, font=font_obj)
-
-
-def fit_font(draw, text, max_width, start_size, min_size=24, bold=False):
-    size = start_size
-    while size >= min_size:
-        fnt = font(size, bold=bold)
-        if text_bbox(draw, (0, 0), text, fnt)[2] <= max_width:
-            return fnt
-        size -= 2
-    return font(min_size, bold=bold)
-
-
-def wrap_by_pixels(draw, text, font_obj, max_width):
-    words = text.split()
-    if len(words) == 1:
-        return textwrap.wrap(text, width=max(4, int(max_width / max(12, font_obj.size * 0.58)))) or [text]
-    lines = []
-    current = ""
-    for word in words:
-        test = word if not current else f"{current} {word}"
-        if text_bbox(draw, (0, 0), test, font_obj)[2] <= max_width:
-            current = test
-        else:
-            if current:
-                lines.append(current)
-            current = word
-    if current:
-        lines.append(current)
-    return lines
-
-
-def draw_brand_mark(draw, width, height):
-    mark_x, mark_y = int(width * 0.07), int(height * 0.10)
-    draw.rounded_rectangle((mark_x, mark_y, mark_x + 58, mark_y + 58), radius=12, fill=WHITE)
-    draw.polygon(
-        [(mark_x + 15, mark_y + 39), (mark_x + 30, mark_y + 15), (mark_x + 43, mark_y + 39)],
-        fill=BRAND_BLUE,
-    )
-    draw.line((mark_x + 21, mark_y + 38, mark_x + 37, mark_y + 38), fill=ORANGE, width=4)
-    draw.text((mark_x + 76, mark_y + 2), COMPANY, font=font(28, bold=True), fill=WHITE)
-    draw.text((mark_x + 76, mark_y + 34), SITE, font=font(18), fill=LIGHT_BLUE)
-
-
-def save_jpg(img, path):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    img.convert("RGB").save(path, "JPEG", quality=92, optimize=True, progressive=True)
-
-
-def create_canvas(width, height, seed=0):
-    img = gradient_background(width, height).convert("RGBA")
-    add_decor(img, seed=seed)
+def job_site_bg(width, height):
+    """Darker industrial texture reminiscent of job sites."""
+    img = gradient_bg(width, height, (30, 35, 45), (15, 18, 28))
+    px = img.load()
+    # Add subtle noise/texture
+    import random
+    rng = random.Random(42)
+    for y in range(height):
+        for x in range(width):
+            noise = rng.randint(-6, 6)
+            r, g, b = px[x, y]
+            px[x, y] = (
+                max(0, min(255, r + noise)),
+                max(0, min(255, g + noise)),
+                max(0, min(255, b + noise)),
+            )
     return img
 
 
-def draw_centered_multiline(draw, lines, center_x, top, font_obj, fill, spacing):
-    y = top
-    for line in lines:
-        bbox = text_bbox(draw, (0, 0), line, font_obj)
-        draw.text((center_x - (bbox[2] - bbox[0]) / 2, y), line, font=font_obj, fill=fill)
-        y += (bbox[3] - bbox[1]) + spacing
-    return y
+# ---- Card / Elements ----
 
+def draw_card(draw, x, y, w, h, fill=WHITE, radius=16, shadow=True):
+    """Draw a card with optional shadow."""
+    if shadow:
+        # Shadow
+        shadow_layer = Image.new("RGBA", (w + 20, h + 20), (0, 0, 0, 0))
+        sd = ImageDraw.Draw(shadow_layer, "RGBA")
+        sd.rounded_rectangle((4, 8, w + 16, h + 12), radius=radius, fill=(0, 0, 0, 30))
+        shadow_layer = shadow_layer.filter(ImageFilter.GaussianBlur(radius=8))
+        draw._image.paste(shadow_layer, (x - 10, y - 10), shadow_layer)
+    draw.rounded_rectangle((x, y, x + w, y + h), radius=radius, fill=fill)
+    # Subtle border
+    draw.rounded_rectangle((x, y, x + w, y + h), radius=radius, outline=(200, 210, 220), width=1)
+
+
+def product_badge(draw, x, y, category, fill_color=BLUE):
+    """Small category badge pill."""
+    tw = text_size(draw, category, font(14, bold=True))[0] + 28
+    draw.rounded_rectangle((x, y, x + tw, y + 26), radius=13, fill=fill_color)
+    draw_centered(draw, category, x + tw // 2, y + 4, font(14, bold=True), WHITE)
+
+
+def accent_bar(draw, x, y, w, color=ORANGE, height=4):
+    """Horizontal accent bar."""
+    draw.rounded_rectangle((x, y, x + w, y + height), radius=2, fill=color)
+
+
+# ---- Layouts ----
+
+def build_header(draw, width, bg_is_dark=True):
+    """Draw logo + site in top-left corner."""
+    if bg_is_dark:
+        logo_fill = WHITE
+        sub_fill = BLUE_LIGHT
+    else:
+        logo_fill = BLUE_DARK
+        sub_fill = MED_GRAY
+
+    margin = 44
+    # Logo diamond
+    draw.polygon(
+        [(margin + 15, margin + 36), (margin + 28, margin + 14), (margin + 41, margin + 36)],
+        fill=BLUE,
+    )
+    draw.line((margin + 20, margin + 35, margin + 36, margin + 35), fill=ORANGE, width=3)
+    draw.text((margin + 54, margin + 4), COMPANY, font=font(20, bold=True), fill=logo_fill)
+    draw.text((margin + 54, margin + 30), SITE, font=font(14), fill=sub_fill)
+
+
+# =========== OG Image Generator (1200 x 630) ===========
 
 def generate_default_og():
-    img = create_canvas(1200, 630, seed=3)
+    """Home page default OG image."""
+    W, H = 1200, 630
+    img = studio_bg(W, H).convert("RGBA")
     draw = ImageDraw.Draw(img, "RGBA")
-    draw_brand_mark(draw, 1200, 630)
+    build_header(draw, W, bg_is_dark=False)
 
-    title_font = font(68, bold=True)
-    cn_font = font(46, bold=True)
-    tag_font = font(34)
-    y = 220
-    y = draw_centered_multiline(draw, [COMPANY], 600, y, title_font, WHITE, 18)
-    y = draw_centered_multiline(draw, [COMPANY_CN], 600, y + 4, cn_font, LIGHT_BLUE, 22)
-    draw_centered_multiline(draw, [TAGLINE], 600, y + 16, tag_font, MUTED, 10)
+    # Center content card
+    card_x, card_y = 120, 90
+    card_w, card_h = 960, 450
+    draw_card(draw, card_x, card_y, card_w, card_h, fill=WHITE)
 
-    draw.rounded_rectangle((330, 500, 870, 508), radius=4, fill=ORANGE)
+    # Product badge
+    product_badge(draw, card_x + 80, card_y + 60, "PAVEMENT SOLUTIONS")
+
+    # Main title
+    title = "Asphalt Crack Sealing &\nCold Mix Asphalt Products"
+    title_font = font(52, bold=True)
+    lines = title.split("\n")
+    ty = card_y + 130
+    for line in lines:
+        draw.text((card_x + 80, ty), line, font=title_font, fill=BLACK)
+        ty += text_size(draw, line, title_font)[1] + 12
+
+    # Tagline
+    sub_font = font(28)
+    draw.text((card_x + 80, ty + 14), TAGLINE, font=sub_font, fill=MED_GRAY)
+
+    # Accent bar
+    accent_bar(draw, card_x + 80, ty + 86, 220, ORANGE, 5)
+
+    # Features row
+    features = [
+        ("✓", "30+ Countries"),
+        ("✓", "ASTM Certified"),
+        ("✓", "Engineer Support"),
+    ]
+    fx = card_x + 80
+    fy = ty + 130
+    for icon, text in features:
+        draw.text((fx, fy), icon, font=font(22), fill=BLUE)
+        draw.text((fx + 32, fy), text, font=font(22), fill=DARK_GRAY)
+        fx += 260
+
+    # Bottom CTA
+    cta = "Explore Products →"
+    cta_font = font(22, bold=True)
+    cta_w = text_size(draw, cta, cta_font)[0]
+    draw.text((card_x + 80, card_y + card_h - 70), cta, font=cta_font, fill=BLUE)
+
     save_jpg(img, PUBLIC_IMAGES / "og-default.jpg")
 
 
-def generate_product_og(slug, name, seed):
-    img = create_canvas(1200, 630, seed=seed)
+def generate_product_og(slug, title_lines, subtitle):
+    """Product-specific OG image."""
+    W, H = 1200, 630
+    img = studio_bg(W, H).convert("RGBA")
     draw = ImageDraw.Draw(img, "RGBA")
-    draw_brand_mark(draw, 1200, 630)
+    build_header(draw, W, bg_is_dark=False)
 
-    title_font = fit_font(draw, name, 900, 86, 50, bold=True)
-    subtitle_font = font(34)
-    title_bbox = text_bbox(draw, (0, 0), name, title_font)
-    x = 90
-    y = 255
-    draw.text((x + 3, y + 5), name, font=title_font, fill=(0, 0, 0, 70))
-    draw.text((x, y), name, font=title_font, fill=WHITE)
-    draw.text((x, y + (title_bbox[3] - title_bbox[1]) + 32), PRODUCT_SUBTITLE, font=subtitle_font, fill=LIGHT_BLUE)
+    # Content card
+    card_x, card_y = 100, 80
+    card_w, card_h = 1000, 470
+    draw_card(draw, card_x, card_y, card_w, card_h, fill=WHITE)
 
-    draw.rounded_rectangle((90, 492, 360, 500), radius=4, fill=ORANGE)
-    site_font = font(24, bold=True)
-    site_bbox = text_bbox(draw, (0, 0), SITE, site_font)
-    draw.text((1120 - site_bbox[2], 548), SITE, font=site_font, fill=(230, 240, 255))
+    # Product badge with category color
+    category_map = {
+        "Pothole": BLUE,
+        "Crack": BLUE_DARK,
+        "Emulsion": (30, 64, 175),
+        "Surface": (13, 30, 86),
+        "Plant": (15, 23, 42),
+        "Technology": ORANGE,
+    }
+    cat = subtitle.split(" · ")[0] if " · " in subtitle else "PRODUCT"
+    badge_color = BLUE
+    for k, v in category_map.items():
+        if k in slug or k in subtitle:
+            badge_color = v
+            break
+    product_badge(draw, card_x + 70, card_y + 50, cat.upper(), fill_color=badge_color)
+
+    # Title
+    lines = title_lines.split("\n")
+    title_font = fit_font(draw, max(lines, key=lambda l: text_size(draw, l, font(56))[0]),
+                          card_w - 140, 56, 30, bold=True)
+    ty = card_y + 120
+    for line in lines:
+        tw = text_size(draw, line, title_font)[0]
+        draw.text((card_x + (card_w - tw) // 2, ty), line, font=title_font, fill=BLACK)
+        ty += text_size(draw, line, title_font)[1] + 8
+
+    # Subtitle
+    sub_font = font(26)
+    draw.text((card_x + 70, ty + 20), subtitle, font=sub_font, fill=MED_GRAY)
+
+    # Accent bar
+    accent_bar(draw, card_x + 70, ty + 66, 280, ORANGE, 5)
+
+    # Bullet features
+    bullet_font = font(22)
+    bullets = subtitle.split(" · ")
+    by = ty + 106
+    for bullet in bullets[:4]:
+        draw.text((card_x + 70, by), "●", font=font(18), fill=BLUE)  
+        draw.text((card_x + 104, by), bullet, font=bullet_font, fill=DARK_GRAY)
+        by += 34
+
+    # Bottom
+    accent_bar(draw, card_x, card_y + card_h - 4, card_w, BLUE, 4)
+    cta = "yidaotech.xyz"
+    cta_font = font(18, bold=True)
+    draw.text((card_x + 70, card_y + card_h - 56), cta, font=cta_font, fill=MED_GRAY)
+
     save_jpg(img, PUBLIC_IMAGES / f"{slug}-og.jpg")
 
 
-def generate_product_hero(slug, name, seed):
-    img = create_canvas(800, 400, seed=seed + 19)
-    draw = ImageDraw.Draw(img, "RGBA")
-    draw_brand_mark(draw, 800, 400)
+# =========== Hero Image Generator (800 x 400) ===========
 
-    title_font = fit_font(draw, name, 620, 56, 34, bold=True)
-    sub_font = font(23)
-    draw.text((58, 176), name, font=title_font, fill=WHITE)
-    title_h = text_bbox(draw, (0, 0), name, title_font)[3]
-    draw.text((60, 176 + title_h + 24), PRODUCT_SUBTITLE, font=sub_font, fill=LIGHT_BLUE)
-    draw.rounded_rectangle((60, 318, 252, 325), radius=4, fill=ORANGE)
-    draw.text((610, 336), SITE, font=font(17, bold=True), fill=(232, 242, 255))
+def generate_product_hero(slug, title_lines, subtitle):
+    """Product page Hero image."""
+    W, H = 800, 400
+    # Industrial dark background
+    img = job_site_bg(W, H).convert("RGBA")
+    draw = ImageDraw.Draw(img, "RGBA")
+    build_header(draw, W, bg_is_dark=True)
+
+    # Content overlay card
+    card_x, card_y = 40, 60
+    card_w, card_h = 720, 280
+    # Semi-transparent dark card
+    overlay = Image.new("RGBA", (card_w, card_h), (10, 15, 25, 210))
+    img.paste(overlay, (card_x, card_y), overlay)
+    draw.rounded_rectangle((card_x, card_y, card_x + card_w, card_y + card_h),
+                           radius=12, outline=(255, 255, 255, 40), width=1)
+    draw = ImageDraw.Draw(img, "RGBA")
+
+    # Badge
+    category_map = {"Pothole": BLUE, "Crack": BLUE_DARK, "Plant": BLUE_LIGHT,
+                    "Technology": ORANGE}
+    cat = subtitle.split(" · ")[0] if " · " in subtitle else "PRODUCT"
+    badge_c = BLUE
+    for k, v in category_map.items():
+        if k in slug or k in subtitle:
+            badge_c = v
+            break
+    product_badge(draw, card_x + 40, card_y + 30, cat.upper(), fill_color=badge_c)
+
+    # Title
+    lines = title_lines.split("\n")
+    title_font = fit_font(draw, max(lines, key=lambda l: text_size(draw, l, font(48))[0]),
+                          card_w - 80, 48, 26, bold=True)
+    ty = card_y + 80
+    for line in lines:
+        tw = text_size(draw, line, title_font)[0]
+        draw.text((card_x + 40 + (card_w - 80 - tw) // 2, ty), line, font=title_font, fill=WHITE)
+        ty += text_size(draw, line, title_font)[1] + 6
+
+    # Subtitle
+    sub_font = font(20)
+    draw.text((card_x + 40, ty + 14), subtitle, font=sub_font, fill=(180, 200, 220))
+
+    # Accent bar
+    accent_bar(draw, card_x + 40, ty + 50, 200, ORANGE, 4)
+
+    # Bottom info
+    draw.text((card_x + 40, card_y + card_h - 44), SITE, font=font(16, bold=True), fill=MED_GRAY)
+
     save_jpg(img, PRODUCT_IMAGES / f"{slug}-hero.jpg")
 
 
-def discover_news():
-    candidates = []
-    for folder_name in ("news", "blog", "posts", "content/news", "content/blog", "src/content/news", "src/content/blog"):
-        folder = ROOT / folder_name
-        if folder.exists():
-            candidates.extend(folder.rglob("*.md"))
-            candidates.extend(folder.rglob("*.mdx"))
-    return sorted(set(candidates))
-
-
 def generate_news_default():
-    img = create_canvas(1200, 630, seed=71)
+    """News section OG default."""
+    W, H = 1200, 630
+    img = studio_bg(W, H).convert("RGBA")
     draw = ImageDraw.Draw(img, "RGBA")
-    draw_brand_mark(draw, 1200, 630)
-    draw.text((92, 256), "News & Insights", font=font(76, bold=True), fill=WHITE)
-    draw.text((96, 350), TAGLINE, font=font(34), fill=LIGHT_BLUE)
-    draw.rounded_rectangle((94, 490, 430, 498), radius=4, fill=ORANGE)
+    build_header(draw, W, bg_is_dark=False)
+
+    card_x, card_y = 100, 80
+    card_w, card_h = 1000, 470
+    draw_card(draw, card_x, card_y, card_w, card_h, fill=WHITE)
+
+    product_badge(draw, card_x + 70, card_y + 50, "NEWS & INSIGHTS")
+
+    title_font = font(64, bold=True)
+    draw.text((card_x + 70, card_y + 130), "News & Insights", font=title_font, fill=BLACK)
+
+    sub_font = font(28)
+    draw.text((card_x + 70, card_y + 240),
+              "Industry updates · Product news · Project stories",
+              font=sub_font, fill=MED_GRAY)
+
+    accent_bar(draw, card_x + 70, card_y + 300, 280, ORANGE, 5)
+    accent_bar(draw, card_x, card_y + card_h - 4, card_w, BLUE, 4)
+
     save_jpg(img, PUBLIC_IMAGES / "news-og-default.jpg")
 
 
-def generate_news_item(path, seed):
-    meta = parse_frontmatter(path)
-    title = meta.get("title") or path.stem.replace("-", " ").title()
-    slug = meta.get("slug") or path.stem
+# ---- Utils ----
 
-    img = create_canvas(1200, 630, seed=seed)
-    draw = ImageDraw.Draw(img, "RGBA")
-    draw_brand_mark(draw, 1200, 630)
-    title_font = fit_font(draw, title, 940, 62, 36, bold=True)
-    lines = wrap_by_pixels(draw, title, title_font, 930)[:3]
-    draw.text((92, 224), "News", font=font(28, bold=True), fill=ORANGE)
-    y = 272
-    for line in lines:
-        draw.text((92, y), line, font=title_font, fill=WHITE)
-        y += text_bbox(draw, (0, 0), line, title_font)[3] + 18
-    draw.text((96, 520), SITE, font=font(24, bold=True), fill=LIGHT_BLUE)
-    save_jpg(img, NEWS_IMAGES / f"{slug}-og.jpg")
+def save_jpg(img, path):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    img.convert("RGB").save(path, "JPEG", quality=94, optimize=True, progressive=True)
+    print(f"  → {path} ({path.stat().st_size:,} bytes)")
 
 
 def main():
-    ensure_dirs()
+    PUBLIC_IMAGES.mkdir(parents=True, exist_ok=True)
+    PRODUCT_IMAGES.mkdir(parents=True, exist_ok=True)
+
+    print("Generating OG images (1200×630):")
     generate_default_og()
-
-    for idx, (slug, fallback_name) in enumerate(PRODUCTS, start=1):
-        md_path = ROOT / f"{slug}.md"
-        meta = parse_frontmatter(md_path) if md_path.exists() else {}
-        name = fallback_name or meta.get("title") or slug.replace("-", " ").title()
-        generate_product_og(slug, name, seed=idx * 11)
-        generate_product_hero(slug, name, seed=idx * 11)
-
     generate_news_default()
-    for idx, news_path in enumerate(discover_news(), start=1):
-        generate_news_item(news_path, seed=100 + idx * 13)
 
-    generated = sorted(p for p in OUT.rglob("*") if p.is_file())
-    print("生成完成：")
-    for path in generated:
-        print(f"{path} - {path.stat().st_size:,} bytes")
+    for slug, title, subtitle in PRODUCTS:
+        print(f"  {slug}...")
+        generate_product_og(slug, title, subtitle)
+
+    print("\nGenerating Hero images (800×400):")
+    for slug, title, subtitle in PRODUCTS:
+        print(f"  {slug}...")
+        generate_product_hero(slug, title, subtitle)
+
+    generated = sorted(p for p in OUT.rglob("*.jpg") if p.is_file())
+    print(f"\nDone! {len(generated)} images generated.")
 
 
 if __name__ == "__main__":
