@@ -2,7 +2,7 @@
 title: "Cold Mix Asphalt Technology Licensing"
 category: "Technology Transfer"
 description: "Full technology transfer package for cold mix asphalt manufacturing. Formula know-how, raw material sourcing, QC protocols, and ongoing R&D support — start your own production in 90 days."
-image: "/images/products/technology-licensing.svg"
+image: "/images/products/technology-licensing-hero.jpg"
 features:
   - Proprietary formulations for 5+ product grades
   - Raw material supplier network (global sourcing)

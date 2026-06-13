@@ -2,7 +2,7 @@
 title: "Pavement Sealcoat - Coal Tar & Asphalt-Based"
 category: "Surface Treatment"
 description: "Professional-grade pavement sealcoat for asphalt protection and beautification. Coal tar and asphalt-emulsion based formulas with sand, polymer, and fast-dry additive options."
-image: "/images/products/pavement-sealcoat.svg"
+image: "/images/products/pavement-sealcoat-hero.jpg"
 features:
   - Coal tar and asphalt-emulsion base options
   - Sand-filled or concentrated (mix-on-site)

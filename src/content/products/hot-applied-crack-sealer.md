@@ -2,7 +2,7 @@
 title: "Hot-Applied Asphalt Crack Sealer - Commercial Grade"
 category: "Crack Sealing"
 description: "Professional hot-applied asphalt crack and joint sealant meeting ASTM D6690 Type II specifications. Superior bonding, fuel-resistant formula for highways, parking lots, and airport runways."
-image: "/images/products/hot-applied-sealer.svg"
+image: "/images/products/hot-applied-crack-sealer-hero.jpg"
 features:
   - Meets ASTM D6690 Type II & ASTM D3405
   - Excellent bonding to asphalt and concrete

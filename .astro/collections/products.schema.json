@@ -16,6 +16,12 @@
         "image": {
           "type": "string"
         },
+        "gallery": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "features": {
           "type": "array",
           "items": {

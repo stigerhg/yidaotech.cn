@@ -2,7 +2,7 @@
 title: "Emulsified Asphalt - CSS-1 / SS-1 / CRS-2 Grades"
 category: "Emulsified Asphalt"
 description: "Cationic and anionic emulsified asphalt for tack coat, prime coat, chip seal, slurry seal, and micro-surfacing applications. Meets ASTM D2397 and ISSA specifications."
-image: "/images/products/emulsified-asphalt.svg"
+image: "/images/products/emulsified-asphalt-hero.jpg"
 features:
   - "Full range: CSS-1, CSS-1h, SS-1, SS-1h, CRS-2, CRS-2P"
   - Custom formulations for specific climate conditions

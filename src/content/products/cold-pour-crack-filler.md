@@ -2,7 +2,7 @@
 title: "Cold Pour Crack Filler - Ready to Use"
 category: "Crack Sealing"
 description: "Solvent-based cold pour crack filler for driveways and small-scale repairs. No heating equipment required — pour directly from the container and ready for traffic in 24 hours."
-image: "/images/products/cold-pour-filler.svg"
+image: "/images/products/cold-pour-crack-filler-hero.jpg"
 features:
   - Ready to use — no heating equipment required
   - Self-leveling formula fills cracks 3–25 mm wide

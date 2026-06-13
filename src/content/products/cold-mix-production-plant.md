@@ -2,7 +2,7 @@
 title: "Cold Mix Asphalt Production Plant - Complete Line"
 category: "Production Equipment"
 description: "Turnkey cold mix asphalt production plant with capacity from 5 to 30 tons per hour. Complete solution including mixer, bagging system, and quality control lab equipment."
-image: "/images/products/cold-mix-plant.svg"
+image: "/images/products/cold-mix-production-plant-hero.jpg"
 features:
   - Continuous production — 5 to 30 TPH capacity
   - PLC automated batching and mixing

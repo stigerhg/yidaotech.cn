@@ -2,7 +2,7 @@
 title: "Cold Mix Asphalt Pothole Repair - Permanent Grade"
 category: "Pothole Repair"
 description: "High-performance cold mix asphalt for permanent pothole and utility cut repairs. Ready to use straight from the bag — no heating, no mixing, no tack coat required."
-image: "/images/products/cold-mix-pothole-repair.svg"
+image: "/images/products/cold-mix-pothole-repair-hero.jpg"
 gallery:
   - "/images/products/shipping-packaged.jpg"
 features:

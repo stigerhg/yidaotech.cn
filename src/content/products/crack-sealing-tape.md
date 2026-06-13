@@ -2,7 +2,7 @@
 title: "Bituminous Crack Sealing Tape - Self-Adhesive"
 category: "Crack Sealing"
 description: "Self-adhesive bituminous crack sealing tape for rapid repairs. Peel-and-stick application — no heating, no mixing. Bonds instantly to asphalt and concrete surfaces."
-image: "/images/products/crack-sealing-tape.svg"
+image: "/images/products/crack-sealing-tape-hero.jpg"
 features:
   - Instant peel-and-stick application
   - High-tack adhesive backing
