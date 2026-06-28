@@ -1,8 +1,12 @@
 ---
 title: "Ultra-Thin Color Anti-Skid Pavement System"
 category: "Color Pavement"
-description: "High-bond, ultra-thin (0.5–1.5 mm) spray-applied color anti-skid pavement coating. Cures in 1–3 hours, lasts 5+ years without fading. Suitable for bike lanes, crosswalks, and decorative paving."
-image: "/images/products/ultra-thin-anti-skid-hero.jpg"
+description: "Integrated color pavement solution for ultra-thin anti-skid surfacing, small-area color cold patch repairs, and direct-to-mixer color asphalt granules."
+image: "/images/products/ultra-thin-anti-skid-pavement-hero.jpg"
+gallery:
+  - "/images/gallery/syyidao_anti_skid.jpg"
+  - "/images/gallery/syyidao_color_cold_patch.jpg"
+  - "/images/gallery/syyidao_color_granules.jpg"
 features:
   - Ultra-thin — only 0.5–1.5 mm total thickness
   - Spray applied — fast, simple, economical
@@ -10,6 +14,8 @@ features:
   - Excellent adhesion to asphalt, concrete, stone, and metal
   - 5-year color retention without fading
   - Strong anti-skid performance
+  - Color cold patch option for bike lanes and small-area color repairs
+  - Direct-to-mixer color granules for small-batch colored asphalt production
   - Works in sub-zero temperatures (0°C and below)
   - Protects pavement from water and oil penetration
 specifications:
@@ -20,22 +26,30 @@ specifications:
   - label: "Cure Time"
     value: "1–3 hours"
   - label: "Application Method"
-    value: "Spray equipment"
+    value: "Spray equipment / hand-lay color cold patch / direct-to-mixer granules"
   - label: "Service Life"
     value: "5+ years without fading"
   - label: "Minimum Application Temperature"
     value: "0°C"
   - label: "Substrate Compatibility"
     value: "Asphalt, concrete, stone, metal"
+  - label: "Color Cold Patch Packaging"
+    value: "20–25 kg bags, LB-05 / LB-10 gradation"
+  - label: "Color Granule Dosage"
+    value: "7–8% of finished asphalt mix weight"
+  - label: "Available Colors"
+    value: "Red, Green, Blue, Yellow, custom match"
 order: 11
 draft: false
 ---
 
 ## Product Overview
 
-Shining Road Technology's ultra-thin color anti-skid pavement system addresses the common problems of traditional anti-skid surfaces: peeling, slow construction, high cost, and low efficiency. With a total thickness of just 0.5–1.5 mm, this spray-applied system delivers exceptional skid resistance, vibrant color, and long-term durability at a fraction of the cost of conventional methods.
+Shining Road Technology's color pavement system addresses the common problems of traditional colored surfaces: peeling, slow construction, high cost, limited batch sizes, and difficult small-area maintenance. The core ultra-thin anti-skid coating is spray-applied at only 0.5–1.5 mm, delivering skid resistance, vibrant color, and long-term durability at a fraction of the cost of conventional methods.
 
 The specially formulated polymer base bonds tenaciously to asphalt, concrete, stone, and even metal substrates — creating a durable, flexible color layer that won't peel or delaminate even under heavy traffic.
+
+For maintenance and production customers, the same color pavement program also includes ready-to-use color cold patch asphalt for small repairs and pre-colored asphalt granules for direct addition to a standard mixing plant. This keeps the product range practical: one color pavement system for surfacing, repair, and small-batch production.
 
 ## Where to Use
 
@@ -46,6 +60,8 @@ The specially formulated polymer base bonds tenaciously to asphalt, concrete, st
 - Color restoration of faded colored asphalt
 - Decorative patterned pavement
 - Ramps and sloped surfaces (anti-skid safety)
+- Small color pavement pothole and surface patch repairs
+- Short-run colored asphalt production for municipal or landscape projects
 
 ## Product Features
 
@@ -55,3 +71,11 @@ The specially formulated polymer base bonds tenaciously to asphalt, concrete, st
 4. **UV Stable** — Special UV-resistant pigments ensure 5+ years of color retention
 5. **Cold-Weather Applicable** — Can be applied at 0°C and below, unlike many coating systems
 6. **Pavement Protection** — Seals the surface against oil, water, and freeze-thaw damage, extending pavement life
+
+## Related Color Pavement Options
+
+### Color Cold Patch Asphalt
+Ready-to-use color cold patch solves the problem of repairing colored pavement without leaving black patches. Open the bag, place the material by hand, tamp or compact, and allow extended curing before heavy traffic. It is suitable for bike lanes, jogging paths, landscape roads, and small decorative pavement repairs.
+
+### Color Asphalt Granules
+Pre-colored asphalt granules are added directly to the pugmill at 7–8% of finished mix weight. They are designed for small to medium colored asphalt batches where installing a dedicated color dosing system is not economical.

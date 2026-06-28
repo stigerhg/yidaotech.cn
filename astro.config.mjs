@@ -4,6 +4,10 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://yidaotech.xyz',
+  redirects: {
+    '/products/color-cold-patch-asphalt/': '/products/ultra-thin-anti-skid-pavement/',
+    '/products/color-asphalt-granules/': '/products/ultra-thin-anti-skid-pavement/',
+  },
   integrations: [tailwind(), sitemap()],
   markdown: {
     shikiConfig: { theme: 'github-light' },

@@ -2,7 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
-const allProducts = await getCollection('products', ({ data }) => !data.draft);
+const allProducts = (await getCollection('products', ({ data }) => !data.draft))
+  .sort((a, b) => a.data.order - b.data.order);
 const categories = [...new Set(allProducts.map(p => p.data.category))];
 ---
 
