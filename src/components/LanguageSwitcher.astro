@@ -1,0 +1,30 @@
+---
+import { languages, locales, localizedPath, unprefixedPath, type Locale } from '../i18n';
+
+const { lang } = Astro.props as { lang: Locale };
+const currentPath = unprefixedPath(Astro.url.pathname);
+---
+
+<div class="relative">
+  <label class="sr-only" for="language-switcher">Language</label>
+  <select
+    id="language-switcher"
+    class="rounded-md border border-gray-200 bg-white px-2 py-1.5 text-sm font-medium text-gray-700 outline-none transition-colors hover:border-primary focus:border-primary"
+    data-language-switcher
+  >
+    {locales.map(locale => (
+      <option value={localizedPath(locale, currentPath)} selected={locale === lang}>
+        {languages[locale].native}
+      </option>
+    ))}
+  </select>
+</div>
+
+<script>
+  document.querySelectorAll('[data-language-switcher]').forEach((select) => {
+    select.addEventListener('change', (event) => {
+      const target = event.currentTarget as HTMLSelectElement;
+      window.location.href = target.value;
+    });
+  });
+</script>

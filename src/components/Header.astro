@@ -1,19 +1,24 @@
 ---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { localizedPath, t, type Locale } from '../i18n';
+
+const { lang } = Astro.props as { lang: Locale };
+const copy = t(lang);
 const navItems = [
-  { label: 'Home', href: '/' },
-  { label: 'Products', href: '/products/' },
-  { label: 'Case Studies', href: '/case-studies/' },
-  { label: 'News', href: '/news/' },
-  { label: 'About Us', href: '/about/' },
-  { label: 'Contact', href: '/contact/' },
+  { label: copy.nav.home, href: localizedPath(lang, '/') },
+  { label: copy.nav.products, href: localizedPath(lang, '/products/') },
+  { label: copy.nav.caseStudies, href: localizedPath(lang, '/case-studies/') },
+  { label: copy.nav.news, href: localizedPath(lang, '/news/') },
+  { label: copy.nav.about, href: localizedPath(lang, '/about/') },
+  { label: copy.nav.contact, href: localizedPath(lang, '/contact/') },
 ];
 ---
 
 <header class="bg-white shadow-sm sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
-      <a href="/" class="flex items-center gap-3">
-        <span class="text-xl font-bold text-primary">Shining Road</span>
+      <a href={localizedPath(lang, '/')} class="flex items-center gap-3">
+        <span class="text-xl font-bold text-primary">{copy.site.shortName}</span>
       </a>
       
       <nav class="hidden md:flex items-center gap-1">
@@ -25,11 +30,14 @@ const navItems = [
         ))}
       </nav>
 
-      <button class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100" id="mobile-menu-btn">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
+      <div class="flex items-center gap-2">
+        <LanguageSwitcher lang={lang} />
+        <button class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100" id="mobile-menu-btn" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </header>

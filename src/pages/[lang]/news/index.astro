@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { getLocale, locales, localizedPath, t } from '../../../i18n';
+
+export function getStaticPaths() {
+  return locales.map(lang => ({ params: { lang } }));
+}
+
+const lang = getLocale(Astro.params.lang);
+const copy = t(lang);
+const sorted = (await getCollection('news', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout lang={lang} title={copy.news.metaTitle} description={copy.news.metaDescription} canonicalURL={`https://yidaotech.xyz${localizedPath(lang, '/news/')}`}>
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="section-title">{copy.news.title}</h1>
+      <p class="section-subtitle">{copy.news.subtitle}</p>
+
+      {sorted.length === 0 ? (
+        <div class="text-center py-20 text-gray-500"><p class="text-lg">{copy.news.empty}</p></div>
+      ) : (
+        <div class="space-y-8 mt-8">
+          {sorted.map(article => (
+            <a href={localizedPath(lang, `/news/${article.slug}/`)} class="card flex flex-col md:flex-row group">
+              {article.data.image && (
+                <div class="md:w-1/3 aspect-video md:aspect-auto bg-gray-100 overflow-hidden">
+                  <img src={article.data.image} alt={article.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
+              )}
+              <div class="p-6 flex-1">
+                <time class="text-sm text-gray-500">{article.data.date.toLocaleDateString(lang === 'en' ? 'en-US' : lang)}</time>
+                <h3 class="text-xl font-semibold mt-2 mb-3 group-hover:text-primary transition-colors">{article.data.title}</h3>
+                <p class="text-gray-600 line-clamp-2">{article.data.description}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

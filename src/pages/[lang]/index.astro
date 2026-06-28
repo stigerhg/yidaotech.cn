@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { getLocale, locales, localizedPath, t } from '../../i18n';
+
+export function getStaticPaths() {
+  return locales.map(lang => ({ params: { lang } }));
+}
+
+const lang = getLocale(Astro.params.lang);
+const copy = t(lang);
+const latestNews = (await getCollection('news', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
+---
+
+<BaseLayout lang={lang} title={copy.home.metaTitle} description={copy.home.metaDescription} canonicalURL={`https://yidaotech.xyz${localizedPath(lang, '/')}`}>
+  <section class="bg-gradient-to-br from-primary via-blue-700 to-blue-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+      <div class="max-w-3xl">
+        <p class="text-blue-200 text-sm md:text-base font-medium tracking-wide uppercase mb-4">{copy.home.eyebrow}</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance">{copy.home.heroTitle}</h1>
+        <p class="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed max-w-2xl">{copy.home.heroSubtitle}</p>
+        <div class="flex flex-wrap gap-4">
+          <a href={localizedPath(lang, '/products/')} class="inline-flex items-center px-6 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors">{copy.actions.viewProducts}</a>
+          <a href={localizedPath(lang, '/contact/')} class="inline-flex items-center px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-colors">{copy.actions.requestQuote}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">{copy.home.solutionsTitle}</h2>
+      <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">{copy.home.solutionsSubtitle}</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {copy.home.solutionCards.map(([title, description]) => (
+          <a href={localizedPath(lang, '/products/')} class="group block p-8 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">{title}</h3>
+            <p class="text-gray-600 text-sm">{description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">{copy.home.whyTitle}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {copy.home.whyCards.map(([title, description]) => (
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
+              <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 class="text-lg font-semibold mb-3">{title}</h3>
+            <p class="text-gray-600">{description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center mb-12">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-2">{copy.home.latestTitle}</h2>
+          <p class="text-gray-600">{copy.home.latestSubtitle}</p>
+        </div>
+        <a href={localizedPath(lang, '/news/')} class="text-primary font-medium hover:underline hidden md:inline-flex items-center gap-1">{copy.actions.allArticles} <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {latestNews.map(article => (
+          <a href={localizedPath(lang, `/news/${article.slug}/`)} class="group block">
+            <article class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:border-primary hover:shadow-lg transition-all">
+              <div class="p-6">
+                <time class="text-sm text-gray-400">{article.data.date.toLocaleDateString(lang === 'en' ? 'en-US' : lang)}</time>
+                <h3 class="text-lg font-semibold mt-2 mb-3 group-hover:text-primary transition-colors line-clamp-2">{article.data.title}</h3>
+                <p class="text-gray-600 text-sm line-clamp-3">{article.data.description}</p>
+              </div>
+            </article>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-primary text-white">
+    <div class="max-w-3xl mx-auto text-center px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">{copy.home.ctaTitle}</h2>
+      <p class="text-lg text-blue-100 mb-8 max-w-xl mx-auto">{copy.home.ctaSubtitle}</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href={localizedPath(lang, '/contact/')} class="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors text-lg">{copy.actions.requestQuote}</a>
+        <a href={localizedPath(lang, '/products/')} class="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-colors text-lg">{copy.actions.browseProducts}</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

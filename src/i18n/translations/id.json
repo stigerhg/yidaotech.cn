@@ -1,0 +1,134 @@
+{
+  "site": {
+    "name": "Teknologi Jalan Shining",
+    "shortName": "Shining Road",
+    "tagline": "Solusi Pemeliharaan Perkerasan Profesional"
+  },
+  "nav": {
+    "home": "Beranda",
+    "products": "Produk",
+    "about": "Tentang Kami",
+    "contact": "Hubungi Kami",
+    "news": "Berita",
+    "caseStudies": "Studi Kasus"
+  },
+  "actions": {
+    "requestQuote": "Minta Penawaran",
+    "viewProducts": "Lihat Produk",
+    "browseProducts": "Lihat Produk",
+    "backToProducts": "Kembali ke Produk",
+    "backToNews": "Kembali ke Berita",
+    "contactUs": "Hubungi Kami",
+    "sendMessage": "Kirim Pesan",
+    "allArticles": "Semua artikel"
+  },
+  "footer": {
+    "description": "Produsen produk penutup retak aspal dan pemeliharaan perkerasan profesional.",
+    "quickLinks": "Tautan Cepat",
+    "contact": "Kontak",
+    "rights": "Hak cipta dilindungi."
+  },
+  "home": {
+    "metaTitle": "Campuran Dingin & Solusi Pemeliharaan Perkerasan | Shining Road Technology",
+    "metaDescription": "Produsen penutup retak panas, aspal campuran dingin, produk pelestarian perkerasan, dan pabrik produksi campuran dingin.",
+    "eyebrow": "Shenyang Shining Road Technology Co., Ltd.",
+    "heroTitle": "Penutup Retak Aspal, Campuran Dingin & Pelestarian Perkerasan",
+    "heroSubtitle": "Solusi lengkap pemeliharaan perkerasan: sealant profesional, aspal campuran dingin, pabrik turnkey, dan lisensi teknologi untuk kontraktor dan distributor di 30+ negara.",
+    "solutionsTitle": "Solusi Kami",
+    "solutionsSubtitle": "Dari produk penutup retak hingga pabrik produksi lengkap, semua yang Anda butuhkan untuk pemeliharaan perkerasan.",
+    "whyTitle": "Mengapa Kontraktor & Distributor Memilih Kami",
+    "latestTitle": "Pembaruan Terbaru",
+    "latestSubtitle": "Wawasan industri, berita produk, dan pembaruan proyek",
+    "ctaTitle": "Siap Memulai?",
+    "ctaSubtitle": "Butuh sampel, penawaran massal, atau konsultasi lisensi teknologi? Tim kami siap membantu.",
+    "solutionCards": [
+      ["Produk Penutup Retak", "Sealant aplikasi panas, pengisi cair dingin, dan pita perekat untuk berbagai retak dan iklim."],
+      ["Aspal Campuran Dingin & Perbaikan Lubang", "Campuran dingin permanen untuk perbaikan lubang sepanjang tahun. Tanpa pemanasan dan dapat bekerja saat basah."],
+      ["Pabrik Produksi", "Pabrik aspal campuran dingin turnkey 5 sampai 30 TPH dengan pelatihan, lab QC, dan garansi."],
+      ["Lisensi Teknologi", "Transfer teknologi lengkap: formula, sumber bahan baku, sistem QC, dan dukungan R&D berkelanjutan."],
+      ["Aspal Emulsi", "Emulsi kationik dan anionik untuk tack coat, chip seal, slurry seal, dan micro-surfacing."],
+      ["Perawatan Permukaan", "Sealcoat, rejuvenator, dan lapisan pelindung untuk memperpanjang umur dan tampilan perkerasan."]
+    ],
+    "whyCards": [
+      ["Standar Internasional", "Produk diuji menurut ASTM, AASHTO, dan EN. Certificate of Analysis disertakan di setiap pengiriman."],
+      ["Dukungan Teknis", "Dukungan berbasis engineer untuk pemilihan produk, panduan aplikasi, dan pelatihan di lokasi."],
+      ["Logistik Global", "Ekspor ke 30+ negara. Pengiriman FCL, LCL, dan bulk dari pelabuhan utama China dengan dukungan dokumen."]
+    ]
+  },
+  "productsPage": {
+    "metaTitle": "Produk | Sealant Jalan & Pemeliharaan Perkerasan",
+    "metaDescription": "Jelajahi rangkaian produk penutup retak, perbaikan lubang, dan pemeliharaan perkerasan kami.",
+    "title": "Produk Kami",
+    "subtitle": "Solusi pemeliharaan perkerasan kelas profesional untuk kontraktor dan distributor",
+    "empty": "Produk akan segera ditambahkan.",
+    "emptyContact": "Periksa kembali atau hubungi kami untuk pertanyaan.",
+    "keyFeatures": "Fitur Utama",
+    "specifications": "Spesifikasi",
+    "packingTitle": "Pengemasan & Pengiriman",
+    "packingSubtitle": "Foto produk nyata, siap dikirim ke lokasi Anda"
+  },
+  "about": {
+    "metaTitle": "Tentang Kami | Shining Road Technology",
+    "metaDescription": "Shenyang Shining Road Technology, produsen penutup retak aspal, aspal campuran dingin, dan produk pelestarian perkerasan.",
+    "title": "Tentang Kami",
+    "subtitle": "Shenyang Shining Road Technology Co., Ltd.",
+    "lead": "Kami adalah produsen dan penyedia teknologi untuk produk pemeliharaan perkerasan, dari sealant retak dan aspal campuran dingin hingga pabrik lengkap dan lisensi teknologi. Berbasis di Shenyang, China, kami melayani pelanggan di lebih dari 30 negara.",
+    "sections": [
+      ["Apa yang Kami Kerjakan", "Bisnis kami mencakup manufaktur produk, pabrik campuran dingin turnkey, dan lisensi teknologi untuk produksi lokal."],
+      ["Filosofi Kami", "Pemeliharaan perkerasan adalah investasi infrastruktur dengan ROI tinggi. Misi kami adalah membuat material berkualitas tersedia di setiap pasar."],
+      ["Komitmen Kualitas", "Setiap batch diuji di laboratorium internal sebelum rilis, termasuk bahan baku, proses produksi, sertifikasi produk jadi, sampel arsip, dan verifikasi pihak ketiga."],
+      ["Kehadiran Global", "Kami mengekspor ke 30+ negara dan mendukung distributor, kontraktor, pemilik pabrik, serta mitra lisensi."]
+    ],
+    "ctaTitle": "Tertarik Bekerja Sama?",
+    "ctaText": "Baik Anda distributor, kontraktor, atau produsen, kami dapat membahas cara mendukung bisnis Anda."
+  },
+  "contact": {
+    "metaTitle": "Hubungi Kami | Shining Road Technology",
+    "metaDescription": "Hubungi kami untuk pertanyaan produk, penawaran massal, lisensi teknologi, dan dukungan teknis.",
+    "title": "Hubungi Kami",
+    "subtitle": "Kami biasanya merespons dalam 24 jam pada hari kerja.",
+    "formTitle": "Kirim Pesan",
+    "infoTitle": "Informasi Kontak",
+    "name": "Nama Lengkap",
+    "email": "Alamat Email",
+    "company": "Perusahaan / Organisasi",
+    "inquiryType": "Jenis Pertanyaan",
+    "message": "Pesan",
+    "confidential": "Informasi Anda bersifat rahasia. Kami tidak akan membagikan detail Anda kepada pihak ketiga.",
+    "headquarters": "Kantor Pusat",
+    "contactPerson": "Narahubung",
+    "responseTime": "Waktu Respons",
+    "responseText": "Kami berupaya merespons dalam 24 jam pada hari kerja (Sen-Jum, UTC+8).",
+    "shipping": "Pengiriman & Logistik"
+  },
+  "news": {
+    "metaTitle": "Berita & Artikel | Shining Road Technology",
+    "metaDescription": "Berita terbaru, pembaruan produk, dan wawasan industri dari Shining Road Technology.",
+    "title": "Berita & Artikel",
+    "subtitle": "Ikuti pembaruan terbaru dari tim kami",
+    "empty": "Artikel akan segera diterbitkan. Silakan cek kembali nanti."
+  },
+  "caseStudies": {
+    "metaTitle": "Studi Kasus | Hasil Pemeliharaan Perkerasan",
+    "metaDescription": "Lihat performa produk Shining Road Technology dalam aplikasi nyata.",
+    "title": "Studi Kasus",
+    "subtitle": "Hasil nyata dengan produk pemeliharaan perkerasan kami",
+    "ctaTitle": "Punya Proyek Serupa?",
+    "ctaText": "Ceritakan tantangan pemeliharaan perkerasan Anda dan kami akan merekomendasikan produk serta pendekatan yang tepat.",
+    "ctaAction": "Hubungi Tim Teknis Kami"
+  },
+  "products": {
+    "hot-applied-crack-sealer": {"title": "Penutup Retak Aplikasi Panas", "category": "Penutup Retak", "description": "Sealant retak dan sambungan aspal aplikasi panas profesional sesuai ASTM D6690 Type II. Ikatan kuat dan tahan bahan bakar untuk jalan, parkir, dan landasan.", "features": ["Memenuhi ASTM D6690 Type II dan ASTM D3405", "Ikatan sangat baik pada aspal dan beton", "Tahan bahan bakar dan bahan kimia", "Tahan freeze-thaw (-30°C sampai 70°C)", "Cepat mengeras sehingga menurunkan waktu penutupan lalu lintas", "Emisi VOC rendah saat aplikasi"], "specifications": [{"label": "Tipe", "value": "Aplikasi panas (direct fire / oil-jacketed melter)"}, {"label": "Suhu Aplikasi", "value": "180–205°C"}, {"label": "Rentang Suhu Layanan", "value": "-30°C sampai +70°C"}, {"label": "Titik Lunak", "value": "≥ 90°C (ASTM D36)"}, {"label": "Penetrasi @ 25°C", "value": "60–80 dmm (ASTM D5)"}, {"label": "Ketahanan Alir @ 60°C", "value": "≤ 3 mm (ASTM D5329)"}, {"label": "Kekuatan Ikatan", "value": "≥ 2.5 MPa"}, {"label": "Kemasan", "value": "25 kg box / 12.5 kg block / custom"}]},
+    "cold-pour-crack-filler": {"title": "Pengisi Retak Cair Dingin", "category": "Penutup Retak", "description": "Pengisi retak cair berbasis pelarut yang siap pakai untuk jalan masuk dan perbaikan skala kecil. Tanpa pemanasan, siap lalu lintas dalam 24 jam.", "features": ["Siap pakai tanpa peralatan pemanas", "Formula self-leveling untuk retak 3–25 mm", "Adhesi baik ke aspal dan beton", "Fleksibel setelah curing", "Tahan UV dan cuaca", "Formulasi rendah bau"], "specifications": [{"label": "Tipe", "value": "Aplikasi dingin berbasis pelarut"}, {"label": "Suhu Aplikasi", "value": "+5°C sampai +40°C"}, {"label": "Lebar Retak", "value": "3–25 mm"}, {"label": "Waktu Curing", "value": "24 jam @ 20°C"}, {"label": "Daya Sebar", "value": "~30 meter linear/L"}, {"label": "Kemasan", "value": "1 L / 5 L / 20 L pail"}]},
+    "crack-sealing-tape": {"title": "Pita Penutup Retak", "category": "Penutup Retak", "description": "Pita bitumen self-adhesive untuk perbaikan cepat. Aplikasi peel-and-stick tanpa pemanasan dan langsung melekat pada aspal atau beton.", "features": ["Aplikasi peel-and-stick instan", "Lapisan perekat tack tinggi", "Mengikuti tepi retak tidak beraturan", "Kedap air dan tahan cuaca", "Siap lalu lintas segera setelah aplikasi", "Cocok untuk aspal dan beton"], "specifications": [{"label": "Tipe", "value": "Pita bitumen self-adhesive"}, {"label": "Pilihan Lebar", "value": "50 / 100 / 150 / 200 mm"}, {"label": "Panjang Roll", "value": "10 m standar / custom"}, {"label": "Ketebalan", "value": "2.0 mm"}, {"label": "Suhu Layanan", "value": "-20°C sampai +80°C"}, {"label": "Adhesi ke Baja", "value": "≥ 20 N/25mm"}, {"label": "Tahan UV", "value": "≥ 1000 h (ASTM G154)"}]},
+    "cold-mix-pothole-repair": {"title": "Perbaikan Lubang Aspal Campuran Dingin", "category": "Perbaikan Lubang", "description": "Aspal campuran dingin berkinerja tinggi untuk perbaikan lubang permanen dan utility cut. Siap pakai dari kantong tanpa pemanasan, pencampuran, atau tack coat.", "features": ["Perbaikan permanen, bukan tambalan sementara", "Tanpa pemanasan atau pencampuran", "Bekerja dalam kondisi basah bahkan di bawah air", "Tidak perlu tack coat, self-adhesive", "Siap lalu lintas segera setelah pemadatan", "Umur simpan panjang, 12+ bulan dalam kantong tertutup"], "specifications": [{"label": "Tipe", "value": "Aspal campuran dingin (solvent-cutback)"}, {"label": "Ukuran Agregat", "value": "0–6 mm / 0–10 mm"}, {"label": "Suhu Aplikasi", "value": "-20°C sampai +40°C"}, {"label": "Metode Pemadatan", "value": "Hand tamper / vibratory plate"}, {"label": "Cakupan", "value": "~0.025 m³ per 25 kg bag"}, {"label": "Kemasan", "value": "25 kg bag / 1 ton bulk bag"}]},
+    "cold-mix-production-plant": {"title": "Pabrik Produksi Campuran Dingin", "category": "Peralatan Produksi", "description": "Pabrik aspal campuran dingin turnkey berkapasitas 5 sampai 30 ton per jam, termasuk mixer, sistem bagging, dan peralatan QC.", "features": ["Produksi kontinu 5 sampai 30 TPH", "Batching dan mixing otomatis PLC", "Lini bagging dan palletizing terintegrasi", "Sistem dust collection tertutup", "Desain modular mudah dikirim dan dipasang", "Manajemen resep dengan 50+ formula"], "specifications": [{"label": "Tipe", "value": "Pabrik aspal campuran dingin kontinu"}, {"label": "Kapasitas", "value": "5 / 10 / 20 / 30 TPH"}, {"label": "Tipe Mixer", "value": "Twin-shaft paddle mixer"}, {"label": "Bin Agregat", "value": "2 / 3 / 4 bin"}, {"label": "Sistem Kontrol", "value": "Siemens PLC dengan HMI"}, {"label": "Daya", "value": "380V / 50Hz, 60–180 kW"}, {"label": "Area Pabrik", "value": "~200–600 m²"}, {"label": "Instalasi & Commissioning", "value": "Termasuk engineer di lokasi"}]},
+    "technology-licensing": {"title": "Lisensi Teknologi", "category": "Transfer Teknologi", "description": "Paket transfer teknologi lengkap untuk produksi aspal campuran dingin: formula, sumber bahan baku, protokol QC, dan dukungan R&D berkelanjutan.", "features": ["Formula proprietary untuk 5+ grade produk", "Jaringan pemasok bahan baku global", "Setup laboratorium QC dan SOP", "Program pelatihan operator", "Optimasi formula dan R&D berkelanjutan", "Dukungan pemasaran: desain kemasan, spec sheet, laporan uji"], "specifications": [{"label": "Tipe Paket", "value": "Lisensi teknologi + dukungan teknis"}, {"label": "Formula Termasuk", "value": "5 formula dasar, dapat disesuaikan"}, {"label": "Durasi Pelatihan", "value": "2 minggu on-site + remote follow-up"}, {"label": "Setup Lab QC", "value": "Daftar peralatan, SOP, protokol uji"}, {"label": "Sumber Bahan Baku", "value": "Database pemasok disetujui"}, {"label": "Masa Lisensi", "value": "5 tahun, dapat diperpanjang"}, {"label": "Wilayah", "value": "Eksklusif per negara/wilayah, dinegosiasikan"}]},
+    "emulsified-asphalt": {"title": "Aspal Emulsi", "category": "Aspal Emulsi", "description": "Aspal emulsi kationik dan anionik untuk tack coat, prime coat, chip seal, slurry seal, dan micro-surfacing. Memenuhi ASTM D2397 dan ISSA.", "features": ["Rentang lengkap: CSS-1, CSS-1h, SS-1, SS-1h, CRS-2, CRS-2P", "Formulasi custom untuk kondisi iklim tertentu", "Stabil disimpan 30+ hari tanpa pengendapan", "Kompatibel dengan peralatan spray standar", "Grade modifikasi lateks untuk micro-surfacing", "Pengiriman bulk tanker, IBC tote, atau drum"], "specifications": [{"label": "Grade Tersedia", "value": "CSS-1, CSS-1h, SS-1, SS-1h, CRS-1, CRS-2, CRS-2P, CQS-1h"}, {"label": "Tipe Muatan", "value": "Kationik / anionik"}, {"label": "Kadar Residu", "value": "57–69%"}, {"label": "Viskositas Saybolt @ 25°C", "value": "20–100 SSF"}, {"label": "Sieve Test", "value": "≤ 0.10%"}, {"label": "Settlement 5 hari", "value": "≤ 5%"}, {"label": "Muatan Partikel", "value": "Positif / negatif"}]},
+    "pavement-sealcoat": {"title": "Pelapis Pelindung Perkerasan", "category": "Perawatan Permukaan", "description": "Sealcoat kelas profesional untuk perlindungan dan estetika aspal. Formula coal tar dan emulsi aspal dengan opsi pasir, polimer, dan fast-dry.", "features": ["Opsi dasar coal tar dan emulsi aspal", "Sand-filled atau konsentrat untuk mix-on-site", "Aditif fast-dry tersedia 2–4 jam", "Finishing hitam pekat", "Tahan UV dan oksidasi", "Kompatibel dengan spray dan squeegee"], "specifications": [{"label": "Tipe Dasar", "value": "Coal tar emulsion / asphalt emulsion"}, {"label": "Kadar Padatan", "value": "45–55% konsentrat / 60–70% ready-mix"}, {"label": "Viskositas @ 25°C", "value": "80–120 KU"}, {"label": "Waktu Kering @ 25°C", "value": "2–4 jam / 4–6 jam"}, {"label": "Daya Sebar", "value": "0.4–0.6 L/m² per coat"}, {"label": "Kemasan", "value": "55 gal drum / 275 gal IBC / bulk"}]},
+    "color-sprayed-pavement": {"title": "Perkerasan Aspal Semprot Warna", "category": "Perkerasan Warna", "description": "Lapisan warna aplikasi semprot untuk rejuvenasi dan restorasi warna aspal atau beton. Curing 2 jam, bertahan 3–5 tahun tanpa pudar.", "features": ["Aplikasi spray cepat tanpa alat berat", "Siap lalu lintas 2 jam setelah aplikasi", "Tersedia merah, hijau, biru, kuning, dan warna custom", "Daya sebar 0.3–0.8 kg/m²", "Tahan UV, retensi warna 3–5 tahun", "Ramah lingkungan, rendah bau"], "specifications": [{"label": "Tipe", "value": "Lapisan warna modifikasi acrylic-polymer"}, {"label": "Metode Aplikasi", "value": "Peralatan spray"}, {"label": "Daya Sebar", "value": "0.3–0.8 kg/m² per coat"}, {"label": "Waktu Curing", "value": "2 jam sebelum lalu lintas"}, {"label": "Retensi Warna", "value": "3–5 tahun"}, {"label": "Kemasan", "value": "20 kg pail"}, {"label": "Warna", "value": "Merah, hijau, biru, kuning, custom"}]},
+    "ultra-thin-anti-skid-pavement": {"title": "Perkerasan Anti-Selip Warna Ultra-Tipis", "category": "Perkerasan Warna", "description": "Sistem perkerasan warna terpadu untuk surfacing anti-selip ultra-tipis, perbaikan warna area kecil, dan granula warna untuk mixer.", "features": ["Ultra-tipis 0.5–1.5 mm", "Aplikasi spray cepat, sederhana, ekonomis", "Curing cepat, buka lalu lintas 1–3 jam", "Adhesi sangat baik ke aspal, beton, batu, dan logam", "Retensi warna 5 tahun tanpa pudar", "Performa anti-selip kuat", "Opsi cold patch warna untuk jalur sepeda", "Granula warna direct-to-mixer", "Dapat bekerja pada 0°C dan di bawahnya", "Melindungi perkerasan dari air dan minyak"], "specifications": [{"label": "Ketebalan Total", "value": "0.5–1.5 mm"}, {"label": "Agregat Anti-Selip", "value": "1–2 kg/m²"}, {"label": "Waktu Curing", "value": "1–3 jam"}, {"label": "Metode Aplikasi", "value": "Spray / hand-lay cold patch / granula ke mixer"}, {"label": "Umur Layanan", "value": "5+ tahun tanpa pudar"}, {"label": "Suhu Minimum", "value": "0°C"}, {"label": "Substrat", "value": "Aspal, beton, batu, logam"}, {"label": "Kemasan Cold Patch Warna", "value": "20–25 kg bag, LB-05 / LB-10"}, {"label": "Dosis Granula Warna", "value": "7–8% berat campuran jadi"}, {"label": "Warna", "value": "Merah, hijau, biru, kuning, custom"}]},
+    "cold-mix-additive": {"title": "Aditif Campuran Dingin", "category": "Input Manufaktur", "description": "Aditif konsentrat untuk membuat aspal campuran dingin berkinerja tinggi. Formula 100% aktif memberi ketahanan air, workability suhu rendah, dan stabilitas simpan 12+ bulan.", "features": ["100% bahan aktif tanpa filler", "Konstruksi segala cuaca (-30°C sampai +50°C)", "Reaktif terhadap air dan lebih baik dalam kondisi basah", "Tahan asam, alkali, dan garam", "Menghasilkan cold mix dengan umur simpan 6–12+ bulan", "Produksi sederhana dengan forced-action mixer apa pun", "Formula generasi ketiga dengan 10+ tahun penyempurnaan lapangan"], "specifications": [{"label": "Tipe", "value": "Aditif cold mix 100% aktif"}, {"label": "Dosis", "value": "2–3% dari berat binder"}, {"label": "Suhu Binder", "value": "100–120°C"}, {"label": "Umur Simpan", "value": "3 tahun tertutup"}, {"label": "Kemasan", "value": "50 kg drum"}, {"label": "Agregat Kompatibel", "value": "Disarankan agregat alkalin"}, {"label": "Penyimpanan Cold Mix", "value": "6–12+ bulan dalam bag, jauh dari matahari"}]},
+    "quick-repair-cement": {"title": "Semen Perbaikan Cepat", "category": "Perbaikan Beton", "description": "Mortar perbaikan berkekuatan tinggi dan cepat setting untuk perkerasan beton semen. Initial set 15 menit, siap lalu lintas dalam 1 jam.", "features": ["Cepat setting: initial set 15 menit, lalu lintas 1 jam", "Kekuatan ikatan tinggi, kegagalan pada beton dasar", "Susut rendah hampir nol", "Kompatibilitas termal dengan beton", "Tahan freeze-thaw", "Tahan bahan kimia dan garam de-icing"], "specifications": [{"label": "Initial Set", "value": "15 menit @ 20°C"}, {"label": "Siap Lalu Lintas", "value": "1 jam setelah pemasangan"}, {"label": "Kuat Lentur", "value": "Lebih besar dari beton C30"}, {"label": "Stabilitas Volume", "value": "Susut kering hampir nol"}, {"label": "Ekspansi Termal", "value": "Sesuai beton Portland biasa"}, {"label": "Aplikasi", "value": "Spalling, scaling, tepi, sudut joint, delaminasi"}, {"label": "Penggunaan Terbukti", "value": "Bandara, ramp jalan, halaman SPBU"}]}
+  }
+}

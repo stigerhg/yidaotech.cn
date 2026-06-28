@@ -9,6 +9,13 @@ export default defineConfig({
     '/products/color-asphalt-granules/': '/products/ultra-thin-anti-skid-pavement/',
   },
   integrations: [tailwind(), sitemap()],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'ru', 'ar', 'id'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
   markdown: {
     shikiConfig: { theme: 'github-light' },
   },

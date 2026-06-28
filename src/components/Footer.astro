@@ -1,28 +1,32 @@
 ---
+import { localizedPath, t, type Locale } from '../i18n';
+
+const { lang } = Astro.props as { lang: Locale };
 const currentYear = new Date().getFullYear();
+const copy = t(lang);
 ---
 
 <footer class="bg-gray-900 text-gray-300">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
-        <h3 class="text-white font-semibold text-lg mb-4">Shining Road Technology</h3>
+        <h3 class="text-white font-semibold text-lg mb-4">{copy.site.name}</h3>
         <p class="text-sm leading-relaxed">
-          Professional asphalt crack sealing and pavement maintenance products manufacturer.
+          {copy.footer.description}
         </p>
       </div>
       <div>
-        <h3 class="text-white font-semibold text-lg mb-4">Quick Links</h3>
+        <h3 class="text-white font-semibold text-lg mb-4">{copy.footer.quickLinks}</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="/products/" class="hover:text-white transition-colors">Products</a></li>
-          <li><a href="/news/" class="hover:text-white transition-colors">News</a></li>
-          <li><a href="/case-studies/" class="hover:text-white transition-colors">Case Studies</a></li>
-          <li><a href="/about/" class="hover:text-white transition-colors">About Us</a></li>
-          <li><a href="/contact/" class="hover:text-white transition-colors">Contact</a></li>
+          <li><a href={localizedPath(lang, '/products/')} class="hover:text-white transition-colors">{copy.nav.products}</a></li>
+          <li><a href={localizedPath(lang, '/news/')} class="hover:text-white transition-colors">{copy.nav.news}</a></li>
+          <li><a href={localizedPath(lang, '/case-studies/')} class="hover:text-white transition-colors">{copy.nav.caseStudies}</a></li>
+          <li><a href={localizedPath(lang, '/about/')} class="hover:text-white transition-colors">{copy.nav.about}</a></li>
+          <li><a href={localizedPath(lang, '/contact/')} class="hover:text-white transition-colors">{copy.nav.contact}</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="text-white font-semibold text-lg mb-4">Contact</h3>
+        <h3 class="text-white font-semibold text-lg mb-4">{copy.footer.contact}</h3>
         <ul class="space-y-2 text-sm">
           <li>Shenyang, Liaoning, China</li>
           <li>Mark</li>
@@ -31,7 +35,7 @@ const currentYear = new Date().getFullYear();
       </div>
     </div>
     <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-      <p>&copy; {currentYear} Shenyang Shining Road Technology. All rights reserved.</p>
+      <p>&copy; {currentYear} Shenyang Shining Road Technology. {copy.footer.rights}</p>
     </div>
   </div>
 </footer>

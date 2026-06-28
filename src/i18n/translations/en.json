@@ -1,0 +1,121 @@
+{
+  "site": {
+    "name": "Shining Road Technology",
+    "shortName": "Shining Road",
+    "tagline": "Professional Pavement Maintenance Solutions"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "news": "News",
+    "caseStudies": "Case Studies"
+  },
+  "actions": {
+    "requestQuote": "Request Quote",
+    "viewProducts": "View Products",
+    "browseProducts": "Browse Products",
+    "backToProducts": "Back to Products",
+    "backToNews": "Back to News",
+    "contactUs": "Contact Us",
+    "sendMessage": "Send Message",
+    "allArticles": "All articles"
+  },
+  "footer": {
+    "description": "Professional asphalt crack sealing and pavement maintenance products manufacturer.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "metaTitle": "Cold Mix Asphalt & Pavement Maintenance Solutions | Shining Road Technology",
+    "metaDescription": "Manufacturer of hot-applied crack sealant, cold mix asphalt, pavement preservation products, and cold mix production plants. Technology licensing available worldwide.",
+    "eyebrow": "Shenyang Shining Road Technology Co., Ltd.",
+    "heroTitle": "Asphalt Crack Sealing, Cold Mix & Pavement Preservation",
+    "heroSubtitle": "Complete pavement maintenance solutions from professional-grade sealants and cold mix asphalt to turnkey production plants and technology licensing. Serving contractors and distributors in 30+ countries.",
+    "solutionsTitle": "Our Solutions",
+    "solutionsSubtitle": "From crack sealing products to complete production plants, everything you need for pavement maintenance.",
+    "whyTitle": "Why Contractors & Distributors Choose Us",
+    "latestTitle": "Latest Updates",
+    "latestSubtitle": "Industry insights, product news, and project updates",
+    "ctaTitle": "Ready to Get Started?",
+    "ctaSubtitle": "Whether you need product samples, a bulk quote, or a technology licensing consultation, our team is ready to help.",
+    "solutionCards": [
+      ["Crack Sealing Products", "Hot-applied sealants, cold pour fillers, and self-adhesive tapes for every crack type and climate."],
+      ["Cold Mix Asphalt & Pothole Repair", "Permanent-grade cold mix for year-round pothole repair. No heating, works in wet conditions."],
+      ["Production Plants", "Turnkey cold mix asphalt plants from 5 to 30 TPH with training, QC lab, and warranty."],
+      ["Technology Licensing", "Full technology transfer: formulas, raw material sourcing, QC systems, and ongoing R&D support."],
+      ["Emulsified Asphalt", "Cationic and anionic emulsions for tack coat, chip seal, slurry seal, and micro-surfacing."],
+      ["Surface Treatments", "Sealcoating, rejuvenators, and protective surface treatments to extend pavement life and appearance."]
+    ],
+    "whyCards": [
+      ["International Standards", "Products tested to ASTM, AASHTO, and EN specifications. Certificate of Analysis provided with every shipment."],
+      ["Technical Support", "Engineer-led support, product selection, application guidance, and on-site training available worldwide."],
+      ["Global Logistics", "Export to 30+ countries. FCL, LCL, and bulk shipments from major Chinese ports. Documentation support included."]
+    ]
+  },
+  "productsPage": {
+    "metaTitle": "Products | Road Sealant & Pavement Maintenance",
+    "metaDescription": "Browse our full range of asphalt crack sealing, pothole repair, and pavement maintenance products.",
+    "title": "Our Products",
+    "subtitle": "Professional-grade pavement maintenance solutions for contractors and distributors",
+    "empty": "Products will be added soon.",
+    "emptyContact": "Check back or contact us for inquiries.",
+    "keyFeatures": "Key Features",
+    "specifications": "Specifications",
+    "packingTitle": "Packing & Shipping",
+    "packingSubtitle": "Real product photos, ready to ship to your location"
+  },
+  "about": {
+    "metaTitle": "About Us | Shining Road Technology — Pavement Maintenance Solutions",
+    "metaDescription": "Shenyang Shining Road Technology, manufacturer of asphalt crack sealing, cold mix asphalt, and pavement preservation products.",
+    "title": "About Us",
+    "subtitle": "Shenyang Shining Road Technology Co., Ltd.",
+    "lead": "We are a professional manufacturer and technology provider specializing in pavement maintenance products, from crack sealants and cold mix asphalt to complete production plants and technology licensing. Headquartered in Shenyang, China, we serve contractors, distributors, and manufacturers in over 30 countries.",
+    "sections": [
+      ["What We Do", "Our business covers product manufacturing, turnkey cold mix production plants, and technology licensing for local manufacturing."],
+      ["Our Philosophy", "Pavement maintenance is one of the highest-ROI investments in infrastructure. Our mission is to make high-quality maintenance materials accessible in every market."],
+      ["Quality Commitment", "Every batch undergoes in-house laboratory testing before release, including raw materials, production process checks, finished product certification, retained samples, and third-party verification."],
+      ["Global Presence", "We export to more than 30 countries and support distributors, contractors, plant owners, and licensing partners worldwide."]
+    ],
+    "ctaTitle": "Interested in Working With Us?",
+    "ctaText": "Whether you are a distributor, contractor, or manufacturer, we can discuss how to support your business."
+  },
+  "contact": {
+    "metaTitle": "Contact Us | Shining Road Technology — Request Quote & Technical Support",
+    "metaDescription": "Get in touch for product inquiries, bulk quotes, technology licensing, and technical support. Response within 24 hours.",
+    "title": "Contact Us",
+    "subtitle": "We typically respond within 24 hours on business days.",
+    "formTitle": "Send a Message",
+    "infoTitle": "Contact Information",
+    "name": "Full Name",
+    "email": "Email Address",
+    "company": "Company / Organization",
+    "inquiryType": "Inquiry Type",
+    "message": "Message",
+    "confidential": "Your information is confidential. We will never share your details with third parties.",
+    "headquarters": "Headquarters",
+    "contactPerson": "Contact Person",
+    "responseTime": "Response Time",
+    "responseText": "We aim to respond within 24 hours during business days (Mon-Fri, UTC+8).",
+    "shipping": "Shipping & Logistics"
+  },
+  "news": {
+    "metaTitle": "News & Articles | Shining Road Technology",
+    "metaDescription": "Latest news, product updates, and industry insights from Shining Road Technology.",
+    "title": "News & Articles",
+    "subtitle": "Stay updated with the latest from our team",
+    "empty": "Articles will be published soon. Check back later."
+  },
+  "caseStudies": {
+    "metaTitle": "Case Studies | Real-World Pavement Maintenance Results",
+    "metaDescription": "See how Shining Road Technology products perform in real-world applications.",
+    "title": "Case Studies",
+    "subtitle": "Real-world results with our pavement maintenance products",
+    "ctaTitle": "Have a Similar Project?",
+    "ctaText": "Tell us about your pavement maintenance challenge and we will recommend the right product and approach.",
+    "ctaAction": "Contact Our Technical Team"
+  },
+  "products": {}
+}

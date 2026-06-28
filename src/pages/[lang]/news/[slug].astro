@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { getLocale, locales, localizedPath, t } from '../../../i18n';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('news', ({ data }) => !data.draft);
+  return locales.flatMap(lang => articles.map(article => ({
+    params: { lang, slug: article.slug },
+    props: { article },
+  })));
+}
+
+const lang = getLocale(Astro.params.lang);
+const copy = t(lang);
+const { article } = Astro.props;
+const { title, date, description, image, tags } = article.data;
+const { Content } = await article.render();
+const url = `https://yidaotech.xyz${localizedPath(lang, `/news/${article.slug}/`)}`;
+---
+
+<BaseLayout
+  lang={lang}
+  title={`${title} | Shining Road Technology`}
+  description={description}
+  canonicalURL={url}
+  ogType="article"
+>
+  <article class="py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <a href={localizedPath(lang, '/news/')} class="text-primary hover:underline text-sm mb-8 inline-block">&larr; {copy.actions.backToNews}</a>
+      <header class="mt-4 mb-8">
+        <time class="text-sm text-gray-500" datetime={date.toISOString()}>{date.toLocaleDateString(lang === 'en' ? 'en-US' : lang)}</time>
+        <h1 class="text-3xl md:text-4xl font-bold mt-3 mb-4">{title}</h1>
+        {tags.length > 0 && (
+          <div class="flex flex-wrap gap-2">
+            {tags.map(tag => <span class="text-xs font-medium text-primary bg-blue-50 px-2 py-1 rounded-full">{tag}</span>)}
+          </div>
+        )}
+      </header>
+      {image && <img src={image} alt={title} class="w-full rounded-xl mb-8" />}
+      <div class="prose prose-lg max-w-none">
+        <Content />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

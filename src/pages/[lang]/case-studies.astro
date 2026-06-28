@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getLocale, locales, localizedPath, t } from '../../i18n';
+
+export function getStaticPaths() {
+  return locales.map(lang => ({ params: { lang } }));
+}
+
+const lang = getLocale(Astro.params.lang);
+const copy = t(lang);
+const cases = [
+  ["Crack Sealing", "Municipal Highway Crack Sealing — 120 km, Southeast Asia", "95% seal intact after 24 months"],
+  ["Cold Mix Asphalt", "Airport Taxiway Emergency Repairs — Middle East", "Repairs completed in 4-hour window"],
+  ["Production Plant", "Cold Mix Plant + Technology License — East Africa", "First local cold mix manufacturer in country"],
+  ["Emulsified Asphalt", "Rural Road Chip Seal Program — South America", "60% cost savings vs. hot mix overlay"]
+];
+---
+
+<BaseLayout lang={lang} title={copy.caseStudies.metaTitle} description={copy.caseStudies.metaDescription} canonicalURL={`https://yidaotech.xyz${localizedPath(lang, '/case-studies/')}`}>
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-bold mb-3">{copy.caseStudies.title}</h1>
+      <p class="text-xl text-gray-500 mb-12">{copy.caseStudies.subtitle}</p>
+
+      <div class="space-y-8">
+        {cases.map(([category, title, result]) => (
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
+            <div class="p-8">
+              <div class="flex items-center gap-2 mb-4">
+                <span class="text-xs font-medium text-primary bg-blue-50 px-3 py-1 rounded-full">{category}</span>
+              </div>
+              <h2 class="text-xl font-bold mb-4">{title}</h2>
+              <div class="bg-gray-50 rounded-lg p-4 mb-6">
+                <div class="text-sm text-gray-500 mb-1">Result</div>
+                <div class="font-semibold text-green-600">{result}</div>
+              </div>
+              <p class="text-gray-600">
+                Shining Road Technology supplied pavement maintenance materials and technical guidance for this project, helping the local team complete work efficiently and improve long-term pavement performance.
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-12 bg-primary text-white rounded-2xl p-10">
+        <h3 class="text-2xl font-bold mb-3">{copy.caseStudies.ctaTitle}</h3>
+        <p class="text-blue-100 mb-6 max-w-md mx-auto">{copy.caseStudies.ctaText}</p>
+        <a href={localizedPath(lang, '/contact/')} class="inline-flex items-center px-8 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+          {copy.caseStudies.ctaAction}
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
