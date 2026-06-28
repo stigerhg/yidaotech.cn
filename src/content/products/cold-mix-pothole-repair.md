@@ -49,6 +49,16 @@ Our permanent-grade cold mix asphalt is engineered for lasting pothole repairs i
 3. **Compact** — Compact in 50–75 mm lifts using a hand tamper or vibratory plate. Crown slightly above surrounding pavement.
 4. **Open** — Traffic-ready immediately after compaction. No curing time required.
 
+## How Cold Mix Strength Develops
+
+Unlike hot mix asphalt, which gains strength as it cools, cold mix asphalt gains strength through a gradual process of solvent evaporation and binder curing:
+
+1. **Initial Compaction** — When compacted, the material is plastic and flows into irregular cavity shapes, filling all voids.
+2. **Solvent Evaporation** — Over 5–7 days, the solvent in the binder gradually evaporates under traffic and air exposure. The binder thickens, aggregate interlock increases, and void content decreases.
+3. **Full Cure** — After approximately one month, the material reaches its full design strength — comparable to or exceeding hot mix asphalt performance.
+
+This two-stage strength formation (binder cohesion + aggregate interlock) gives cold mix its unique ability to be stored for months yet perform like hot mix once placed and compacted.
+
 ## Economic Advantages
 
 - Eliminates hot mix plant dependency for small repairs

@@ -40,6 +40,12 @@ PRODUCTS = [
     ("cold-pour-crack-filler", "Cold Pour\nCrack Filler", "Ready-to-use · Self-leveling · No equipment needed"),
     ("cold-mix-production-plant", "Cold Mix\nProduction Plant", "5-30 TPH · Turnkey · PLC automated · QC lab included"),
     ("technology-licensing", "Technology\nLicensing", "Formula transfer · Raw material sourcing · 90-day launch"),
+    ("color-cold-patch-asphalt", "Color Cold Patch\nAsphalt", "Ready-to-use · Multiple colors · No heating needed"),
+    ("color-sprayed-pavement", "Color Sprayed\nAsphalt Pavement", "Spray application · 2-hour cure · 3-5 year life"),
+    ("ultra-thin-anti-skid-pavement", "Ultra-Thin Color\nAnti-Skid System", "0.5-1.5 mm · Spray applied · 5-year durability"),
+    ("cold-mix-additive", "Cold Mix Asphalt\nAdditive 3rd Gen", "100% active · -30°C workable · 12+ month storage"),
+    ("quick-repair-cement", "Quick Repair\nCement Mortar", "15-min set · 1-hour traffic · High bond strength"),
+    ("color-asphalt-granules", "Color Asphalt\nGranules", "Direct-to-mixer · 7-8% dosage · Batch coloring"),
 ]
 
 
