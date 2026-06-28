@@ -16,6 +16,7 @@ export type Locale = keyof typeof languages;
 
 export const locales = Object.keys(languages) as Locale[];
 export const defaultLocale: Locale = 'en';
+export const nonDefaultLocales = locales.filter((locale) => locale !== defaultLocale);
 export const translations = { en, ru, ar, id, zh } as const;
 
 export function isLocale(value: string | undefined): value is Locale {

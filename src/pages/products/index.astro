@@ -8,8 +8,8 @@ const categories = [...new Set(allProducts.map(p => p.data.category))];
 ---
 
 <BaseLayout 
-  title="Products | Road Sealant & Pavement Maintenance"
-  description="Browse our full range of asphalt crack sealing, pothole repair, and pavement maintenance products."
+  title="Asphalt Maintenance Products | Crack Sealant & Cold Mix | Shining Road Technology"
+  description="Browse asphalt crack sealants, cold mix pothole repair, emulsified asphalt, sealcoat, and production plants. Contact us for samples and export quotes."
 >
   <section class="py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,8 +27,8 @@ const categories = [...new Set(allProducts.map(p => p.data.category))];
             <a href={`/products/${product.slug}/`} class="card group">
               {product.data.image && (
                 <div class="aspect-video bg-gray-100 overflow-hidden">
-                  <img src={product.data.image} alt={product.data.title} 
-                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <img src={product.data.image} alt={`${product.data.title} - ${product.data.category} by Shining Road Technology`}
+                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                 </div>
               )}
               <div class="p-6">

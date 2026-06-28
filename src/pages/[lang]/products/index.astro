@@ -1,10 +1,10 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { getLocale, locales, localizedPath, t, translateProduct } from '../../../i18n';
+import { getLocale, localizedPath, nonDefaultLocales, t, translateProduct } from '../../../i18n';
 
 export function getStaticPaths() {
-  return locales.map(lang => ({ params: { lang } }));
+  return nonDefaultLocales.map(lang => ({ params: { lang } }));
 }
 
 const lang = getLocale(Astro.params.lang);
@@ -37,8 +37,8 @@ const allProducts = (await getCollection('products', ({ data }) => !data.draft))
               <a href={localizedPath(lang, `/products/${product.slug}/`)} class="card group">
                 {data.image && (
                   <div class="aspect-video bg-gray-100 overflow-hidden">
-                    <img src={data.image} alt={data.title}
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <img src={data.image} alt={`${data.title} - ${data.category} by Shining Road Technology`}
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                   </div>
                 )}
                 <div class="p-6">

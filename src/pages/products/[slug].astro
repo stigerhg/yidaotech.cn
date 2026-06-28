@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { absoluteUrl, productImageAlt, productMetaDescription, productTitle } from '../../utils/seo';
 
 export async function getStaticPaths() {
   const products = await getCollection('products', ({ data }) => !data.draft);
@@ -10,6 +11,9 @@ export async function getStaticPaths() {
 const { product } = Astro.props;
 const { title, category, description, image, gallery, features, specifications } = product.data;
 const slug = product.slug;
+const productUrl = `https://yidaotech.xyz/products/${slug}/`;
+const optimizedDescription = productMetaDescription('en', description);
+const imageAlt = productImageAlt(title, category);
 
 const productSchema = {
   "@context": "https://schema.org",
@@ -17,8 +21,8 @@ const productSchema = {
   "name": title,
   "description": description,
   "category": category,
-  "url": `https://yidaotech.xyz/products/${slug}/`,
-  ...(image && { "image": `https://yidaotech.xyz${image}` }),
+  "url": productUrl,
+  ...(image && { "image": absoluteUrl(image) }),
   "brand": {
     "@type": "Brand",
     "name": "Shining Road Technology"
@@ -30,9 +34,19 @@ const productSchema = {
   "offers": {
     "@type": "Offer",
     "availability": "https://schema.org/InStock",
-    "url": `https://yidaotech.xyz/contact/`,
+    "priceCurrency": "USD",
+    "price": "Contact for pricing",
+    "url": productUrl,
+    "seller": { "@type": "Organization", "name": "Shining Road Technology" },
     "businessFunction": "https://purl.org/goodrelations/v1#ProvideService"
-  }
+  },
+  ...(specifications?.length > 0 && {
+    "additionalProperty": specifications.map((spec) => ({
+      "@type": "PropertyValue",
+      "name": spec.label,
+      "value": spec.value
+    }))
+  })
 };
 
 const breadcrumbSchema = {
@@ -49,9 +63,9 @@ const schemas = [productSchema, breadcrumbSchema];
 ---
 
 <BaseLayout 
-  title={`${title} | Shining Road Technology`} 
-  description={description}
-  canonicalURL={`https://yidaotech.xyz/products/${slug}/`}
+  title={productTitle(title, category)}
+  description={optimizedDescription}
+  canonicalURL={productUrl}
   ogImage={`https://yidaotech.xyz/images/${slug}-og.jpg`}
   ogType="product"
   schema={schemas}
@@ -64,7 +78,7 @@ const schemas = [productSchema, breadcrumbSchema];
         <div>
           {image && (
             <div class="aspect-square bg-gray-100 rounded-xl overflow-hidden">
-              <img src={image} alt={title} class="w-full h-full object-cover" />
+              <img src={image} alt={imageAlt} class="w-full h-full object-cover" loading="eager" />
             </div>
           )}
         </div>
@@ -124,7 +138,7 @@ const schemas = [productSchema, breadcrumbSchema];
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {gallery.map((img, i) => (
             <div class="group relative bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all">
-              <img src={img} alt={`${title} — photo ${i + 1}`} class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+              <img src={img} alt={`${title} ${category} packaging and shipping photo ${i + 1}`} class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
             </div>
           ))}
         </div>

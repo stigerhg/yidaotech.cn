@@ -2,11 +2,12 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { defaultLocale, getDir, languages, type Locale } from '../i18n';
+import { alternateLinks, breadcrumbSchema } from '../utils/seo';
 
 const {
   title = 'Shining Road Technology — Asphalt Crack Sealing, Cold Mix & Pavement Maintenance',
   description = 'Manufacturer of hot-applied crack sealant, cold mix asphalt, pavement preservation products, and cold mix production plants. Technology licensing available worldwide.',
-  canonicalURL = 'https://yidaotech.xyz',
+  canonicalURL = null,
   ogImage = 'https://yidaotech.xyz/og-default.jpg',
   ogType = 'website',
   schema = null,
@@ -15,6 +16,11 @@ const {
 
 const currentURL = canonicalURL || Astro.url.href;
 const locale = lang as Locale;
+const currentPath = new URL(currentURL).pathname;
+const alternates = alternateLinks(currentPath);
+const schemaItems = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+const hasBreadcrumb = schemaItems.some((item) => item?.['@type'] === 'BreadcrumbList');
+const pageSchemas = hasBreadcrumb ? schemaItems : [...schemaItems, breadcrumbSchema(locale, currentPath, title.split('|')[0].trim())];
 ---
 
 <!doctype html>
@@ -28,6 +34,9 @@ const locale = lang as Locale;
   <meta name="description" content={description} />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href={currentURL} />
+  {alternates.map(({ hreflang, href }) => (
+    <link rel="alternate" hreflang={hreflang} href={href} />
+  ))}
   
   <!-- Open Graph -->
   <meta property="og:title" content={title} />
@@ -53,6 +62,7 @@ const locale = lang as Locale;
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Schema.org: Organization (global) -->
@@ -97,8 +107,8 @@ const locale = lang as Locale;
   </script>
 
   <!-- Page-specific schema -->
-  {schema && (
-    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  {pageSchemas.length > 0 && (
+    <script type="application/ld+json" set:html={JSON.stringify(pageSchemas)} />
   )}
 </head>
 <body class="bg-white text-gray-900 font-sans">

@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /products/color-cold-patch-asphalt/
+Disallow: /products/color-asphalt-granules/
 
 Sitemap: https://yidaotech.xyz/sitemap-index.xml

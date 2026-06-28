@@ -1,9 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getLocale, locales, localizedPath, t } from '../../i18n';
+import { getLocale, localizedPath, nonDefaultLocales, t } from '../../i18n';
 
 export function getStaticPaths() {
-  return locales.map(lang => ({ params: { lang } }));
+  return nonDefaultLocales.map(lang => ({ params: { lang } }));
 }
 
 const lang = getLocale(Astro.params.lang);

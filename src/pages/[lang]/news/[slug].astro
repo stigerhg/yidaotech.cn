@@ -1,11 +1,12 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { getLocale, locales, localizedPath, t } from '../../../i18n';
+import { getLocale, localizedPath, nonDefaultLocales, t } from '../../../i18n';
+import { absoluteUrl, metaDescription } from '../../../utils/seo';
 
 export async function getStaticPaths() {
   const articles = await getCollection('news', ({ data }) => !data.draft);
-  return locales.flatMap(lang => articles.map(article => ({
+  return nonDefaultLocales.flatMap(lang => articles.map(article => ({
     params: { lang, slug: article.slug },
     props: { article },
   })));
@@ -17,14 +18,31 @@ const { article } = Astro.props;
 const { title, date, description, image, tags } = article.data;
 const { Content } = await article.render();
 const url = `https://yidaotech.xyz${localizedPath(lang, `/news/${article.slug}/`)}`;
+const optimizedDescription = metaDescription(description, 'Read the full article from Shining Road Technology.');
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "datePublished": date.toISOString(),
+  "dateModified": date.toISOString(),
+  "url": url,
+  ...(image && { "image": absoluteUrl(image) }),
+  "author": { "@type": "Person", "name": "Shining Road Technology" },
+  "publisher": { "@type": "Organization", "name": "Shining Road Technology", "url": "https://yidaotech.xyz" },
+  ...(tags?.length > 0 && { "keywords": tags.join(", ") })
+};
 ---
 
 <BaseLayout
   lang={lang}
   title={`${title} | Shining Road Technology`}
-  description={description}
+  description={optimizedDescription}
   canonicalURL={url}
+  ogImage={image ? absoluteUrl(image) : undefined}
   ogType="article"
+  schema={articleSchema}
 >
   <article class="py-16">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,7 +56,7 @@ const url = `https://yidaotech.xyz${localizedPath(lang, `/news/${article.slug}/`
           </div>
         )}
       </header>
-      {image && <img src={image} alt={title} class="w-full rounded-xl mb-8" />}
+      {image && <img src={image} alt={`${title} article image`} class="w-full rounded-xl mb-8" loading="eager" />}
       <div class="prose prose-lg max-w-none">
         <Content />
       </div>
