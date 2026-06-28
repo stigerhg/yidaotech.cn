@@ -1,121 +1,208 @@
+import { defaultLocale, locales, localizedPath, t, type Locale } from '../i18n';
+import { alternateLinks, breadcrumbSchema, productTitle, productMetaDescription, productImageAlt } from '../utils/seo';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  canonicalURL?: string;
+  ogImage?: string;
+  ogType?: string;
+  lang?: Locale;
+  schema?: any | any[];
+  noIndex?: boolean;
+  product?: {
+    slug: string;
+    title: string;
+    category: string;
+    description: string;
+    image?: string;
+    specifications?: { label: string; value: string }[];
+  };
+}
+
+const { title, description, canonicalURL, ogImage, ogType, lang = defaultLocale, schema: extraSchema, noIndex, product } = Astro.props;
+const copy = t(lang);
+const dir = lang === 'ar' ? 'rtl' : 'ltr';
+const ogLocaleMap: Record<string, string> = { en: 'en_US', ru: 'ru_RU', ar: 'ar_AR', id: 'id_ID', zh: 'zh_CN' };
+
+// Hreflang
+const currentPath = canonicalURL ? new URL(canonicalURL).pathname : Astro.url.pathname;
+const hreflangLinks = alternateLinks(currentPath);
+
+// Breadcrumb
+const breadCrumb = breadcrumbSchema(lang, currentPath, product?.title);
+
+// Combined schemas
+const schemas = [];
+if (extraSchema) Array.isArray(extraSchema) ? schemas.push(...extraSchema) : schemas.push(extraSchema);
+
+// Product schema with enhanced data
+if (product) {
+  const productSchema: any = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.title,
+    description: product.description,
+    category: product.category,
+    image: product.image ? `https://yidaotech.xyz${product.image}` : undefined,
+    url: canonicalURL,
+    brand: { '@type': 'Brand', name: 'Shining Road Technology' },
+    manufacturer: { '@type': 'Organization', name: 'Shenyang Shining Road Technology Co., Ltd.' },
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      url: canonicalURL,
+      priceCurrency: 'USD',
+      price: '0',
+      priceSpecification: { '@type': 'UnitPriceSpecification', unitText: 'Contact for pricing' },
+      seller: { '@type': 'Organization', name: 'Shining Road Technology' },
+    },
+  };
+  if (product.specifications?.length) {
+    productSchema.additionalProperty = product.specifications.map((s) => ({
+      '@type': 'PropertyValue',
+      name: s.label,
+      value: s.value,
+    }));
+  }
+  schemas.push(productSchema);
+}
+
+schemas.push(breadCrumb);
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { defaultLocale, getDir, languages, type Locale } from '../i18n';
-import { alternateLinks, breadcrumbSchema } from '../utils/seo';
 
-const {
-  title = 'Shining Road Technology — Asphalt Crack Sealing, Cold Mix & Pavement Maintenance',
-  description = 'Manufacturer of hot-applied crack sealant, cold mix asphalt, pavement preservation products, and cold mix production plants. Technology licensing available worldwide.',
-  canonicalURL = null,
-  ogImage = 'https://yidaotech.xyz/og-default.jpg',
-  ogType = 'website',
-  schema = null,
-  lang = defaultLocale,
-} = Astro.props;
-
-const currentURL = canonicalURL || Astro.url.href;
-const locale = lang as Locale;
-const currentPath = new URL(currentURL).pathname;
-const alternates = alternateLinks(currentPath);
-const schemaItems = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
-const hasBreadcrumb = schemaItems.some((item) => item?.['@type'] === 'BreadcrumbList');
-const pageSchemas = hasBreadcrumb ? schemaItems : [...schemaItems, breadcrumbSchema(locale, currentPath, title.split('|')[0].trim())];
----
-
-<!doctype html>
-<html lang={locale} dir={getDir(locale)}>
+<!DOCTYPE html>
+<html lang={lang} dir={dir}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <!-- Primary Meta -->
   <title>{title}</title>
   <meta name="description" content={description} />
-  <meta name="robots" content="index, follow, max-image-preview:large" />
-  <link rel="canonical" href={currentURL} />
-  {alternates.map(({ hreflang, href }) => (
-    <link rel="alternate" hreflang={hreflang} href={href} />
+  {noIndex && <meta name="robots" content="noindex" />}
+  {!noIndex && <meta name="robots" content="index, follow, max-image-preview:large" />}
+  <link rel="canonical" href={canonicalURL || `${'https://yidaotech.xyz'}${Astro.url.pathname}`} />
+
+  <!-- Hreflang -->
+  {hreflangLinks.map(link => (
+    <link rel="alternate" hreflang={link.hreflang} href={link.href} />
   ))}
-  
+
   <!-- Open Graph -->
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
-  <meta property="og:url" content={currentURL} />
-  <meta property="og:type" content={ogType} />
+  <meta property="og:title" content={title!.replace(/<[^>]+>/g, '')} />
+  <meta property="og:description" content={description!.replace(/<[^>]+>/g, '')} />
+  <meta property="og:url" content={canonicalURL || `${'https://yidaotech.xyz'}${Astro.url.pathname}`} />
+  <meta property="og:type" content={ogType || 'website'} />
   <meta property="og:site_name" content="Shining Road Technology" />
-  <meta property="og:locale" content={languages[locale].ogLocale} />
-  {ogImage && <meta property="og:image" content={ogImage} />}
-  {ogImage && <meta property="og:image:width" content="1200" />}
-  {ogImage && <meta property="og:image:height" content="630" />}
-  
+  <meta property="og:locale" content={ogLocaleMap[lang] || 'en_US'} />
+  <meta property="og:image" content={ogImage || 'https://yidaotech.xyz/og-default.jpg'} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={title} />
-  <meta name="twitter:description" content={description} />
-  {ogImage && <meta name="twitter:image" content={ogImage} />}
+  <meta name="twitter:title" content={title!.replace(/<[^>]+>/g, '')} />
+  <meta name="twitter:description" content={description!.replace(/<[^>]+>/g, '')} />
+  <meta name="twitter:image" content={ogImage || 'https://yidaotech.xyz/og-default.jpg'} />
 
   <!-- Favicon & Icons -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Schema.org: Organization (global) -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Shining Road Technology",
-      "alternateName": "Shenyang Shining Road Technology Co., Ltd.",
-      "url": "https://yidaotech.xyz",
-      "description": "Professional manufacturer of asphalt crack sealing, cold mix asphalt, and pavement preservation products. Serving 30+ countries with technology licensing and turnkey production plants available.",
-      "email": "lilei838025@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Shenyang",
-        "addressRegion": "Liaoning",
-        "addressCountry": "CN"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "name": "Mark",
-        "email": "lilei838025@gmail.com"
-      },
-      "sameAs": []
-    }
-  </script>
+  <!-- Schema.org -->
+  {schemas.map((s, i) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)}></script>
+  ))}
 
-  <!-- Breadcrumb Schema (default for all pages) -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Shining Road Technology",
-      "url": "https://yidaotech.xyz",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://yidaotech.xyz/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-  </script>
-
-  <!-- Page-specific schema -->
-  {pageSchemas.length > 0 && (
-    <script type="application/ld+json" set:html={JSON.stringify(pageSchemas)} />
-  )}
+  <link rel="stylesheet" href="/_astro/about.DVek_VMb.css"></link>
 </head>
-<body class="bg-white text-gray-900 font-sans">
-  <Header lang={locale} />
+<body class="bg-white text-gray-900 font-sans" dir={dir}>
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16" dir={dir}>
+        <a href={localizedPath(lang, '/')} class="flex items-center gap-3">
+          <span class="text-xl font-bold text-primary">Shining Road</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-1" dir="ltr">
+          <a href={localizedPath(lang, '/')} class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors">{copy.nav.home}</a>
+          <a href={localizedPath(lang, '/products/')} class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors">{copy.nav.products}</a>
+          <a href={localizedPath(lang, '/case-studies/')} class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors">{copy.nav.caseStudies}</a>
+          <a href={localizedPath(lang, '/news/')} class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors">{copy.nav.news}</a>
+          <a href={localizedPath(lang, '/about/')} class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors">{copy.nav.about}</a>
+          <a href={localizedPath(lang, '/contact/')} class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md transition-colors">{copy.nav.contact}</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <div class="relative">
+            <label class="sr-only" for="language-switcher">Language</label>
+            <select id="language-switcher" class="rounded-md border border-gray-200 bg-white px-2 py-1.5 text-sm font-medium text-gray-700 outline-none transition-colors hover:border-primary focus:border-primary" data-language-switcher>
+              {locales.map(locale => (
+                <option value={localizedPath(locale, Astro.url.pathname.replace(/^\/(en|ru|ar|id|zh)\//, '/').replace(/^\/(en|ru|ar|id|zh)$/, '/'))} selected={locale === lang}>
+                  {({ en: 'English', ru: 'Русский', ar: 'العربية', id: 'Bahasa Indonesia', zh: '中文' } as Record<string, string>)[locale]}
+                </option>
+              ))}
+            </select>
+          </div>
+          <script type="module">
+            document.querySelectorAll("[data-language-switcher]").forEach(e => {{
+              e.addEventListener("change", t => {{
+                const a = t.currentTarget as HTMLSelectElement;
+                window.location.href = a.value;
+              }});
+            }});
+          </script>
+          <button class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100" id="mobile-menu-btn" aria-label="Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <main class="min-h-screen">
     <slot />
   </main>
-  <Footer lang={locale} />
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12" dir={dir}>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" style={dir === 'rtl' ? { direction: 'rtl' } : {}}>
+        <div>
+          <h3 class="text-white font-bold text-lg mb-4">Shining Road Technology</h3>
+          <p class="text-sm leading-relaxed">{copy.footer.description}</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">{copy.footer.quickLinks}</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href={localizedPath(lang, '/products/')} class="hover:text-white transition-colors">{copy.nav.products}</a></li>
+            <li><a href={localizedPath(lang, '/about/')} class="hover:text-white transition-colors">{copy.nav.about}</a></li>
+            <li><a href={localizedPath(lang, '/contact/')} class="hover:text-white transition-colors">{copy.nav.contact}</a></li>
+            <li><a href={localizedPath(lang, '/news/')} class="hover:text-white transition-colors">{copy.nav.news}</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">{copy.footer.contact}</h4>
+          <ul class="space-y-2 text-sm">
+            <li>Mark / Sales Director</li>
+            <li>Tel: 13020305125</li>
+            <li>Email: lilei838025@gmail.com</li>
+            <li><a href="https://wa.me/8613020305125" class="hover:text-white transition-colors" target="_blank">WhatsApp: +86-13020305125</a></li>
+            <li><a href="https://t.me/+8613020305125" class="hover:text-white transition-colors" target="_blank">Telegram: +86-13020305125</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        <p>&copy; {new Date().getFullYear()} {copy.site.name}. {copy.footer.rights}</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
