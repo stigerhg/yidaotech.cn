@@ -36,7 +36,7 @@ const allProducts = (await getCollection('products', ({ data }) => !data.draft))
             return (
               <a href={localizedPath(lang, `/products/${product.slug}/`)} class="card group">
                 {data.image && (
-                  <div class="aspect-video bg-gray-100 overflow-hidden">
+                  <div class="aspect-video bg-gray-100 rounded-lg border border-gray-200 shadow-sm overflow-hidden">
                     <img src={data.image} alt={`${data.title} - ${data.category} by Shining Road Technology`}
                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
                   </div>

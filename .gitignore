@@ -1,8 +1,10 @@
 # Dependencies
 node_modules/
-
-# Build output
+.astro/
 dist/
+
+# Generated leads data
+leads/
 .env
 
 # OS
