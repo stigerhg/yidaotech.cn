@@ -1,4 +1,5 @@
-import { defaultLocale, locales, localizedPath, t, type Locale } from '../i18n';
+import { defaultLocale, locales, localizedPath, t } from '../i18n';
+import type { Locale } from '../i18n';
 
 const SITE_URL = 'https://yidaotech.xyz';
 
