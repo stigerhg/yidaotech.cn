@@ -57,3 +57,7 @@ The result is a cold patch that stays cleaner in the bag, resists sticking to to
 - Better stock stability for distributors and maintenance depots
 - Same-day traffic opening for emergency and routine repairs
 - Professional repair quality without hot mix scheduling constraints
+
+## Technical Performance
+
+熠道冷补料是一款用于路面修补的冷补沥青混合料，适用于道路坑槽、局部破损等路面维修场景。根据检测结果显示，该材料在马歇尔稳定度试验中实测值分别为 8.30 和 10.49，路面修补段渗水系数为 0，基本不透水，体现出较好的结构稳定性和防渗性能。产品可用于道路快速修补施工，满足路面局部维修对便捷施工、密实成型和耐水性能的需求。
