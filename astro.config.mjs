@@ -22,12 +22,34 @@ function addXDefaultSitemapLink(item) {
   };
 }
 
+const productRedirectTargets = {
+  'cold-mix-pothole-repair': 'standard-cold-patch',
+  'pavement-sealcoat': 'black-pavement-sealcoat',
+  'ultra-thin-anti-skid-pavement': 'color-pavement-sealcoat',
+  'color-sprayed-pavement': 'color-pavement-sealcoat',
+  'color-cold-patch-asphalt': 'color-pavement-sealcoat',
+  'color-asphalt-granules': 'color-pavement-sealcoat',
+  'cold-mix-production-plant': 'cold-mix-additive',
+  'cold-pour-crack-filler': 'black-pavement-sealcoat',
+  'crack-sealing-tape': 'black-pavement-sealcoat',
+  'emulsified-asphalt': 'black-pavement-sealcoat',
+  'hot-applied-crack-sealer': 'black-pavement-sealcoat',
+  'technology-licensing': 'cold-mix-additive',
+  'quick-repair-cement': 'standard-cold-patch',
+};
+
+const localizedProductRedirects = Object.fromEntries(
+  ['', '/ru', '/ar', '/id', '/zh'].flatMap((prefix) =>
+    Object.entries(productRedirectTargets).map(([oldSlug, newSlug]) => [
+      `${prefix}/products/${oldSlug}/`,
+      { status: 301, destination: `${prefix}/products/${newSlug}/` },
+    ])
+  )
+);
+
 export default defineConfig({
   site: 'https://yidaotech.xyz',
-  redirects: {
-    '/products/color-cold-patch-asphalt/': '/products/ultra-thin-anti-skid-pavement/',
-    '/products/color-asphalt-granules/': '/products/ultra-thin-anti-skid-pavement/',
-  },
+  redirects: localizedProductRedirects,
   integrations: [tailwind(), sitemap({
     i18n: {
       defaultLocale: 'en',

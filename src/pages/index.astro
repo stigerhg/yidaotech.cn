@@ -2,16 +2,14 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
-const products = await getCollection('products', ({ data }) => !data.draft);
-const categories = [...new Set(products.map(p => p.data.category))];
 const latestNews = (await getCollection('news', ({ data }) => !data.draft))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 3);
 ---
 
 <BaseLayout 
-  title="Cold Mix Asphalt | Crack Sealant & Pavement Maintenance | Shining Road Technology"
-  description="Buy cold mix asphalt, crack sealant, sealcoat, emulsified asphalt, and production plants from Shining Road Technology. Request samples or an export quote."
+  title="Cold Mix Asphalt, Sealcoat & Asphalt Additives | Shining Road Technology"
+  description="Buy cold mix asphalt, black and color pavement sealcoat, cold mix additive, asphalt recycling agent, and warm mix additive from Shining Road Technology."
 >
   <!-- Hero -->
   <section class="bg-gradient-to-br from-primary via-blue-700 to-blue-900 text-white">
@@ -19,11 +17,11 @@ const latestNews = (await getCollection('news', ({ data }) => !data.draft))
       <div class="max-w-3xl">
         <p class="text-blue-200 text-sm md:text-base font-medium tracking-wide uppercase mb-4">Shenyang Shining Road Technology Co., Ltd.</p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance">
-          Asphalt Crack Sealing, Cold Mix & Pavement Preservation
+          Cold Mix Asphalt, Pavement Sealcoat & Asphalt Additives
         </h1>
         <p class="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed max-w-2xl">
-          Complete pavement maintenance solutions — from professional-grade sealants and cold mix asphalt 
-          to turnkey production plants and technology licensing. Serving contractors and distributors in 30+ countries.
+          Focused pavement maintenance materials in three product families: cold mix asphalt, pavement sealcoat,
+          and asphalt additives. Serving contractors, distributors, and asphalt plants worldwide.
         </p>
         <div class="flex flex-wrap gap-4">
           <a href="/products/" class="inline-flex items-center px-6 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors">
@@ -42,55 +40,31 @@ const latestNews = (await getCollection('news', ({ data }) => !data.draft))
   <section class="py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Our Solutions</h2>
-      <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">From crack sealing products to complete production plants — everything you need for pavement maintenance</p>
+      <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Seven focused products across three pavement maintenance categories.</p>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <a href="/products/" class="group block p-8 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all">
           <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
           </div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Crack Sealing Products</h3>
-          <p class="text-gray-600 text-sm">Hot-applied sealants, cold pour fillers, and self-adhesive tapes for every crack type and climate.</p>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Cold Mix Asphalt</h3>
+          <p class="text-gray-600 text-sm">Standard all-weather cold patch and capsule pressure-sensitive cold patch for fast pothole and utility cut repair.</p>
         </a>
 
         <a href="/products/" class="group block p-8 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all">
           <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-colors">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
           </div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Cold Mix Asphalt & Pothole Repair</h3>
-          <p class="text-gray-600 text-sm">Permanent-grade cold mix for year-round pothole repair. No heating, works in wet conditions.</p>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Pavement Sealcoat</h3>
+          <p class="text-gray-600 text-sm">Black coal tar and asphalt-emulsion sealcoat plus color anti-skid decorative coating for asphalt and concrete surfaces.</p>
         </a>
 
         <a href="/products/" class="group block p-8 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all">
           <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-5 group-hover:bg-green-600 group-hover:text-white transition-colors">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Production Plants</h3>
-          <p class="text-gray-600 text-sm">Turnkey cold mix asphalt plants from 5 to 30 TPH. Complete with training, QC lab, and warranty.</p>
-        </a>
-
-        <a href="/products/" class="group block p-8 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all">
-          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-5 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          </div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Technology Licensing</h3>
-          <p class="text-gray-600 text-sm">Full technology transfer — formulas, raw material sourcing, QC systems, and ongoing R&D support.</p>
-        </a>
-
-        <a href="/products/" class="group block p-8 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all">
-          <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-5 group-hover:bg-red-500 group-hover:text-white transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-          </div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Emulsified Asphalt</h3>
-          <p class="text-gray-600 text-sm">Full range of cationic and anionic emulsions for tack coat, chip seal, slurry seal, and micro-surfacing.</p>
-        </a>
-
-        <a href="/products/" class="group block p-8 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all">
-          <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-5 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
-          </div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Surface Treatments</h3>
-          <p class="text-gray-600 text-sm">Sealcoating, rejuvenators, and protective surface treatments to extend pavement life and appearance.</p>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Asphalt Additives</h3>
+          <p class="text-gray-600 text-sm">Cold mix additive, asphalt recycling agent, and warm mix additive for plants, recycling, and lower-temperature paving.</p>
         </a>
       </div>
     </div>
@@ -174,7 +148,7 @@ const latestNews = (await getCollection('news', ({ data }) => !data.draft))
     <div class="max-w-3xl mx-auto text-center px-4">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Get Started?</h2>
       <p class="text-lg text-blue-100 mb-8 max-w-xl mx-auto">
-        Whether you need product samples, a bulk quote, or a technology licensing consultation — our team is ready to help.
+        Whether you need samples, technical data, or a bulk export quote, our team can recommend the right product from the reorganized range.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="/contact/" class="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors text-lg">

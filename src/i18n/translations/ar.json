@@ -23,43 +23,58 @@
     "allArticles": "كل المقالات"
   },
   "footer": {
-    "description": "شركة مصنعة لمنتجات سد شقوق الأسفلت وصيانة الأرصفة.",
+    "description": "مصنع خلطة إسفلت باردة وطلاءات حماية الرصف وإضافات الإسفلت.",
     "quickLinks": "روابط سريعة",
     "contact": "تواصل",
     "rights": "جميع الحقوق محفوظة."
   },
   "home": {
-    "metaTitle": "الخلطة الباردة وحلول صيانة الأرصفة | Shining Road Technology",
-    "metaDescription": "مصنع مانعات تسرب الشقوق الساخنة والخلطة الباردة ومنتجات صيانة الأرصفة ومصانع إنتاج الخلطة الباردة.",
+    "metaTitle": "خلطة إسفلت باردة وطلاءات الرصف وإضافات الإسفلت | Shining Road Technology",
+    "metaDescription": "ثلاث عائلات منتجات وسبعة مواد أساسية لصيانة الرصف.",
     "eyebrow": "Shenyang Shining Road Technology Co., Ltd.",
-    "heroTitle": "سد الشقوق والخلطة الباردة وصيانة الأرصفة",
-    "heroSubtitle": "حلول متكاملة لصيانة الأرصفة تشمل مانعات تسرب احترافية، خلطة أسفلت باردة، مصانع إنتاج جاهزة، وترخيص التقنية للمقاولين والموزعين في أكثر من 30 دولة.",
+    "heroTitle": "خلطة إسفلت باردة وطلاءات الرصف وإضافات الإسفلت",
+    "heroSubtitle": "ثلاث عائلات منتجات وسبعة مواد أساسية لصيانة الرصف.",
     "solutionsTitle": "حلولنا",
-    "solutionsSubtitle": "من منتجات سد الشقوق إلى مصانع الإنتاج الكاملة، نوفر كل ما تحتاجه لصيانة الأرصفة.",
+    "solutionsSubtitle": "ثلاث عائلات منتجات وسبعة مواد أساسية لصيانة الرصف.",
     "whyTitle": "لماذا يختارنا المقاولون والموزعون",
     "latestTitle": "آخر التحديثات",
     "latestSubtitle": "رؤى صناعية وأخبار المنتجات وتحديثات المشاريع",
     "ctaTitle": "هل أنت جاهز للبدء؟",
-    "ctaSubtitle": "سواء كنت تحتاج إلى عينات، عرض سعر للكميات، أو استشارة ترخيص تقنية، فريقنا جاهز للمساعدة.",
+    "ctaSubtitle": "ثلاث عائلات منتجات وسبعة مواد أساسية لصيانة الرصف.",
     "solutionCards": [
-      ["منتجات سد الشقوق", "مانعات تسرب ساخنة، حشوات باردة، وأشرطة ذاتية اللصق لكل أنواع الشقوق والمناخات."],
-      ["الخلطة الباردة وإصلاح الحفر", "خلطة باردة دائمة لإصلاح الحفر طوال العام، بدون تسخين وتعمل في الظروف الرطبة."],
-      ["مصانع الإنتاج", "مصانع خلطة باردة جاهزة من 5 إلى 30 طن/ساعة مع تدريب ومختبر جودة وضمان."],
-      ["ترخيص التقنية", "نقل كامل للتقنية: الصيغ، مصادر المواد الخام، أنظمة الجودة، ودعم البحث والتطوير."],
-      ["الأسفلت المستحلب", "مستحلبات كاتيونية وأنيونية للطبقة اللاصقة، الرش الحجري، slurry seal وmicro-surfacing."],
-      ["معالجات السطح", "طلاءات حماية ومجددات ومعالجات سطحية لإطالة عمر الرصف وتحسين مظهره."]
+      [
+        "خلطة إسفلت باردة",
+        "خلطة باردة قياسية وخلطة كبسولات حساسة للضغط لإصلاح الحفر بسرعة."
+      ],
+      [
+        "طلاء حماية الرصف",
+        "طلاء أسود وطلاء ملون مضاد للانزلاق وزخرفي للأسفلت والخرسانة."
+      ],
+      [
+        "إضافات الإسفلت",
+        "مضاف الخلطة الباردة، عامل إعادة تدوير الإسفلت، ومضاف الخلطة الدافئة."
+      ]
     ],
     "whyCards": [
-      ["معايير دولية", "تختبر المنتجات وفق ASTM وAASHTO وEN، ويتم توفير شهادة تحليل مع كل شحنة."],
-      ["دعم فني", "دعم يقوده مهندسون لاختيار المنتج وإرشادات التطبيق والتدريب في الموقع."],
-      ["لوجستيات عالمية", "تصدير إلى أكثر من 30 دولة مع شحن FCL وLCL وشحنات سائبة من الموانئ الصينية الرئيسية."]
+      [
+        "معايير دولية",
+        "تختبر المنتجات وفق ASTM وAASHTO وEN، ويتم توفير شهادة تحليل مع كل شحنة."
+      ],
+      [
+        "دعم فني",
+        "دعم يقوده مهندسون لاختيار المنتج وإرشادات التطبيق والتدريب في الموقع."
+      ],
+      [
+        "لوجستيات عالمية",
+        "تصدير إلى أكثر من 30 دولة مع شحن FCL وLCL وشحنات سائبة من الموانئ الصينية الرئيسية."
+      ]
     ]
   },
   "productsPage": {
-    "metaTitle": "المنتجات | مانعات تسرب الطرق وصيانة الأرصفة",
-    "metaDescription": "تصفح مجموعتنا الكاملة من منتجات سد شقوق الأسفلت وإصلاح الحفر وصيانة الأرصفة.",
+    "metaTitle": "خلطة إسفلت باردة وطلاءات الرصف وإضافات الإسفلت",
+    "metaDescription": "ثلاث عائلات منتجات وسبعة مواد أساسية لصيانة الرصف.",
     "title": "منتجاتنا",
-    "subtitle": "حلول صيانة أرصفة احترافية للمقاولين والموزعين",
+    "subtitle": "ثلاث عائلات منتجات وسبعة مواد أساسية لصيانة الرصف.",
     "empty": "ستضاف المنتجات قريباً.",
     "emptyContact": "يرجى العودة لاحقاً أو الاتصال بنا للاستفسار.",
     "keyFeatures": "الميزات الرئيسية",
@@ -69,22 +84,34 @@
   },
   "about": {
     "metaTitle": "عن الشركة | Shining Road Technology",
-    "metaDescription": "Shenyang Shining Road Technology مصنع لمنتجات سد الشقوق والخلطة الباردة وصيانة الأرصفة.",
+    "metaDescription": "Learn about Shenyang Shining Road Technology, a manufacturer of cold mix asphalt, pavement sealcoat, and asphalt additives.",
     "title": "عن الشركة",
     "subtitle": "Shenyang Shining Road Technology Co., Ltd.",
-    "lead": "نحن مصنع ومزود تقنية متخصص في منتجات صيانة الأرصفة، من مانعات تسرب الشقوق والخلطة الباردة إلى مصانع الإنتاج الكاملة وترخيص التقنية. يقع مقرنا في شنيانغ، الصين، ونخدم عملاء في أكثر من 30 دولة.",
+    "lead": "We are a professional manufacturer and technology provider specializing in pavement maintenance products: cold mix asphalt, pavement sealcoat, and asphalt additives. Headquartered in Shenyang, China, we serve contractors, distributors, and manufacturers in over 30 countries.",
     "sections": [
-      ["ما الذي نقدمه", "يشمل عملنا تصنيع المنتجات، مصانع الخلطة الباردة الجاهزة، وترخيص التقنية للإنتاج المحلي."],
-      ["فلسفتنا", "صيانة الأرصفة في الوقت المناسب استثمار عالي العائد في البنية التحتية. هدفنا جعل المواد عالية الجودة متاحة في كل سوق."],
-      ["التزام الجودة", "تخضع كل دفعة لاختبارات مخبرية داخلية قبل الإطلاق، بما يشمل المواد الخام، عملية الإنتاج، اعتماد المنتج النهائي، عينات محفوظة، وتحقق طرف ثالث."],
-      ["حضور عالمي", "نصدر إلى أكثر من 30 دولة وندعم الموزعين والمقاولين وأصحاب المصانع وشركاء الترخيص."]
+      [
+        "What We Do",
+        "Our business covers three focused product families: cold mix asphalt, pavement sealcoat, and asphalt additives."
+      ],
+      [
+        "Our Philosophy",
+        "Pavement maintenance is one of the highest-ROI investments in infrastructure. Our mission is to make high-quality maintenance materials accessible in every market."
+      ],
+      [
+        "Quality Commitment",
+        "Every batch undergoes in-house laboratory testing before release, including raw materials, production process checks, finished product certification, retained samples, and third-party verification."
+      ],
+      [
+        "Global Presence",
+        "We export to more than 30 countries and support distributors, contractors, asphalt plants, and road maintenance teams worldwide."
+      ]
     ],
     "ctaTitle": "هل ترغب في العمل معنا؟",
     "ctaText": "سواء كنت موزعاً أو مقاولاً أو مصنعاً، يمكننا مناقشة طريقة دعم أعمالك."
   },
   "contact": {
     "metaTitle": "اتصل بنا | Shining Road Technology",
-    "metaDescription": "تواصل معنا لاستفسارات المنتجات وعروض الأسعار وترخيص التقنية والدعم الفني.",
+    "metaDescription": "Contact Shining Road Technology for cold mix asphalt, pavement sealcoat, and asphalt additive quotes. We respond within 24 hours.",
     "title": "اتصل بنا",
     "subtitle": "نرد عادة خلال 24 ساعة في أيام العمل.",
     "formTitle": "إرسال رسالة",
@@ -103,14 +130,14 @@
   },
   "news": {
     "metaTitle": "الأخبار والمقالات | Shining Road Technology",
-    "metaDescription": "آخر أخبار المنتجات والرؤى الصناعية من Shining Road Technology.",
+    "metaDescription": "Read pavement maintenance guides, cold mix asphalt updates, sealcoat tips, asphalt additive notes, and project news from Shining Road Technology.",
     "title": "الأخبار والمقالات",
     "subtitle": "تابع آخر تحديثات فريقنا",
     "empty": "ستنشر المقالات قريباً. يرجى العودة لاحقاً."
   },
   "caseStudies": {
     "metaTitle": "دراسات الحالة | نتائج صيانة الأرصفة",
-    "metaDescription": "تعرف على أداء منتجات Shining Road Technology في التطبيقات الواقعية.",
+    "metaDescription": "See field results for Shining Road Technology cold mix asphalt, pavement sealcoat, and asphalt additive projects worldwide.",
     "title": "دراسات الحالة",
     "subtitle": "نتائج واقعية باستخدام منتجات صيانة الأرصفة",
     "ctaTitle": "هل لديك مشروع مشابه؟",
@@ -118,17 +145,278 @@
     "ctaAction": "تواصل مع فريقنا الفني"
   },
   "products": {
-    "hot-applied-crack-sealer": {"title": "مانع تسرب الشقوق الساخن", "category": "سد الشقوق", "description": "مانع تسرب احترافي للشقوق والفواصل الأسفلتية بالتطبيق الساخن وفق ASTM D6690 Type II، بترابط قوي ومقاومة للوقود للطرق والمواقف والمطارات.", "features": ["مطابق لـ ASTM D6690 Type II وASTM D3405", "التصاق ممتاز بالأسفلت والخرسانة", "مقاوم للوقود والمواد الكيميائية", "مقاوم للتجمد والذوبان (-30°C إلى 70°C)", "تصلب سريع يقلل زمن إغلاق المرور", "انبعاثات VOC منخفضة أثناء التطبيق"], "specifications": [{"label": "النوع", "value": "تطبيق ساخن (تسخين مباشر / غلاية زيتية)"}, {"label": "درجة التطبيق", "value": "180–205°C"}, {"label": "نطاق الخدمة", "value": "-30°C إلى +70°C"}, {"label": "نقطة الليونة", "value": "≥ 90°C (ASTM D36)"}, {"label": "الاختراق @ 25°C", "value": "60–80 dmm (ASTM D5)"}, {"label": "مقاومة الجريان @ 60°C", "value": "≤ 3 mm (ASTM D5329)"}, {"label": "قوة الالتصاق", "value": "≥ 2.5 MPa"}, {"label": "التعبئة", "value": "صندوق 25 kg / قالب 12.5 kg / مخصص"}]},
-    "cold-pour-crack-filler": {"title": "حشو الشقوق البارد", "category": "سد الشقوق", "description": "حشو شقوق بارد قائم على المذيب وجاهز للاستخدام للمداخل والإصلاحات الصغيرة. لا يحتاج إلى تسخين ويصبح جاهزاً للمرور خلال 24 ساعة.", "features": ["جاهز للاستخدام بدون معدات تسخين", "تركيبة ذاتية التسوية للشقوق 3–25 mm", "التصاق جيد بالأسفلت والخرسانة", "مرن بعد التصلب", "مقاوم للأشعة فوق البنفسجية والطقس", "رائحة منخفضة"], "specifications": [{"label": "النوع", "value": "تطبيق بارد قائم على المذيب"}, {"label": "درجة التطبيق", "value": "+5°C إلى +40°C"}, {"label": "عرض الشق", "value": "3–25 mm"}, {"label": "زمن التصلب", "value": "24 ساعة @ 20°C"}, {"label": "التغطية", "value": "~30 متر طولي/لتر"}, {"label": "التعبئة", "value": "1 L / 5 L / 20 L دلو"}]},
-    "crack-sealing-tape": {"title": "شريط إغلاق الشقوق", "category": "سد الشقوق", "description": "شريط بيتوميني ذاتي اللصق لإصلاح سريع للشقوق. تطبيق لصق مباشر بدون تسخين أو خلط ويلتصق فوراً بالأسفلت والخرسانة.", "features": ["تطبيق لصق فوري", "طبقة لاصقة عالية التماسك", "يتوافق مع حواف الشق غير المنتظمة", "مقاوم للماء والطقس", "جاهز للمرور مباشرة بعد التطبيق", "مناسب للأسفلت والخرسانة"], "specifications": [{"label": "النوع", "value": "شريط بيتوميني ذاتي اللصق"}, {"label": "العرض", "value": "50 / 100 / 150 / 200 mm"}, {"label": "طول اللفة", "value": "10 m قياسي / مخصص"}, {"label": "السماكة", "value": "2.0 mm"}, {"label": "درجة الخدمة", "value": "-20°C إلى +80°C"}, {"label": "الالتصاق بالفولاذ", "value": "≥ 20 N/25mm"}, {"label": "مقاومة UV", "value": "≥ 1000 h (ASTM G154)"}]},
-    "cold-mix-pothole-repair": {"title": "إصلاح حفر الأسفلت بالخلطة الباردة", "category": "إصلاح الحفر", "description": "خلطة أسفلت باردة عالية الأداء لإصلاح دائم للحفر وفتحات الخدمات. جاهزة من الكيس بدون تسخين أو خلط أو طبقة لاصقة.", "features": ["إصلاح دائم وليس رقعة مؤقتة", "لا يحتاج إلى تسخين أو خلط", "يعمل في الظروف الرطبة وحتى تحت الماء", "لا يحتاج إلى tack coat، ذاتي الالتصاق", "جاهز للمرور بعد الدمك مباشرة", "عمر تخزين طويل 12+ شهراً في كيس مغلق"], "specifications": [{"label": "النوع", "value": "خلطة أسفلت باردة (solvent-cutback)"}, {"label": "حجم الركام", "value": "0–6 mm / 0–10 mm"}, {"label": "درجة التطبيق", "value": "-20°C إلى +40°C"}, {"label": "طريقة الدمك", "value": "مدك يدوي / صفيحة اهتزازية"}, {"label": "التغطية", "value": "~0.025 m³ لكل كيس 25 kg"}, {"label": "التعبئة", "value": "كيس 25 kg / كيس جامبو 1 ton"}]},
-    "cold-mix-production-plant": {"title": "مصنع إنتاج الخلطة الباردة", "category": "معدات الإنتاج", "description": "مصنع خلطة أسفلت باردة جاهز بطاقة 5 إلى 30 طن/ساعة، يشمل الخلاط ونظام التعبئة ومعدات مختبر الجودة.", "features": ["إنتاج مستمر 5 إلى 30 TPH", "جرعات وخلط آلي بنظام PLC", "خط تعبئة ورص منصات متكامل", "نظام جمع غبار مغلق", "تصميم وحدات سهل النقل والتركيب", "نظام إدارة وصفات بأكثر من 50 صيغة"], "specifications": [{"label": "النوع", "value": "مصنع خلطة باردة مستمر"}, {"label": "الطاقة", "value": "5 / 10 / 20 / 30 TPH"}, {"label": "نوع الخلاط", "value": "خلاط مزدوج العمود"}, {"label": "صوامع الركام", "value": "2 / 3 / 4 حسب الطلب"}, {"label": "التحكم", "value": "Siemens PLC مع HMI"}, {"label": "القدرة", "value": "380V / 50Hz, 60–180 kW"}, {"label": "المساحة", "value": "~200–600 m²"}, {"label": "التركيب والتشغيل", "value": "مشمول مع مهندس في الموقع"}]},
-    "technology-licensing": {"title": "ترخيص التقنية", "category": "نقل التقنية", "description": "حزمة نقل تقنية كاملة لتصنيع الخلطة الباردة: الصيغ، مصادر المواد الخام، بروتوكولات الجودة، ودعم R&D مستمر.", "features": ["صيغ خاصة لأكثر من 5 درجات منتج", "شبكة موردي مواد خام عالمية", "إعداد مختبر QC وإجراءات SOP", "برنامج تدريب للمشغلين", "تحسين صيغ وبحث وتطوير مستمر", "دعم تسويقي: تصميم تعبئة، نشرات فنية، تقارير اختبار"], "specifications": [{"label": "نوع الحزمة", "value": "ترخيص تقنية + دعم فني"}, {"label": "الصيغ المشمولة", "value": "5 صيغ أساسية قابلة للتعديل"}, {"label": "مدة التدريب", "value": "أسبوعان في الموقع + متابعة عن بعد"}, {"label": "إعداد مختبر QC", "value": "قائمة معدات وSOP وبروتوكولات اختبار"}, {"label": "مصادر المواد", "value": "قاعدة بيانات موردين معتمدين"}, {"label": "مدة الترخيص", "value": "5 سنوات قابلة للتجديد"}, {"label": "المنطقة", "value": "حصرية حسب الدولة/المنطقة وقابلة للتفاوض"}]},
-    "emulsified-asphalt": {"title": "الأسفلت المستحلب", "category": "الأسفلت المستحلب", "description": "أسفلت مستحلب كاتيوني وأنيوني للطبقة اللاصقة والرش الحجري وslurry seal وmicro-surfacing. مطابق لـ ASTM D2397 وISSA.", "features": ["مجموعة كاملة: CSS-1, CSS-1h, SS-1, SS-1h, CRS-2, CRS-2P", "تركيبات مخصصة للمناخ", "تخزين مستقر 30+ يوماً بدون ترسيب", "متوافق مع معدات الرش القياسية", "درجات معدلة باللاتكس لـ micro-surfacing", "تسليم بصهريج أو IBC أو براميل"], "specifications": [{"label": "الدرجات", "value": "CSS-1, CSS-1h, SS-1, SS-1h, CRS-1, CRS-2, CRS-2P, CQS-1h"}, {"label": "نوع الشحنة", "value": "كاتيوني / أنيوني"}, {"label": "محتوى البقايا", "value": "57–69%"}, {"label": "لزوجة Saybolt @ 25°C", "value": "20–100 SSF"}, {"label": "اختبار المنخل", "value": "≤ 0.10%"}, {"label": "الترسيب 5 أيام", "value": "≤ 5%"}, {"label": "شحنة الجسيم", "value": "موجبة / سالبة"}]},
-    "pavement-sealcoat": {"title": "طلاء حماية الرصيف", "category": "معالجة السطح", "description": "Sealcoat احترافي لحماية وتجميل الأسفلت، بصيغ قائمة على coal tar أو مستحلب الأسفلت مع خيارات الرمل والبوليمر والتجفيف السريع.", "features": ["خيارات أساس coal tar أو مستحلب أسفلت", "مملوء بالرمل أو مركز للخلط في الموقع", "إضافة تجفيف سريع 2–4 ساعات", "مظهر أسود عميق", "مقاوم للأشعة فوق البنفسجية والأكسدة", "متوافق مع الرش والمساحة المطاطية"], "specifications": [{"label": "نوع الأساس", "value": "Coal tar emulsion / asphalt emulsion"}, {"label": "المواد الصلبة", "value": "45–55% مركز / 60–70% جاهز"}, {"label": "اللزوجة @ 25°C", "value": "80–120 KU"}, {"label": "زمن الجفاف @ 25°C", "value": "2–4 ساعات / 4–6 ساعات"}, {"label": "التغطية", "value": "0.4–0.6 L/m² لكل طبقة"}, {"label": "التعبئة", "value": "55 gal drum / 275 gal IBC / bulk"}]},
-    "color-sprayed-pavement": {"title": "رصيف أسفلت ملون بالرش", "category": "الرصف الملون", "description": "طلاء لون عالي الأداء بالرش لتجديد الأسفلت والخرسانة واستعادة اللون. يتصلب خلال ساعتين ويدوم 3–5 سنوات بدون بهتان.", "features": ["تطبيق بالرش سريع بدون معدات ثقيلة", "جاهز للمرور بعد ساعتين", "ألوان أحمر وأخضر وأزرق وأصفر ومخصصة", "تغطية 0.3–0.8 kg/m²", "مقاوم UV مع ثبات لون 3–5 سنوات", "صديق للبيئة ومنخفض الرائحة"], "specifications": [{"label": "النوع", "value": "طلاء لون معدل acrylic-polymer"}, {"label": "طريقة التطبيق", "value": "معدات رش"}, {"label": "التغطية", "value": "0.3–0.8 kg/m² لكل طبقة"}, {"label": "زمن التصلب", "value": "ساعتان قبل المرور"}, {"label": "ثبات اللون", "value": "3–5 سنوات"}, {"label": "التعبئة", "value": "دلو 20 kg"}, {"label": "الألوان", "value": "أحمر، أخضر، أزرق، أصفر، مخصص"}]},
-    "ultra-thin-anti-skid-pavement": {"title": "رصيف ملون مضاد للانزلاق فائق الرقة", "category": "الرصف الملون", "description": "نظام رصف ملون متكامل لسطح مضاد للانزلاق فائق الرقة، وإصلاحات ملونة صغيرة، وحبيبات ملونة تضاف مباشرة للخلاط.", "features": ["طبقة فائقة الرقة 0.5–1.5 mm", "تطبيق بالرش سريع وبسيط واقتصادي", "تصلب سريع وفتح المرور خلال 1–3 ساعات", "التصاق ممتاز بالأسفلت والخرسانة والحجر والمعدن", "ثبات لون 5 سنوات", "أداء قوي مضاد للانزلاق", "خيار خلطة باردة ملونة لمسارات الدراجات", "حبيبات ملونة للإنتاج الصغير", "يعمل عند 0°C وأقل", "يحمي الرصف من الماء والزيت"], "specifications": [{"label": "السماكة الكلية", "value": "0.5–1.5 mm"}, {"label": "استهلاك الركام المضاد للانزلاق", "value": "1–2 kg/m²"}, {"label": "زمن التصلب", "value": "1–3 ساعات"}, {"label": "طريقة التطبيق", "value": "رش / خلطة باردة يدوية / حبيبات للخلاط"}, {"label": "عمر الخدمة", "value": "5+ سنوات بدون بهتان"}, {"label": "أقل درجة تطبيق", "value": "0°C"}, {"label": "التوافق", "value": "أسفلت، خرسانة، حجر، معدن"}, {"label": "تعبئة الخلطة الملونة", "value": "أكياس 20–25 kg, LB-05 / LB-10"}, {"label": "جرعة الحبيبات", "value": "7–8% من وزن الخلطة النهائية"}, {"label": "الألوان", "value": "أحمر، أخضر، أزرق، أصفر، مخصص"}]},
-    "cold-mix-additive": {"title": "مادة مضافة للخلطة الباردة", "category": "مدخلات التصنيع", "description": "مادة مضافة مركزة لتصنيع خلطة باردة عالية الأداء. تركيبة 100% فعالة توفر مقاومة للماء وقابلية تشغيل في البرد وثبات تخزين 12+ شهراً.", "features": ["مكونات فعالة 100% بدون حشوات", "تطبيق في جميع الظروف الجوية (-30°C إلى +50°C)", "تتفاعل مع الماء وتعمل أفضل في الرطوبة", "مقاومة للأحماض والقلويات والأملاح", "تنتج خلطة باردة بعمر تخزين 6–12+ شهر", "إنتاج بسيط بأي خلاط قسري", "تركيبة الجيل الثالث بخبرة ميدانية 10+ سنوات"], "specifications": [{"label": "النوع", "value": "مضافة خلطة باردة 100% فعالة"}, {"label": "الجرعة", "value": "2–3% من وزن الرابط"}, {"label": "درجة الرابط", "value": "100–120°C"}, {"label": "عمر التخزين", "value": "3 سنوات في عبوة مغلقة"}, {"label": "التعبئة", "value": "برميل 50 kg"}, {"label": "الركام", "value": "يوصى بالركام القلوي"}, {"label": "تخزين الخلطة", "value": "6–12+ شهر في أكياس بعيداً عن الشمس"}]},
-    "quick-repair-cement": {"title": "أسمنت سريع الإصلاح", "category": "إصلاح الخرسانة", "description": "مونة إصلاح عالية القوة وسريعة التصلب لرصف الخرسانة الأسمنتية. بداية الشك 15 دقيقة وجاهزة للمرور خلال ساعة.", "features": ["شك سريع: 15 دقيقة وجاهز للمرور خلال ساعة", "قوة التصاق عالية والفشل يحدث في الخرسانة الأساسية", "انكماش منخفض شبه معدوم", "تمدد حراري متوافق مع الخرسانة", "مقاوم للتجمد والذوبان", "مقاوم للأملاح والمواد الكيميائية"], "specifications": [{"label": "بداية الشك", "value": "15 دقيقة @ 20°C"}, {"label": "جاهز للمرور", "value": "ساعة بعد الوضع"}, {"label": "قوة الانحناء", "value": "أعلى من خرسانة C30"}, {"label": "الثبات الحجمي", "value": "انكماش تجفيف شبه معدوم"}, {"label": "التمدد الحراري", "value": "مطابق للخرسانة البورتلاندية العادية"}, {"label": "التطبيقات", "value": "تقشر، حواف، زوايا فواصل، انفصال سطح"}, {"label": "استخدام مثبت", "value": "مطارات، منحدرات طرق، ساحات محطات وقود"}]}
+    "standard-cold-patch": {
+      "title": "الخلطة الباردة القياسية — إصلاح الحفر في جميع الأحوال الجوية",
+      "category": "خلطة إسفلت باردة",
+      "description": "High-performance cold mix asphalt for permanent pothole and utility cut repairs. Ready to use straight from the bag with no heating, mixing, or tack coat required.",
+      "features": [
+        "Permanent repair, not a temporary patch",
+        "No heating or mixing required",
+        "Works in wet conditions",
+        "No tack coat needed",
+        "Traffic-ready after compaction",
+        "12+ month sealed bag shelf life"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Cold mix asphalt"
+        },
+        {
+          "label": "Aggregate Size",
+          "value": "0–6 mm / 0–10 mm"
+        },
+        {
+          "label": "Application Temperature",
+          "value": "-20°C to +40°C"
+        },
+        {
+          "label": "Compaction Method",
+          "value": "Hand tamper / vibratory plate"
+        },
+        {
+          "label": "Coverage",
+          "value": "~0.025 m³ per 25 kg bag"
+        },
+        {
+          "label": "Packaging",
+          "value": "25 kg bag / 1 ton bulk bag"
+        }
+      ]
+    },
+    "capsule-pressure-cold-patch": {
+      "title": "خلطة باردة بكبسولات حساسة للضغط — تقنية إصلاح ذكية",
+      "category": "خلطة إسفلت باردة",
+      "description": "Smart cold patch with pressure-sensitive capsules that release binder under compaction, so repairs strengthen under traffic while reducing sticking to tires and tools.",
+      "features": [
+        "Pressure-activated binder release",
+        "Traffic compaction improves density",
+        "Reduced sticking to tires and tools",
+        "Longer storage stability",
+        "Suitable for wet and cold repairs",
+        "Immediate traffic opening"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Pressure-sensitive capsule cold mix"
+        },
+        {
+          "label": "Activation",
+          "value": "Vehicle load / compactor pressure"
+        },
+        {
+          "label": "Aggregate Size",
+          "value": "0–6 mm / 0–10 mm"
+        },
+        {
+          "label": "Application Temperature",
+          "value": "-20°C to +45°C"
+        },
+        {
+          "label": "Storage Life",
+          "value": "12–18+ months sealed"
+        },
+        {
+          "label": "Packaging",
+          "value": "25 kg bag / 1 ton bulk bag"
+        }
+      ]
+    },
+    "black-pavement-sealcoat": {
+      "title": "طلاء حماية أسود — قطران الفحم ومستحلب الإسفلت",
+      "category": "طلاء حماية الرصف",
+      "description": "Professional black pavement sealcoat for asphalt protection and beautification, available in coal tar and asphalt-emulsion formulas.",
+      "features": [
+        "Coal tar and asphalt-emulsion options",
+        "Sand-filled or concentrate grades",
+        "Fast-dry additive available",
+        "Deep black finish",
+        "UV and oxidation resistance",
+        "Spray and squeegee compatible"
+      ],
+      "specifications": [
+        {
+          "label": "Base Type",
+          "value": "Coal tar emulsion / asphalt emulsion"
+        },
+        {
+          "label": "Solids Content",
+          "value": "45–55% concentrate / 60–70% ready-mix"
+        },
+        {
+          "label": "Viscosity @ 25°C",
+          "value": "80–120 KU"
+        },
+        {
+          "label": "Drying Time",
+          "value": "2–6 hours"
+        },
+        {
+          "label": "Coverage",
+          "value": "0.4–0.6 L/m² per coat"
+        },
+        {
+          "label": "Packaging",
+          "value": "55 gal drum / IBC / bulk"
+        }
+      ]
+    },
+    "color-pavement-sealcoat": {
+      "title": "طلاء حماية ملون — طبقة زخرفية ومضادة للانزلاق",
+      "category": "طلاء حماية الرصف",
+      "description": "Color anti-skid pavement sealcoat for asphalt and concrete surfaces. A 0.5–1.5 mm decorative protective coating with multiple colors.",
+      "features": [
+        "0.5–1.5 mm ultra-thin coating",
+        "Spray or squeegee application",
+        "Decorative and traffic-guidance colors",
+        "Strong adhesion to asphalt and concrete",
+        "UV-resistant pigments",
+        "Optional anti-skid aggregate"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Acrylic-polymer color sealcoat"
+        },
+        {
+          "label": "Film Thickness",
+          "value": "0.5–1.5 mm"
+        },
+        {
+          "label": "Anti-Skid Aggregate",
+          "value": "1–2 kg/m²"
+        },
+        {
+          "label": "Coverage",
+          "value": "0.3–0.8 kg/m² per coat"
+        },
+        {
+          "label": "Cure Time",
+          "value": "1–3 hours"
+        },
+        {
+          "label": "Colors",
+          "value": "Red, green, blue, yellow, black, custom"
+        }
+      ]
+    },
+    "cold-mix-additive": {
+      "title": "مضاف الخلطة الإسفلتية الباردة — مركز الجيل الثالث",
+      "category": "إضافات الإسفلت",
+      "description": "Concentrated additive for manufacturing high-performance cold mix asphalt with water resistance, low-temperature workability, and long storage stability.",
+      "features": [
+        "100% active ingredients",
+        "All-weather construction",
+        "Water-reactive performance",
+        "Acid, alkali, and salt resistant",
+        "6–12+ month cold mix storage",
+        "Simple production with forced-action mixers"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "100% active cold mix additive"
+        },
+        {
+          "label": "Dosage Rate",
+          "value": "2–3% of binder weight"
+        },
+        {
+          "label": "Binder Temperature",
+          "value": "100–120°C"
+        },
+        {
+          "label": "Storage Life",
+          "value": "3 years sealed"
+        },
+        {
+          "label": "Packaging",
+          "value": "50 kg drum"
+        },
+        {
+          "label": "Cold Mix Storage",
+          "value": "6–12+ months bagged"
+        }
+      ]
+    },
+    "asphalt-recycling-agent": {
+      "title": "عامل إعادة تدوير الإسفلت — تجديد الرصف المتقادم",
+      "category": "إضافات الإسفلت",
+      "description": "Recycling agent for rejuvenating aged asphalt binder in reclaimed asphalt pavement and old asphalt surfaces.",
+      "features": [
+        "Restores aged binder flexibility",
+        "Improves RAP binder blending",
+        "For hot in-place and plant-mix recycling",
+        "Reduces brittleness and raveling risk",
+        "Supports higher RAP usage",
+        "Dosage support by lab design"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Asphalt rejuvenator"
+        },
+        {
+          "label": "Application",
+          "value": "HIR / plant recycling / RAP treatment"
+        },
+        {
+          "label": "Typical Dosage",
+          "value": "2–8% of aged binder weight"
+        },
+        {
+          "label": "Mixing Temperature",
+          "value": "120–170°C"
+        },
+        {
+          "label": "Packaging",
+          "value": "200 kg drum / IBC / bulk"
+        },
+        {
+          "label": "Support",
+          "value": "Binder and mix testing"
+        }
+      ]
+    },
+    "warm-mix-additive": {
+      "title": "مضاف الخلطة الإسفلتية الدافئة — خفض درجة حرارة الإنتاج",
+      "category": "إضافات الإسفلت",
+      "description": "Warm mix additive reduces asphalt mixture production temperature by 30–50°C to save energy, lower emissions, and improve workability.",
+      "features": [
+        "30–50°C temperature reduction",
+        "Lower fuel consumption",
+        "Improved lower-temperature compaction",
+        "Extended paving season",
+        "Less smoke and odor",
+        "Compatible with high-RAP mixes"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Warm mix asphalt additive"
+        },
+        {
+          "label": "Temperature Reduction",
+          "value": "30–50°C"
+        },
+        {
+          "label": "Typical Dosage",
+          "value": "0.3–0.8% of binder weight"
+        },
+        {
+          "label": "Compatible Mixes",
+          "value": "Dense-graded, SMA, high-RAP"
+        },
+        {
+          "label": "Packaging",
+          "value": "25 kg bag / 200 kg drum"
+        },
+        {
+          "label": "Benefits",
+          "value": "Energy saving and lower emissions"
+        }
+      ]
+    }
   }
 }

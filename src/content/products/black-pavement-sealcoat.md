@@ -1,8 +1,8 @@
 ---
-title: "Pavement Sealcoat - Coal Tar & Asphalt-Based"
-category: "Surface Treatment"
+title: "Black Pavement Sealcoat — Coal Tar & Asphalt Emulsion"
+category: "Pavement Sealcoat"
 description: "Professional-grade pavement sealcoat for asphalt protection and beautification. Coal tar and asphalt-emulsion based formulas with sand, polymer, and fast-dry additive options."
-image: "/images/products/pavement-sealcoat-hero.jpg"
+image: "/images/products/black-pavement-sealcoat-hero.jpg"
 features:
   - Coal tar and asphalt-emulsion base options
   - Sand-filled or concentrated (mix-on-site)
@@ -23,7 +23,7 @@ specifications:
     value: "0.4–0.6 L/m² per coat"
   - label: "Packaging"
     value: "55 gal drum / 275 gal IBC tote / Bulk"
-order: 8
+order: 3
 draft: false
 ---
 

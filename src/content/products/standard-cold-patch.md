@@ -1,8 +1,8 @@
 ---
-title: "Cold Mix Asphalt Pothole Repair - Permanent Grade"
-category: "Pothole Repair"
+title: "Standard Cold Mix Asphalt — All-Weather Pothole Repair"
+category: "Cold Mix Asphalt"
 description: "High-performance cold mix asphalt for permanent pothole and utility cut repairs. Ready to use straight from the bag — no heating, no mixing, no tack coat required."
-image: "/images/products/cold-mix-pothole-repair-hero.jpg"
+image: "/images/products/standard-cold-patch-hero.jpg"
 gallery:
   - "/images/products/shipping-packaged.jpg"
 features:
@@ -25,7 +25,7 @@ specifications:
     value: "~0.025 m³ per 25 kg bag"
   - label: "Packaging"
     value: "25 kg bag / 1 ton bulk bag"
-order: 4
+order: 1
 draft: false
 ---
 

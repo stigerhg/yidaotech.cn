@@ -23,43 +23,58 @@
     "allArticles": "Все статьи"
   },
   "footer": {
-    "description": "Производитель материалов для герметизации трещин асфальта и обслуживания дорожных покрытий.",
+    "description": "Производитель холодного асфальта, покрытий sealcoat и асфальтовых добавок.",
     "quickLinks": "Быстрые ссылки",
     "contact": "Контакты",
     "rights": "Все права защищены."
   },
   "home": {
-    "metaTitle": "Холодный асфальт и решения для обслуживания покрытий | Shining Road Technology",
-    "metaDescription": "Производитель горячих герметиков трещин, холодного асфальта, материалов для защиты покрытий и заводов холодной смеси.",
+    "metaTitle": "Холодный асфальт, защитные покрытия и добавки для асфальта | Shining Road Technology",
+    "metaDescription": "Три продуктовые группы и семь ключевых материалов для обслуживания дорожных покрытий.",
     "eyebrow": "Shenyang Shining Road Technology Co., Ltd.",
-    "heroTitle": "Герметизация трещин, холодный асфальт и защита дорожных покрытий",
-    "heroSubtitle": "Комплексные решения для обслуживания покрытий: профессиональные герметики, холодный асфальт, заводы под ключ и лицензирование технологий для подрядчиков и дистрибьюторов в 30+ странах.",
+    "heroTitle": "Холодный асфальт, защитные покрытия и добавки для асфальта",
+    "heroSubtitle": "Три продуктовые группы и семь ключевых материалов для обслуживания дорожных покрытий.",
     "solutionsTitle": "Наши решения",
-    "solutionsSubtitle": "От материалов для герметизации трещин до заводов под ключ — все для обслуживания дорожных покрытий.",
+    "solutionsSubtitle": "Три продуктовые группы и семь ключевых материалов для обслуживания дорожных покрытий.",
     "whyTitle": "Почему подрядчики и дистрибьюторы выбирают нас",
     "latestTitle": "Последние обновления",
     "latestSubtitle": "Отраслевые материалы, новости продуктов и проекты",
     "ctaTitle": "Готовы начать?",
-    "ctaSubtitle": "Нужны образцы, оптовая цена или консультация по лицензированию технологии? Наша команда готова помочь.",
+    "ctaSubtitle": "Три продуктовые группы и семь ключевых материалов для обслуживания дорожных покрытий.",
     "solutionCards": [
-      ["Материалы для герметизации трещин", "Горячие герметики, холодные заливки и самоклеящиеся ленты для разных типов трещин и климата."],
-      ["Холодный асфальт и ямочный ремонт", "Холодная смесь постоянного класса для круглогодичного ремонта выбоин. Без нагрева, работает во влажных условиях."],
-      ["Производственные линии", "Заводы холодной смеси под ключ от 5 до 30 т/ч с обучением, лабораторией контроля качества и гарантией."],
-      ["Лицензирование технологий", "Передача формул, подбор сырья, системы контроля качества и постоянная R&D поддержка."],
-      ["Эмульгированный битум", "Катионные и анионные эмульсии для подгрунтовки, поверхностной обработки, slurry seal и micro-surfacing."],
-      ["Защитные обработки поверхности", "Sealcoat, регенераторы и защитные покрытия для продления срока службы и улучшения внешнего вида."]
+      [
+        "Холодный асфальт",
+        "Стандартная холодная смесь и капсульная pressure-sensitive смесь для быстрого ремонта выбоин."
+      ],
+      [
+        "Покрытия для покрытия",
+        "Черное защитное покрытие и цветное противоскользящее декоративное покрытие."
+      ],
+      [
+        "Асфальтовые добавки",
+        "Добавка для холодной смеси, регенератор асфальта и warm mix additive."
+      ]
     ],
     "whyCards": [
-      ["Международные стандарты", "Продукты испытываются по ASTM, AASHTO и EN. Сертификат анализа предоставляется с каждой поставкой."],
-      ["Техническая поддержка", "Подбор продукта, рекомендации по применению и выездное обучение под руководством инженеров."],
-      ["Глобальная логистика", "Экспорт в 30+ стран. FCL, LCL и навалочные поставки из основных портов Китая с документальным сопровождением."]
+      [
+        "Международные стандарты",
+        "Продукты испытываются по ASTM, AASHTO и EN. Сертификат анализа предоставляется с каждой поставкой."
+      ],
+      [
+        "Техническая поддержка",
+        "Подбор продукта, рекомендации по применению и выездное обучение под руководством инженеров."
+      ],
+      [
+        "Глобальная логистика",
+        "Экспорт в 30+ стран. FCL, LCL и навалочные поставки из основных портов Китая с документальным сопровождением."
+      ]
     ]
   },
   "productsPage": {
-    "metaTitle": "Продукты | Герметики и обслуживание покрытий",
-    "metaDescription": "Полный ассортимент материалов для герметизации трещин, ямочного ремонта и обслуживания дорожных покрытий.",
+    "metaTitle": "Холодный асфальт, защитные покрытия и добавки для асфальта",
+    "metaDescription": "Три продуктовые группы и семь ключевых материалов для обслуживания дорожных покрытий.",
     "title": "Наша продукция",
-    "subtitle": "Профессиональные решения для подрядчиков и дистрибьюторов",
+    "subtitle": "Три продуктовые группы и семь ключевых материалов для обслуживания дорожных покрытий.",
     "empty": "Продукты скоро будут добавлены.",
     "emptyContact": "Вернитесь позже или свяжитесь с нами для запроса.",
     "keyFeatures": "Ключевые особенности",
@@ -69,22 +84,34 @@
   },
   "about": {
     "metaTitle": "О нас | Shining Road Technology",
-    "metaDescription": "Shenyang Shining Road Technology — производитель материалов для герметизации трещин, холодного асфальта и защиты покрытий.",
+    "metaDescription": "Learn about Shenyang Shining Road Technology, a manufacturer of cold mix asphalt, pavement sealcoat, and asphalt additives.",
     "title": "О нас",
     "subtitle": "Shenyang Shining Road Technology Co., Ltd.",
-    "lead": "Мы производим и передаем технологии материалов для обслуживания дорожных покрытий: герметики трещин, холодный асфальт, заводы под ключ и лицензионные пакеты. Компания находится в Шэньяне, Китай, и обслуживает клиентов более чем в 30 странах.",
+    "lead": "We are a professional manufacturer and technology provider specializing in pavement maintenance products: cold mix asphalt, pavement sealcoat, and asphalt additives. Headquartered in Shenyang, China, we serve contractors, distributors, and manufacturers in over 30 countries.",
     "sections": [
-      ["Что мы делаем", "Наш бизнес включает производство материалов, поставку заводов холодной смеси под ключ и лицензирование технологий для локального производства."],
-      ["Наша философия", "Своевременное обслуживание покрытий дает высокий возврат инвестиций. Наша задача — сделать качественные материалы доступными на каждом рынке."],
-      ["Качество", "Каждая партия проходит лабораторный контроль: входное сырье, производственный процесс, сертификация готовой продукции, архивные образцы и независимые проверки."],
-      ["Глобальное присутствие", "Мы экспортируем в 30+ стран и поддерживаем дистрибьюторов, подрядчиков, владельцев заводов и лицензионных партнеров."]
+      [
+        "What We Do",
+        "Our business covers three focused product families: cold mix asphalt, pavement sealcoat, and asphalt additives."
+      ],
+      [
+        "Our Philosophy",
+        "Pavement maintenance is one of the highest-ROI investments in infrastructure. Our mission is to make high-quality maintenance materials accessible in every market."
+      ],
+      [
+        "Quality Commitment",
+        "Every batch undergoes in-house laboratory testing before release, including raw materials, production process checks, finished product certification, retained samples, and third-party verification."
+      ],
+      [
+        "Global Presence",
+        "We export to more than 30 countries and support distributors, contractors, asphalt plants, and road maintenance teams worldwide."
+      ]
     ],
     "ctaTitle": "Хотите работать с нами?",
     "ctaText": "Если вы дистрибьютор, подрядчик или производитель, мы обсудим, как поддержать ваш бизнес."
   },
   "contact": {
     "metaTitle": "Контакты | Shining Road Technology",
-    "metaDescription": "Свяжитесь с нами по вопросам продукции, оптовых цен, лицензирования технологий и технической поддержки.",
+    "metaDescription": "Contact Shining Road Technology for cold mix asphalt, pavement sealcoat, and asphalt additive quotes. We respond within 24 hours.",
     "title": "Контакты",
     "subtitle": "Обычно мы отвечаем в течение 24 часов в рабочие дни.",
     "formTitle": "Отправить сообщение",
@@ -103,14 +130,14 @@
   },
   "news": {
     "metaTitle": "Новости и статьи | Shining Road Technology",
-    "metaDescription": "Новости продуктов, отраслевые материалы и обновления Shining Road Technology.",
+    "metaDescription": "Read pavement maintenance guides, cold mix asphalt updates, sealcoat tips, asphalt additive notes, and project news from Shining Road Technology.",
     "title": "Новости и статьи",
     "subtitle": "Следите за последними обновлениями нашей команды",
     "empty": "Статьи будут опубликованы скоро. Зайдите позже."
   },
   "caseStudies": {
     "metaTitle": "Примеры работ | Результаты обслуживания покрытий",
-    "metaDescription": "Посмотрите, как продукты Shining Road Technology работают в реальных проектах.",
+    "metaDescription": "See field results for Shining Road Technology cold mix asphalt, pavement sealcoat, and asphalt additive projects worldwide.",
     "title": "Примеры работ",
     "subtitle": "Практические результаты применения наших материалов",
     "ctaTitle": "Есть похожий проект?",
@@ -118,89 +145,278 @@
     "ctaAction": "Связаться с технической командой"
   },
   "products": {
-    "hot-applied-crack-sealer": {
-      "title": "Горячая герметизирующая мастика",
-      "category": "Герметизация трещин",
-      "description": "Профессиональный горячий герметик для трещин и швов асфальта по ASTM D6690 Type II. Высокая адгезия, топливостойкая формула для дорог, парковок и аэродромов.",
-      "features": ["Соответствует ASTM D6690 Type II и ASTM D3405", "Отличная адгезия к асфальту и бетону", "Стойкость к топливу и химии", "Морозо- и теплостойкость (-30°C до 70°C)", "Быстрое отверждение сокращает перекрытие движения", "Низкие выбросы VOC при применении"],
-      "specifications": [{"label": "Тип", "value": "Горячее нанесение (прямой нагрев / котел с масляной рубашкой)"}, {"label": "Температура нанесения", "value": "180–205°C"}, {"label": "Диапазон эксплуатации", "value": "-30°C до +70°C"}, {"label": "Температура размягчения", "value": "≥ 90°C (ASTM D36)"}, {"label": "Пенетрация @ 25°C", "value": "60–80 dmm (ASTM D5)"}, {"label": "Текучесть @ 60°C", "value": "≤ 3 mm (ASTM D5329)"}, {"label": "Прочность сцепления (AC/AC)", "value": "≥ 2.5 MPa"}, {"label": "Упаковка", "value": "25 kg короб / 12.5 kg блок / под заказ"}]
+    "standard-cold-patch": {
+      "title": "Стандартная холодная асфальтовая смесь — всепогодный ремонт выбоин",
+      "category": "Холодный асфальт",
+      "description": "High-performance cold mix asphalt for permanent pothole and utility cut repairs. Ready to use straight from the bag with no heating, mixing, or tack coat required.",
+      "features": [
+        "Permanent repair, not a temporary patch",
+        "No heating or mixing required",
+        "Works in wet conditions",
+        "No tack coat needed",
+        "Traffic-ready after compaction",
+        "12+ month sealed bag shelf life"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Cold mix asphalt"
+        },
+        {
+          "label": "Aggregate Size",
+          "value": "0–6 mm / 0–10 mm"
+        },
+        {
+          "label": "Application Temperature",
+          "value": "-20°C to +40°C"
+        },
+        {
+          "label": "Compaction Method",
+          "value": "Hand tamper / vibratory plate"
+        },
+        {
+          "label": "Coverage",
+          "value": "~0.025 m³ per 25 kg bag"
+        },
+        {
+          "label": "Packaging",
+          "value": "25 kg bag / 1 ton bulk bag"
+        }
+      ]
     },
-    "cold-pour-crack-filler": {
-      "title": "Холодная заливка трещин",
-      "category": "Герметизация трещин",
-      "description": "Готовый к применению растворный заполнитель трещин для подъездных дорожек и небольших ремонтов. Не требует нагрева и открывается для движения через 24 часа.",
-      "features": ["Готов к применению, оборудование для нагрева не требуется", "Самовыравнивающаяся формула для трещин 3–25 mm", "Хорошая адгезия к асфальту и бетону", "Сохраняет гибкость после отверждения", "Стойкость к УФ и погоде", "Низкий запах"],
-      "specifications": [{"label": "Тип", "value": "Холодное нанесение (на растворителе)"}, {"label": "Температура нанесения", "value": "+5°C до +40°C"}, {"label": "Ширина трещин", "value": "3–25 mm"}, {"label": "Время отверждения", "value": "24 часа @ 20°C"}, {"label": "Расход", "value": "~30 пог. м/л (6 mm x 25 mm)"}, {"label": "Упаковка", "value": "1 L / 5 L / 20 L ведро"}]
+    "capsule-pressure-cold-patch": {
+      "title": "Капсульная pressure-sensitive холодная смесь — умная технология ремонта",
+      "category": "Холодный асфальт",
+      "description": "Smart cold patch with pressure-sensitive capsules that release binder under compaction, so repairs strengthen under traffic while reducing sticking to tires and tools.",
+      "features": [
+        "Pressure-activated binder release",
+        "Traffic compaction improves density",
+        "Reduced sticking to tires and tools",
+        "Longer storage stability",
+        "Suitable for wet and cold repairs",
+        "Immediate traffic opening"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Pressure-sensitive capsule cold mix"
+        },
+        {
+          "label": "Activation",
+          "value": "Vehicle load / compactor pressure"
+        },
+        {
+          "label": "Aggregate Size",
+          "value": "0–6 mm / 0–10 mm"
+        },
+        {
+          "label": "Application Temperature",
+          "value": "-20°C to +45°C"
+        },
+        {
+          "label": "Storage Life",
+          "value": "12–18+ months sealed"
+        },
+        {
+          "label": "Packaging",
+          "value": "25 kg bag / 1 ton bulk bag"
+        }
+      ]
     },
-    "crack-sealing-tape": {
-      "title": "Лента для заделки трещин",
-      "category": "Герметизация трещин",
-      "description": "Самоклеящаяся битумная лента для быстрого ремонта трещин. Наклеивание без нагрева и смешивания, мгновенное сцепление с асфальтом и бетоном.",
-      "features": ["Мгновенное peel-and-stick нанесение", "Высоколипкий клеевой слой", "Повторяет неровные края трещины", "Водонепроницаемая и погодостойкая", "Движение возможно сразу после нанесения", "Подходит для асфальта и бетона"],
-      "specifications": [{"label": "Тип", "value": "Самоклеящаяся битумная лента"}, {"label": "Ширина", "value": "50 / 100 / 150 / 200 mm"}, {"label": "Длина рулона", "value": "10 m стандарт / под заказ"}, {"label": "Толщина", "value": "2.0 mm"}, {"label": "Температура эксплуатации", "value": "-20°C до +80°C"}, {"label": "Адгезия к стали", "value": "≥ 20 N/25mm"}, {"label": "УФ-стойкость", "value": "≥ 1000 h (ASTM G154)"}]
+    "black-pavement-sealcoat": {
+      "title": "Черное покрытие sealcoat — каменноугольная смола и битумная эмульсия",
+      "category": "Защитное покрытие",
+      "description": "Professional black pavement sealcoat for asphalt protection and beautification, available in coal tar and asphalt-emulsion formulas.",
+      "features": [
+        "Coal tar and asphalt-emulsion options",
+        "Sand-filled or concentrate grades",
+        "Fast-dry additive available",
+        "Deep black finish",
+        "UV and oxidation resistance",
+        "Spray and squeegee compatible"
+      ],
+      "specifications": [
+        {
+          "label": "Base Type",
+          "value": "Coal tar emulsion / asphalt emulsion"
+        },
+        {
+          "label": "Solids Content",
+          "value": "45–55% concentrate / 60–70% ready-mix"
+        },
+        {
+          "label": "Viscosity @ 25°C",
+          "value": "80–120 KU"
+        },
+        {
+          "label": "Drying Time",
+          "value": "2–6 hours"
+        },
+        {
+          "label": "Coverage",
+          "value": "0.4–0.6 L/m² per coat"
+        },
+        {
+          "label": "Packaging",
+          "value": "55 gal drum / IBC / bulk"
+        }
+      ]
     },
-    "cold-mix-pothole-repair": {
-      "title": "Холодная асфальтобетонная смесь для ямочного ремонта",
-      "category": "Ямочный ремонт",
-      "description": "Высокоэффективная холодная смесь для постоянного ремонта выбоин и карт. Готова к применению из мешка: без нагрева, смешивания и подгрунтовки.",
-      "features": ["Постоянный ремонт, не временная заплатка", "Нагрев и смешивание не требуются", "Работает во влажных условиях, даже под водой", "Подгрунтовка не нужна, самоклеящаяся", "Движение сразу после уплотнения", "Долгий срок хранения, 12+ месяцев в закрытом мешке"],
-      "specifications": [{"label": "Тип", "value": "Холодная асфальтовая смесь (cutback)"}, {"label": "Размер заполнителя", "value": "0–6 mm / 0–10 mm"}, {"label": "Температура применения", "value": "-20°C до +40°C"}, {"label": "Уплотнение", "value": "Ручная трамбовка / виброплита"}, {"label": "Покрытие", "value": "~0.025 m³ на мешок 25 kg"}, {"label": "Упаковка", "value": "25 kg мешок / 1 ton big bag"}]
-    },
-    "cold-mix-production-plant": {
-      "title": "Завод по производству холодной асфальтобетонной смеси",
-      "category": "Производственное оборудование",
-      "description": "Завод холодной смеси под ключ производительностью 5–30 т/ч. Комплект включает смеситель, фасовку и лабораторное оборудование контроля качества.",
-      "features": ["Непрерывное производство 5–30 TPH", "Автоматическое дозирование и смешивание PLC", "Интегрированная линия фасовки и паллетирования", "Закрытая система пылеулавливания", "Модульная конструкция для перевозки и монтажа", "Система рецептов с 50+ формулами"],
-      "specifications": [{"label": "Тип", "value": "Непрерывный завод холодной асфальтовой смеси"}, {"label": "Производительность", "value": "5 / 10 / 20 / 30 TPH"}, {"label": "Смеситель", "value": "Двухвальный лопастной"}, {"label": "Бункеры заполнителя", "value": "2 / 3 / 4 по конфигурации"}, {"label": "Система управления", "value": "Siemens PLC с HMI"}, {"label": "Электропитание", "value": "380V / 50Hz, 60–180 kW"}, {"label": "Площадь", "value": "~200–600 m²"}, {"label": "Монтаж и пусконаладка", "value": "Включены, инженер на площадке"}]
-    },
-    "technology-licensing": {
-      "title": "Лицензирование технологии",
-      "category": "Передача технологий",
-      "description": "Полный пакет передачи технологии производства холодного асфальта: формулы, сырье, QC протоколы и постоянная R&D поддержка.",
-      "features": ["Собственные формулы для 5+ классов продукта", "Глобальная сеть поставщиков сырья", "Настройка лаборатории QC и SOP", "Обучение операторов: теория и практика", "Постоянная оптимизация формул и R&D", "Маркетинговая поддержка: упаковка, TDS, отчеты испытаний"],
-      "specifications": [{"label": "Тип пакета", "value": "Лицензия технологии + техподдержка"}, {"label": "Формулы", "value": "5 базовых формул, настраиваемые"}, {"label": "Обучение", "value": "2 недели на площадке + удаленное сопровождение"}, {"label": "QC лаборатория", "value": "Список оборудования, SOP, протоколы испытаний"}, {"label": "Источники сырья", "value": "База утвержденных поставщиков"}, {"label": "Срок лицензии", "value": "5 лет с продлением"}, {"label": "Территория", "value": "Эксклюзивно по стране/региону, обсуждается"}]
-    },
-    "emulsified-asphalt": {
-      "title": "Эмульгированный битум",
-      "category": "Эмульгированный битум",
-      "description": "Катионные и анионные битумные эмульсии для tack coat, prime coat, chip seal, slurry seal и micro-surfacing. Соответствует ASTM D2397 и ISSA.",
-      "features": ["Полная линейка: CSS-1, CSS-1h, SS-1, SS-1h, CRS-2, CRS-2P", "Индивидуальные рецептуры под климат", "Стабильное хранение 30+ дней без осаждения", "Совместимость со стандартным распылительным оборудованием", "Латекс-модифицированные марки для micro-surfacing", "Поставка автоцистерной, IBC или бочками"],
-      "specifications": [{"label": "Доступные марки", "value": "CSS-1, CSS-1h, SS-1, SS-1h, CRS-1, CRS-2, CRS-2P, CQS-1h"}, {"label": "Тип заряда", "value": "Катионная / анионная"}, {"label": "Содержание остатка", "value": "57–69%"}, {"label": "Вязкость Saybolt @ 25°C", "value": "20–100 SSF"}, {"label": "Ситовой тест", "value": "≤ 0.10%"}, {"label": "Осаждение за 5 дней", "value": "≤ 5%"}, {"label": "Заряд частиц", "value": "Положительный / отрицательный"}]
-    },
-    "pavement-sealcoat": {
-      "title": "Защитное покрытие",
-      "category": "Обработка поверхности",
-      "description": "Профессиональное защитное покрытие для асфальта на основе каменноугольной смолы или битумной эмульсии с опциями песка, полимера и быстрого высыхания.",
-      "features": ["Варианты на основе coal tar и битумной эмульсии", "С песком или концентрат для смешивания на объекте", "Быстросохнущая добавка 2–4 часа", "Глубокий черный финиш", "Стойкость к УФ и окислению", "Подходит для распыления и ракеля"],
-      "specifications": [{"label": "Основа", "value": "Coal tar emulsion / asphalt emulsion"}, {"label": "Сухой остаток", "value": "45–55% концентрат / 60–70% ready-mix"}, {"label": "Вязкость @ 25°C", "value": "80–120 KU"}, {"label": "Время высыхания @ 25°C", "value": "2–4 часа / 4–6 часов"}, {"label": "Расход", "value": "0.4–0.6 L/m² за слой"}, {"label": "Упаковка", "value": "55 gal drum / 275 gal IBC / bulk"}]
-    },
-    "color-sprayed-pavement": {
-      "title": "Цветное напыляемое асфальтовое покрытие",
-      "category": "Цветное покрытие",
-      "description": "Высокоэффективное цветное покрытие распылением для восстановления асфальта и бетона. Отверждение за 2 часа, срок цвета 3–5 лет.",
-      "features": ["Быстрое распыление без тяжелой техники", "Движение через 2 часа", "Красный, зеленый, синий, желтый и заказные цвета", "Расход 0.3–0.8 kg/m²", "УФ-стойкость, цвет 3–5 лет", "Экологичное, низкий запах"],
-      "specifications": [{"label": "Тип", "value": "Акрил-полимерное цветное покрытие"}, {"label": "Метод нанесения", "value": "Распылительное оборудование"}, {"label": "Расход", "value": "0.3–0.8 kg/m² за слой"}, {"label": "Отверждение", "value": "2 часа до движения"}, {"label": "Сохранение цвета", "value": "3–5 лет"}, {"label": "Упаковка", "value": "20 kg ведро"}, {"label": "Цвета", "value": "Красный, зеленый, синий, желтый, заказной"}]
-    },
-    "ultra-thin-anti-skid-pavement": {
-      "title": "Тонкослойное цветное противоскользящее покрытие",
-      "category": "Цветное покрытие",
-      "description": "Интегрированная система цветного покрытия для тонкослойной противоскользящей поверхности, локального цветного холодного ремонта и цветных гранул для смесителя.",
-      "features": ["Ультратонкий слой 0.5–1.5 mm", "Распыление: быстро, просто, экономично", "Открытие движения за 1–3 часа", "Отличная адгезия к асфальту, бетону, камню и металлу", "Сохранение цвета 5 лет", "Сильный противоскользящий эффект", "Цветный холодный ремонт для велодорожек", "Цветные гранулы для малых партий асфальта", "Работает при 0°C и ниже", "Защищает покрытие от воды и масла"],
-      "specifications": [{"label": "Толщина", "value": "0.5–1.5 mm"}, {"label": "Расход антискользящего заполнителя", "value": "1–2 kg/m²"}, {"label": "Отверждение", "value": "1–3 часа"}, {"label": "Метод", "value": "Распыление / ручная укладка / гранулы в смеситель"}, {"label": "Срок службы", "value": "5+ лет без выцветания"}, {"label": "Минимальная температура", "value": "0°C"}, {"label": "Основания", "value": "Асфальт, бетон, камень, металл"}, {"label": "Упаковка цветной смеси", "value": "20–25 kg мешки, LB-05 / LB-10"}, {"label": "Дозировка гранул", "value": "7–8% массы готовой смеси"}, {"label": "Цвета", "value": "Красный, зеленый, синий, желтый, подбор"}]
+    "color-pavement-sealcoat": {
+      "title": "Цветное покрытие sealcoat — противоскользящее и декоративное покрытие",
+      "category": "Защитное покрытие",
+      "description": "Color anti-skid pavement sealcoat for asphalt and concrete surfaces. A 0.5–1.5 mm decorative protective coating with multiple colors.",
+      "features": [
+        "0.5–1.5 mm ultra-thin coating",
+        "Spray or squeegee application",
+        "Decorative and traffic-guidance colors",
+        "Strong adhesion to asphalt and concrete",
+        "UV-resistant pigments",
+        "Optional anti-skid aggregate"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Acrylic-polymer color sealcoat"
+        },
+        {
+          "label": "Film Thickness",
+          "value": "0.5–1.5 mm"
+        },
+        {
+          "label": "Anti-Skid Aggregate",
+          "value": "1–2 kg/m²"
+        },
+        {
+          "label": "Coverage",
+          "value": "0.3–0.8 kg/m² per coat"
+        },
+        {
+          "label": "Cure Time",
+          "value": "1–3 hours"
+        },
+        {
+          "label": "Colors",
+          "value": "Red, green, blue, yellow, black, custom"
+        }
+      ]
     },
     "cold-mix-additive": {
-      "title": "Добавка для холодного асфальта",
-      "category": "Сырье для производства",
-      "description": "Концентрированная добавка для производства высококачественного холодного асфальта. 100% активная формула обеспечивает водостойкость, работоспособность при низкой температуре и хранение 12+ месяцев.",
-      "features": ["100% активные компоненты без наполнителей", "Всепогодное применение (-30°C до +50°C)", "Водоактивная формула лучше работает во влажных условиях", "Стойкость к кислотам, щелочам и солям", "Холодная смесь хранится 6–12+ месяцев", "Простое производство в любом принудительном смесителе", "Формула 3-го поколения с 10+ годами практики"],
-      "specifications": [{"label": "Тип", "value": "100% активная добавка для холодной смеси"}, {"label": "Дозировка", "value": "2–3% от массы вяжущего"}, {"label": "Температура вяжущего", "value": "100–120°C"}, {"label": "Срок хранения", "value": "3 года в закрытой таре"}, {"label": "Упаковка", "value": "50 kg барабан"}, {"label": "Заполнители", "value": "Рекомендуются щелочные заполнители"}, {"label": "Хранение смеси", "value": "6–12+ месяцев в мешках без солнца"}]
+      "title": "Добавка для холодной асфальтовой смеси — концентрат 3-го поколения",
+      "category": "Асфальтовые добавки",
+      "description": "Concentrated additive for manufacturing high-performance cold mix asphalt with water resistance, low-temperature workability, and long storage stability.",
+      "features": [
+        "100% active ingredients",
+        "All-weather construction",
+        "Water-reactive performance",
+        "Acid, alkali, and salt resistant",
+        "6–12+ month cold mix storage",
+        "Simple production with forced-action mixers"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "100% active cold mix additive"
+        },
+        {
+          "label": "Dosage Rate",
+          "value": "2–3% of binder weight"
+        },
+        {
+          "label": "Binder Temperature",
+          "value": "100–120°C"
+        },
+        {
+          "label": "Storage Life",
+          "value": "3 years sealed"
+        },
+        {
+          "label": "Packaging",
+          "value": "50 kg drum"
+        },
+        {
+          "label": "Cold Mix Storage",
+          "value": "6–12+ months bagged"
+        }
+      ]
     },
-    "quick-repair-cement": {
-      "title": "Быстротвердеющий цемент для ремонта",
-      "category": "Ремонт бетона",
-      "description": "Высокопрочный быстросхватывающийся ремонтный раствор для цементобетонных покрытий. Начало схватывания 15 минут, движение через 1 час.",
-      "features": ["Быстрое схватывание: 15 минут, движение через 1 час", "Высокая адгезия, разрушение по основанию бетона", "Низкая усадка, почти нулевая", "Тепловая совместимость с бетоном", "Морозостойкость", "Химическая стойкость к противогололедным солям"],
-      "specifications": [{"label": "Начало схватывания", "value": "15 минут @ 20°C"}, {"label": "Открытие движения", "value": "1 час после укладки"}, {"label": "Прочность на изгиб", "value": "Выше бетона C30"}, {"label": "Объемная стабильность", "value": "Почти нулевая усадка"}, {"label": "Тепловое расширение", "value": "Соответствует обычному портландцементному бетону"}, {"label": "Применение", "value": "Сколы, шелушение, кромки, углы швов, отслоения"}, {"label": "Проверенное применение", "value": "Аэропорты, съезды, АЗС"}]
+    "asphalt-recycling-agent": {
+      "title": "Регенератор асфальта — восстановление старого покрытия",
+      "category": "Асфальтовые добавки",
+      "description": "Recycling agent for rejuvenating aged asphalt binder in reclaimed asphalt pavement and old asphalt surfaces.",
+      "features": [
+        "Restores aged binder flexibility",
+        "Improves RAP binder blending",
+        "For hot in-place and plant-mix recycling",
+        "Reduces brittleness and raveling risk",
+        "Supports higher RAP usage",
+        "Dosage support by lab design"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Asphalt rejuvenator"
+        },
+        {
+          "label": "Application",
+          "value": "HIR / plant recycling / RAP treatment"
+        },
+        {
+          "label": "Typical Dosage",
+          "value": "2–8% of aged binder weight"
+        },
+        {
+          "label": "Mixing Temperature",
+          "value": "120–170°C"
+        },
+        {
+          "label": "Packaging",
+          "value": "200 kg drum / IBC / bulk"
+        },
+        {
+          "label": "Support",
+          "value": "Binder and mix testing"
+        }
+      ]
+    },
+    "warm-mix-additive": {
+      "title": "Добавка Warm Mix Asphalt — снижение температуры производства",
+      "category": "Асфальтовые добавки",
+      "description": "Warm mix additive reduces asphalt mixture production temperature by 30–50°C to save energy, lower emissions, and improve workability.",
+      "features": [
+        "30–50°C temperature reduction",
+        "Lower fuel consumption",
+        "Improved lower-temperature compaction",
+        "Extended paving season",
+        "Less smoke and odor",
+        "Compatible with high-RAP mixes"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Warm mix asphalt additive"
+        },
+        {
+          "label": "Temperature Reduction",
+          "value": "30–50°C"
+        },
+        {
+          "label": "Typical Dosage",
+          "value": "0.3–0.8% of binder weight"
+        },
+        {
+          "label": "Compatible Mixes",
+          "value": "Dense-graded, SMA, high-RAP"
+        },
+        {
+          "label": "Packaging",
+          "value": "25 kg bag / 200 kg drum"
+        },
+        {
+          "label": "Benefits",
+          "value": "Energy saving and lower emissions"
+        }
+      ]
     }
   }
 }

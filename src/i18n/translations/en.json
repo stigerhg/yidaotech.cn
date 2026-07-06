@@ -23,43 +23,58 @@
     "allArticles": "All articles"
   },
   "footer": {
-    "description": "Professional asphalt crack sealing and pavement maintenance products manufacturer.",
+    "description": "Professional cold mix asphalt, pavement sealcoat, and asphalt additive manufacturer.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "rights": "All rights reserved."
   },
   "home": {
-    "metaTitle": "Cold Mix Asphalt | Crack Sealant & Pavement Maintenance | Shining Road Technology",
-    "metaDescription": "Buy cold mix asphalt, crack sealant, sealcoat, emulsified asphalt, and production plants from Shining Road Technology. Request samples or an export quote.",
+    "metaTitle": "Cold Mix Asphalt, Sealcoat & Asphalt Additives | Shining Road Technology",
+    "metaDescription": "Buy cold mix asphalt, black and color pavement sealcoat, cold mix additive, asphalt recycling agent, and warm mix additive from Shining Road Technology.",
     "eyebrow": "Shenyang Shining Road Technology Co., Ltd.",
-    "heroTitle": "Asphalt Crack Sealing, Cold Mix & Pavement Preservation",
-    "heroSubtitle": "Complete pavement maintenance solutions from professional-grade sealants and cold mix asphalt to turnkey production plants and technology licensing. Serving contractors and distributors in 30+ countries.",
+    "heroTitle": "Cold Mix Asphalt, Pavement Sealcoat & Asphalt Additives",
+    "heroSubtitle": "Focused pavement maintenance materials in three product families: cold mix asphalt, pavement sealcoat, and asphalt additives. Serving contractors, distributors, and asphalt plants worldwide.",
     "solutionsTitle": "Our Solutions",
-    "solutionsSubtitle": "From crack sealing products to complete production plants, everything you need for pavement maintenance.",
+    "solutionsSubtitle": "Seven focused products across three pavement maintenance categories.",
     "whyTitle": "Why Contractors & Distributors Choose Us",
     "latestTitle": "Latest Updates",
     "latestSubtitle": "Industry insights, product news, and project updates",
     "ctaTitle": "Ready to Get Started?",
-    "ctaSubtitle": "Whether you need product samples, a bulk quote, or a technology licensing consultation, our team is ready to help.",
+    "ctaSubtitle": "Whether you need samples, technical data, or a bulk export quote, our team can recommend the right product from the reorganized range.",
     "solutionCards": [
-      ["Crack Sealing Products", "Hot-applied sealants, cold pour fillers, and self-adhesive tapes for every crack type and climate."],
-      ["Cold Mix Asphalt & Pothole Repair", "Permanent-grade cold mix for year-round pothole repair. No heating, works in wet conditions."],
-      ["Production Plants", "Turnkey cold mix asphalt plants from 5 to 30 TPH with training, QC lab, and warranty."],
-      ["Technology Licensing", "Full technology transfer: formulas, raw material sourcing, QC systems, and ongoing R&D support."],
-      ["Emulsified Asphalt", "Cationic and anionic emulsions for tack coat, chip seal, slurry seal, and micro-surfacing."],
-      ["Surface Treatments", "Sealcoating, rejuvenators, and protective surface treatments to extend pavement life and appearance."]
+      [
+        "Cold Mix Asphalt",
+        "Standard all-weather cold patch and capsule pressure-sensitive cold patch for fast pothole and utility cut repair."
+      ],
+      [
+        "Pavement Sealcoat",
+        "Black coal tar and asphalt-emulsion sealcoat plus color anti-skid decorative coating for asphalt and concrete surfaces."
+      ],
+      [
+        "Asphalt Additives",
+        "Cold mix additive, asphalt recycling agent, and warm mix additive for plants, recycling, and lower-temperature paving."
+      ]
     ],
     "whyCards": [
-      ["International Standards", "Products tested to ASTM, AASHTO, and EN specifications. Certificate of Analysis provided with every shipment."],
-      ["Technical Support", "Engineer-led support, product selection, application guidance, and on-site training available worldwide."],
-      ["Global Logistics", "Export to 30+ countries. FCL, LCL, and bulk shipments from major Chinese ports. Documentation support included."]
+      [
+        "International Standards",
+        "Products tested to ASTM, AASHTO, and EN specifications. Certificate of Analysis provided with every shipment."
+      ],
+      [
+        "Technical Support",
+        "Engineer-led support, product selection, application guidance, and on-site training available worldwide."
+      ],
+      [
+        "Global Logistics",
+        "Export to 30+ countries. FCL, LCL, and bulk shipments from major Chinese ports. Documentation support included."
+      ]
     ]
   },
   "productsPage": {
-    "metaTitle": "Asphalt Maintenance Products | Crack Sealant & Cold Mix | Shining Road Technology",
-    "metaDescription": "Browse asphalt crack sealants, cold mix pothole repair, emulsified asphalt, sealcoat, and production plants. Contact us for samples and export quotes.",
+    "metaTitle": "Pavement Maintenance Products | Cold Mix, Sealcoat & Asphalt Additives",
+    "metaDescription": "Browse seven focused products: standard cold patch, capsule pressure cold patch, black sealcoat, color sealcoat, cold mix additive, recycling agent, and warm mix additive.",
     "title": "Our Products",
-    "subtitle": "Professional-grade pavement maintenance solutions for contractors and distributors",
+    "subtitle": "Three product families for road maintenance contractors, distributors, and asphalt plants",
     "empty": "Products will be added soon.",
     "emptyContact": "Check back or contact us for inquiries.",
     "keyFeatures": "Key Features",
@@ -69,22 +84,34 @@
   },
   "about": {
     "metaTitle": "About Shining Road Technology | Asphalt Maintenance Manufacturer",
-    "metaDescription": "Learn about Shenyang Shining Road Technology, a manufacturer of crack sealants, cold mix asphalt, sealcoat, and pavement maintenance technology.",
+    "metaDescription": "Learn about Shenyang Shining Road Technology, a manufacturer of cold mix asphalt, pavement sealcoat, and asphalt additives.",
     "title": "About Us",
     "subtitle": "Shenyang Shining Road Technology Co., Ltd.",
-    "lead": "We are a professional manufacturer and technology provider specializing in pavement maintenance products, from crack sealants and cold mix asphalt to complete production plants and technology licensing. Headquartered in Shenyang, China, we serve contractors, distributors, and manufacturers in over 30 countries.",
+    "lead": "We are a professional manufacturer and technology provider specializing in pavement maintenance products: cold mix asphalt, pavement sealcoat, and asphalt additives. Headquartered in Shenyang, China, we serve contractors, distributors, and manufacturers in over 30 countries.",
     "sections": [
-      ["What We Do", "Our business covers product manufacturing, turnkey cold mix production plants, and technology licensing for local manufacturing."],
-      ["Our Philosophy", "Pavement maintenance is one of the highest-ROI investments in infrastructure. Our mission is to make high-quality maintenance materials accessible in every market."],
-      ["Quality Commitment", "Every batch undergoes in-house laboratory testing before release, including raw materials, production process checks, finished product certification, retained samples, and third-party verification."],
-      ["Global Presence", "We export to more than 30 countries and support distributors, contractors, plant owners, and licensing partners worldwide."]
+      [
+        "What We Do",
+        "Our business covers three focused product families: cold mix asphalt, pavement sealcoat, and asphalt additives."
+      ],
+      [
+        "Our Philosophy",
+        "Pavement maintenance is one of the highest-ROI investments in infrastructure. Our mission is to make high-quality maintenance materials accessible in every market."
+      ],
+      [
+        "Quality Commitment",
+        "Every batch undergoes in-house laboratory testing before release, including raw materials, production process checks, finished product certification, retained samples, and third-party verification."
+      ],
+      [
+        "Global Presence",
+        "We export to more than 30 countries and support distributors, contractors, asphalt plants, and road maintenance teams worldwide."
+      ]
     ],
     "ctaTitle": "Interested in Working With Us?",
     "ctaText": "Whether you are a distributor, contractor, or manufacturer, we can discuss how to support your business."
   },
   "contact": {
     "metaTitle": "Request Quote | Asphalt Maintenance Products | Shining Road Technology",
-    "metaDescription": "Contact Shining Road Technology for crack sealant, cold mix asphalt, production plant, and technology licensing quotes. We respond within 24 hours.",
+    "metaDescription": "Contact Shining Road Technology for cold mix asphalt, pavement sealcoat, and asphalt additive quotes. We respond within 24 hours.",
     "title": "Contact Us",
     "subtitle": "We typically respond within 24 hours on business days.",
     "formTitle": "Send a Message",
@@ -103,19 +130,293 @@
   },
   "news": {
     "metaTitle": "Pavement Maintenance News | Product Guides | Shining Road Technology",
-    "metaDescription": "Read pavement maintenance guides, cold mix asphalt updates, crack sealing tips, and project news from Shining Road Technology.",
+    "metaDescription": "Read pavement maintenance guides, cold mix asphalt updates, sealcoat tips, asphalt additive notes, and project news from Shining Road Technology.",
     "title": "News & Articles",
     "subtitle": "Stay updated with the latest from our team",
     "empty": "Articles will be published soon. Check back later."
   },
   "caseStudies": {
     "metaTitle": "Pavement Maintenance Case Studies | Asphalt Repair Results",
-    "metaDescription": "See field results for Shining Road Technology crack sealing, cold mix asphalt, production plants, and pavement maintenance projects worldwide.",
+    "metaDescription": "See field results for Shining Road Technology cold mix asphalt, pavement sealcoat, and asphalt additive projects worldwide.",
     "title": "Case Studies",
     "subtitle": "Real-world results with our pavement maintenance products",
     "ctaTitle": "Have a Similar Project?",
     "ctaText": "Tell us about your pavement maintenance challenge and we will recommend the right product and approach.",
     "ctaAction": "Contact Our Technical Team"
   },
-  "products": {}
+  "products": {
+    "standard-cold-patch": {
+      "title": "Standard Cold Mix Asphalt — All-Weather Pothole Repair",
+      "category": "Cold Mix Asphalt",
+      "description": "High-performance cold mix asphalt for permanent pothole and utility cut repairs. Ready to use straight from the bag with no heating, mixing, or tack coat required.",
+      "features": [
+        "Permanent repair, not a temporary patch",
+        "No heating or mixing required",
+        "Works in wet conditions",
+        "No tack coat needed",
+        "Traffic-ready after compaction",
+        "12+ month sealed bag shelf life"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Cold mix asphalt"
+        },
+        {
+          "label": "Aggregate Size",
+          "value": "0–6 mm / 0–10 mm"
+        },
+        {
+          "label": "Application Temperature",
+          "value": "-20°C to +40°C"
+        },
+        {
+          "label": "Compaction Method",
+          "value": "Hand tamper / vibratory plate"
+        },
+        {
+          "label": "Coverage",
+          "value": "~0.025 m³ per 25 kg bag"
+        },
+        {
+          "label": "Packaging",
+          "value": "25 kg bag / 1 ton bulk bag"
+        }
+      ]
+    },
+    "capsule-pressure-cold-patch": {
+      "title": "Capsule Pressure-Sensitive Cold Patch — Smart Repair Technology",
+      "category": "Cold Mix Asphalt",
+      "description": "Smart cold patch with pressure-sensitive capsules that release binder under compaction, so repairs strengthen under traffic while reducing sticking to tires and tools.",
+      "features": [
+        "Pressure-activated binder release",
+        "Traffic compaction improves density",
+        "Reduced sticking to tires and tools",
+        "Longer storage stability",
+        "Suitable for wet and cold repairs",
+        "Immediate traffic opening"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Pressure-sensitive capsule cold mix"
+        },
+        {
+          "label": "Activation",
+          "value": "Vehicle load / compactor pressure"
+        },
+        {
+          "label": "Aggregate Size",
+          "value": "0–6 mm / 0–10 mm"
+        },
+        {
+          "label": "Application Temperature",
+          "value": "-20°C to +45°C"
+        },
+        {
+          "label": "Storage Life",
+          "value": "12–18+ months sealed"
+        },
+        {
+          "label": "Packaging",
+          "value": "25 kg bag / 1 ton bulk bag"
+        }
+      ]
+    },
+    "black-pavement-sealcoat": {
+      "title": "Black Pavement Sealcoat — Coal Tar & Asphalt Emulsion",
+      "category": "Pavement Sealcoat",
+      "description": "Professional black pavement sealcoat for asphalt protection and beautification, available in coal tar and asphalt-emulsion formulas.",
+      "features": [
+        "Coal tar and asphalt-emulsion options",
+        "Sand-filled or concentrate grades",
+        "Fast-dry additive available",
+        "Deep black finish",
+        "UV and oxidation resistance",
+        "Spray and squeegee compatible"
+      ],
+      "specifications": [
+        {
+          "label": "Base Type",
+          "value": "Coal tar emulsion / asphalt emulsion"
+        },
+        {
+          "label": "Solids Content",
+          "value": "45–55% concentrate / 60–70% ready-mix"
+        },
+        {
+          "label": "Viscosity @ 25°C",
+          "value": "80–120 KU"
+        },
+        {
+          "label": "Drying Time",
+          "value": "2–6 hours"
+        },
+        {
+          "label": "Coverage",
+          "value": "0.4–0.6 L/m² per coat"
+        },
+        {
+          "label": "Packaging",
+          "value": "55 gal drum / IBC / bulk"
+        }
+      ]
+    },
+    "color-pavement-sealcoat": {
+      "title": "Color Pavement Sealcoat — Anti-Skid & Decorative Coating",
+      "category": "Pavement Sealcoat",
+      "description": "Color anti-skid pavement sealcoat for asphalt and concrete surfaces. A 0.5–1.5 mm decorative protective coating with multiple colors.",
+      "features": [
+        "0.5–1.5 mm ultra-thin coating",
+        "Spray or squeegee application",
+        "Decorative and traffic-guidance colors",
+        "Strong adhesion to asphalt and concrete",
+        "UV-resistant pigments",
+        "Optional anti-skid aggregate"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Acrylic-polymer color sealcoat"
+        },
+        {
+          "label": "Film Thickness",
+          "value": "0.5–1.5 mm"
+        },
+        {
+          "label": "Anti-Skid Aggregate",
+          "value": "1–2 kg/m²"
+        },
+        {
+          "label": "Coverage",
+          "value": "0.3–0.8 kg/m² per coat"
+        },
+        {
+          "label": "Cure Time",
+          "value": "1–3 hours"
+        },
+        {
+          "label": "Colors",
+          "value": "Red, green, blue, yellow, black, custom"
+        }
+      ]
+    },
+    "cold-mix-additive": {
+      "title": "Cold Mix Asphalt Additive — 3rd Generation Concentrate",
+      "category": "Asphalt Additives",
+      "description": "Concentrated additive for manufacturing high-performance cold mix asphalt with water resistance, low-temperature workability, and long storage stability.",
+      "features": [
+        "100% active ingredients",
+        "All-weather construction",
+        "Water-reactive performance",
+        "Acid, alkali, and salt resistant",
+        "6–12+ month cold mix storage",
+        "Simple production with forced-action mixers"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "100% active cold mix additive"
+        },
+        {
+          "label": "Dosage Rate",
+          "value": "2–3% of binder weight"
+        },
+        {
+          "label": "Binder Temperature",
+          "value": "100–120°C"
+        },
+        {
+          "label": "Storage Life",
+          "value": "3 years sealed"
+        },
+        {
+          "label": "Packaging",
+          "value": "50 kg drum"
+        },
+        {
+          "label": "Cold Mix Storage",
+          "value": "6–12+ months bagged"
+        }
+      ]
+    },
+    "asphalt-recycling-agent": {
+      "title": "Asphalt Recycling Agent — Rejuvenate Aged Pavement",
+      "category": "Asphalt Additives",
+      "description": "Recycling agent for rejuvenating aged asphalt binder in reclaimed asphalt pavement and old asphalt surfaces.",
+      "features": [
+        "Restores aged binder flexibility",
+        "Improves RAP binder blending",
+        "For hot in-place and plant-mix recycling",
+        "Reduces brittleness and raveling risk",
+        "Supports higher RAP usage",
+        "Dosage support by lab design"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Asphalt rejuvenator"
+        },
+        {
+          "label": "Application",
+          "value": "HIR / plant recycling / RAP treatment"
+        },
+        {
+          "label": "Typical Dosage",
+          "value": "2–8% of aged binder weight"
+        },
+        {
+          "label": "Mixing Temperature",
+          "value": "120–170°C"
+        },
+        {
+          "label": "Packaging",
+          "value": "200 kg drum / IBC / bulk"
+        },
+        {
+          "label": "Support",
+          "value": "Binder and mix testing"
+        }
+      ]
+    },
+    "warm-mix-additive": {
+      "title": "Warm Mix Asphalt Additive — Reduce Production Temperature",
+      "category": "Asphalt Additives",
+      "description": "Warm mix additive reduces asphalt mixture production temperature by 30–50°C to save energy, lower emissions, and improve workability.",
+      "features": [
+        "30–50°C temperature reduction",
+        "Lower fuel consumption",
+        "Improved lower-temperature compaction",
+        "Extended paving season",
+        "Less smoke and odor",
+        "Compatible with high-RAP mixes"
+      ],
+      "specifications": [
+        {
+          "label": "Type",
+          "value": "Warm mix asphalt additive"
+        },
+        {
+          "label": "Temperature Reduction",
+          "value": "30–50°C"
+        },
+        {
+          "label": "Typical Dosage",
+          "value": "0.3–0.8% of binder weight"
+        },
+        {
+          "label": "Compatible Mixes",
+          "value": "Dense-graded, SMA, high-RAP"
+        },
+        {
+          "label": "Packaging",
+          "value": "25 kg bag / 200 kg drum"
+        },
+        {
+          "label": "Benefits",
+          "value": "Energy saving and lower emissions"
+        }
+      ]
+    }
+  }
 }

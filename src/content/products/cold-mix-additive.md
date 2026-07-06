@@ -1,6 +1,6 @@
 ---
-title: "Cold Mix Asphalt Additive - 3rd Generation"
-category: "Manufacturing Inputs"
+title: "Cold Mix Asphalt Additive — 3rd Generation Concentrate"
+category: "Asphalt Additives"
 description: "Concentrated additive for manufacturing high-performance cold mix asphalt. 100% active formula provides water resistance, low-temperature workability, and 12+ month storage stability."
 image: "/images/products/cold-mix-additive-hero.jpg"
 features:
@@ -26,7 +26,7 @@ specifications:
     value: "Alkaline aggregates recommended"
   - label: "Cold Mix Storage"
     value: "6–12+ months (bagged, out of sunlight)"
-order: 12
+order: 5
 draft: false
 ---
 
