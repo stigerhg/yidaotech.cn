@@ -30,6 +30,17 @@
   .card {
     @apply bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden;
   }
+  .product-image-frame {
+    @apply bg-gray-100 overflow-hidden;
+    aspect-ratio: 2 / 1;
+  }
+  .product-hero-frame {
+    @apply bg-gray-100 rounded-xl border border-gray-200 shadow-md overflow-hidden;
+    aspect-ratio: 2 / 1;
+  }
+  .product-image {
+    @apply block w-full h-full object-cover transition-transform duration-300;
+  }
 }
 
 @layer utilities {

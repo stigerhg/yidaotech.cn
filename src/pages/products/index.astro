@@ -61,9 +61,9 @@ const catBorders: Record<string, string> = {
                 {catProducts.map(product => (
                   <a href={`/products/${product.slug}/`} class={`card group border ${catBorders[catKey]} hover:shadow-lg transition-all rounded-xl overflow-hidden bg-white`}>
                     {product.data.image && (
-                      <div class="aspect-video bg-gray-100 overflow-hidden">
+                      <div class="product-image-frame">
                         <img src={product.data.image} alt={`${product.data.title} - ${catKey} by Shining Road Technology`}
-                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                             class="product-image group-hover:scale-105" loading="lazy" width="800" height="400" />
                       </div>
                     )}
                     <div class="p-6">

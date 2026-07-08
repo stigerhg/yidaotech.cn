@@ -77,8 +77,8 @@ const schemas = [productSchema, breadcrumbSchema];
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-4">
         <div>
           {image && (
-            <div class="bg-gray-100 rounded-xl border border-gray-200 shadow-md overflow-hidden flex items-center justify-center" style="min-height: 300px;">
-              <img src={image} alt={imageAlt} class="w-full h-auto object-contain max-h-[400px]" loading="eager" />
+            <div class="product-hero-frame">
+              <img src={image} alt={imageAlt} class="product-image" loading="eager" width="800" height="400" />
             </div>
           )}
         </div>
@@ -137,7 +137,7 @@ const schemas = [productSchema, breadcrumbSchema];
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {gallery.map((img, i) => (
-            <div class="group relative bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all">
+            <div class="group relative bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-all">
               <img src={img} alt={`${title} ${category} packaging and shipping photo ${i + 1}`} class="w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
             </div>
           ))}

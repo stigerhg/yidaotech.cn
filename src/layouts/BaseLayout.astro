@@ -2,6 +2,7 @@
 import { defaultLocale, languages, locales, localizedPath, t, unprefixedPath } from '../i18n';
 import type { Locale } from '../i18n';
 import { alternateLinks, breadcrumbSchema, productTitle, productMetaDescription, productImageAlt } from '../utils/seo';
+import '../styles/global.css';
 
 export interface Props {
   title?: string;
@@ -124,7 +125,6 @@ schemas.push(breadCrumb);
     <script type="application/ld+json" set:html={JSON.stringify(s)}></script>
   ))}
 
-  <link rel="stylesheet" href="/_astro/about.DVek_VMb.css"></link>
 </head>
 <body class="bg-white text-gray-900 font-sans" dir={dir}>
   <!-- Header -->
