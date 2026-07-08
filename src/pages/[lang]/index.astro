@@ -34,15 +34,22 @@ const latestNews = (await getCollection('news', ({ data }) => !data.draft))
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">{copy.home.solutionsTitle}</h2>
       <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">{copy.home.solutionsSubtitle}</p>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {copy.home.solutionCards.map(([title, description]) => (
-          <a href={localizedPath(lang, '/products/')} class="group block p-8 bg-white rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors">
+        {copy.home.solutionCards.map(([title, description], i) => {
+          const slugs = ['cold-mix-asphalt', 'pavement-sealcoat', 'asphalt-additives'];
+          const colors = ['bg-amber-100', 'bg-blue-100', 'bg-purple-100'];
+          const hoverColors = ['group-hover:bg-amber-500', 'group-hover:bg-blue-600', 'group-hover:bg-purple-600'];
+          const borders = ['border-amber-200 hover:border-amber-400', 'border-blue-200 hover:border-blue-400', 'border-purple-200 hover:border-purple-400'];
+          const idx = i % 3;
+          return (
+          <a href={localizedPath(lang, `/products/category/${slugs[idx]}/`)} class={`group block p-8 bg-white rounded-xl border ${borders[idx]} hover:shadow-lg transition-all`}>
+            <div class={`w-12 h-12 ${colors[idx]} rounded-lg flex items-center justify-center mb-5 ${hoverColors[idx]} group-hover:text-white transition-colors`}>
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
             </div>
             <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">{title}</h3>
             <p class="text-gray-600 text-sm">{description}</p>
           </a>
-        ))}
+          );
+        })}
       </div>
     </div>
   </section>
