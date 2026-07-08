@@ -79,8 +79,8 @@ const breadcrumbSchema = {
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-4">
         <div>
           {image && (
-            <div class="aspect-video bg-gray-100 rounded-xl border border-gray-200 shadow-md overflow-hidden">
-              <img src={image} alt={imageAlt} class="w-full h-full object-cover" loading="eager" />
+            <div class="bg-gray-100 rounded-xl border border-gray-200 shadow-md overflow-hidden flex items-center justify-center" style="min-height: 300px;">
+              <img src={image} alt={imageAlt} class="w-full h-auto object-contain max-h-[400px]" loading="eager" />
             </div>
           )}
         </div>
