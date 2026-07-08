@@ -148,273 +148,273 @@
     "standard-cold-patch": {
       "title": "Стандартная холодная асфальтовая смесь — всепогодный ремонт выбоин",
       "category": "Холодный асфальт",
-      "description": "High-performance cold mix asphalt for permanent pothole and utility cut repairs. Ready to use straight from the bag with no heating, mixing, or tack coat required.",
+      "description": "Высокоэффективная холодная асфальтовая смесь для постоянного ремонта выбоин и траншей инженерных коммуникаций. Готова к применению прямо из мешка, без нагрева, дополнительного смешивания и подгрунтовки.",
       "features": [
-        "Permanent repair, not a temporary patch",
-        "No heating or mixing required",
-        "Works in wet conditions",
-        "No tack coat needed",
-        "Traffic-ready after compaction",
-        "12+ month sealed bag shelf life"
+        "Постоянный ремонт, а не временная заплатка",
+        "Не требуется нагрев или смешивание",
+        "Работает во влажных условиях",
+        "Не требуется подгрунтовка",
+        "Можно открывать движение после уплотнения",
+        "Срок хранения в закрытом мешке более 12 месяцев"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Cold mix asphalt"
+          "label": "Тип",
+          "value": "Холодная асфальтовая смесь"
         },
         {
-          "label": "Aggregate Size",
-          "value": "0–6 mm / 0–10 mm"
+          "label": "Размер заполнителя",
+          "value": "0–6 мм / 0–10 мм"
         },
         {
-          "label": "Application Temperature",
-          "value": "-20°C to +40°C"
+          "label": "Температура применения",
+          "value": "-20°C до +40°C"
         },
         {
-          "label": "Compaction Method",
-          "value": "Hand tamper / vibratory plate"
+          "label": "Метод уплотнения",
+          "value": "Ручная трамбовка / виброплита"
         },
         {
-          "label": "Coverage",
-          "value": "~0.025 m³ per 25 kg bag"
+          "label": "Выход материала",
+          "value": "~0,025 м³ на мешок 25 кг"
         },
         {
-          "label": "Packaging",
-          "value": "25 kg bag / 1 ton bulk bag"
+          "label": "Упаковка",
+          "value": "Мешок 25 кг / биг-бэг 1 тонна"
         }
       ]
     },
     "capsule-pressure-cold-patch": {
-      "title": "Капсульная pressure-sensitive холодная смесь — умная технология ремонта",
+      "title": "Капсульная холодная смесь с активацией давлением — умная технология ремонта",
       "category": "Холодный асфальт",
-      "description": "Smart cold patch with pressure-sensitive capsules that release binder under compaction, so repairs strengthen under traffic while reducing sticking to tires and tools.",
+      "description": "Умная холодная смесь с капсулами, чувствительными к давлению: связующее высвобождается при уплотнении, поэтому ремонт набирает прочность под движением и меньше прилипает к колесам и инструментам.",
       "features": [
-        "Pressure-activated binder release",
-        "Traffic compaction improves density",
-        "Reduced sticking to tires and tools",
-        "Longer storage stability",
-        "Suitable for wet and cold repairs",
-        "Immediate traffic opening"
+        "Связующее активируется давлением",
+        "Уплотнение движением повышает плотность",
+        "Меньше налипает на колеса и инструменты",
+        "Повышенная стабильность при хранении",
+        "Подходит для влажного и холодного ремонта",
+        "Движение можно открывать сразу после уплотнения"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Pressure-sensitive capsule cold mix"
+          "label": "Тип",
+          "value": "Капсульная холодная смесь с активацией давлением"
         },
         {
-          "label": "Activation",
-          "value": "Vehicle load / compactor pressure"
+          "label": "Активация",
+          "value": "Нагрузка автомобиля / давление уплотнителя"
         },
         {
-          "label": "Aggregate Size",
-          "value": "0–6 mm / 0–10 mm"
+          "label": "Размер заполнителя",
+          "value": "0–6 мм / 0–10 мм"
         },
         {
-          "label": "Application Temperature",
-          "value": "-20°C to +45°C"
+          "label": "Температура применения",
+          "value": "-20°C до +45°C"
         },
         {
-          "label": "Storage Life",
-          "value": "12–18+ months sealed"
+          "label": "Срок хранения",
+          "value": "12–18+ месяцев в закрытой упаковке"
         },
         {
-          "label": "Packaging",
-          "value": "25 kg bag / 1 ton bulk bag"
+          "label": "Упаковка",
+          "value": "Мешок 25 кг / биг-бэг 1 тонна"
         }
       ]
     },
     "black-pavement-sealcoat": {
-      "title": "Черное покрытие sealcoat — каменноугольная смола и битумная эмульсия",
+      "title": "Черное защитное покрытие для асфальта — каменноугольная смола и битумная эмульсия",
       "category": "Защитное покрытие",
-      "description": "Professional black pavement sealcoat for asphalt protection and beautification, available in coal tar and asphalt-emulsion formulas.",
+      "description": "Профессиональное черное защитное покрытие для защиты и обновления асфальтовых поверхностей, доступное на основе каменноугольной смолы или битумной эмульсии.",
       "features": [
-        "Coal tar and asphalt-emulsion options",
-        "Sand-filled or concentrate grades",
-        "Fast-dry additive available",
-        "Deep black finish",
-        "UV and oxidation resistance",
-        "Spray and squeegee compatible"
+        "Варианты на каменноугольной смоле и битумной эмульсии",
+        "Песконаполненные и концентрированные марки",
+        "Доступна быстросохнущая добавка",
+        "Глубокий черный финиш",
+        "Устойчивость к УФ и окислению",
+        "Совместимо с распылением и нанесением раклей"
       ],
       "specifications": [
         {
-          "label": "Base Type",
-          "value": "Coal tar emulsion / asphalt emulsion"
+          "label": "Тип основы",
+          "value": "Эмульсия каменноугольной смолы / битумная эмульсия"
         },
         {
-          "label": "Solids Content",
-          "value": "45–55% concentrate / 60–70% ready-mix"
+          "label": "Содержание сухих веществ",
+          "value": "45–55% концентрат / 60–70% готовая смесь"
         },
         {
-          "label": "Viscosity @ 25°C",
+          "label": "Вязкость при 25°C",
           "value": "80–120 KU"
         },
         {
-          "label": "Drying Time",
-          "value": "2–6 hours"
+          "label": "Время высыхания",
+          "value": "2–6 часов"
         },
         {
-          "label": "Coverage",
-          "value": "0.4–0.6 L/m² per coat"
+          "label": "Расход",
+          "value": "0,4–0,6 л/м² на слой"
         },
         {
-          "label": "Packaging",
-          "value": "55 gal drum / IBC / bulk"
+          "label": "Упаковка",
+          "value": "Бочка 55 галлонов / IBC / наливом"
         }
       ]
     },
     "color-pavement-sealcoat": {
-      "title": "Цветное покрытие sealcoat — противоскользящее и декоративное покрытие",
+      "title": "Цветное защитное покрытие для покрытия — противоскользящее декоративное покрытие",
       "category": "Защитное покрытие",
-      "description": "Color anti-skid pavement sealcoat for asphalt and concrete surfaces. A 0.5–1.5 mm decorative protective coating with multiple colors.",
+      "description": "Цветное противоскользящее защитное покрытие для асфальта и бетона. Декоративный защитный слой толщиной 0,5–1,5 мм с выбором нескольких цветов.",
       "features": [
-        "0.5–1.5 mm ultra-thin coating",
-        "Spray or squeegee application",
-        "Decorative and traffic-guidance colors",
-        "Strong adhesion to asphalt and concrete",
-        "UV-resistant pigments",
-        "Optional anti-skid aggregate"
+        "Ультратонкий слой 0,5–1,5 мм",
+        "Нанесение распылением или раклей",
+        "Декоративные и направляющие цвета для движения",
+        "Сильная адгезия к асфальту и бетону",
+        "УФ-стойкие пигменты",
+        "Опциональный противоскользящий заполнитель"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Acrylic-polymer color sealcoat"
+          "label": "Тип",
+          "value": "Цветное акрил-полимерное защитное покрытие"
         },
         {
-          "label": "Film Thickness",
-          "value": "0.5–1.5 mm"
+          "label": "Толщина пленки",
+          "value": "0,5–1,5 мм"
         },
         {
-          "label": "Anti-Skid Aggregate",
-          "value": "1–2 kg/m²"
+          "label": "Противоскользящий заполнитель",
+          "value": "1–2 кг/м²"
         },
         {
-          "label": "Coverage",
-          "value": "0.3–0.8 kg/m² per coat"
+          "label": "Расход",
+          "value": "0,3–0,8 кг/м² на слой"
         },
         {
-          "label": "Cure Time",
-          "value": "1–3 hours"
+          "label": "Время отверждения",
+          "value": "1–3 часа"
         },
         {
-          "label": "Colors",
-          "value": "Red, green, blue, yellow, black, custom"
+          "label": "Цвета",
+          "value": "Красный, зеленый, синий, желтый, черный, индивидуальный"
         }
       ]
     },
     "cold-mix-additive": {
       "title": "Добавка для холодной асфальтовой смеси — концентрат 3-го поколения",
       "category": "Асфальтовые добавки",
-      "description": "Concentrated additive for manufacturing high-performance cold mix asphalt with water resistance, low-temperature workability, and long storage stability.",
+      "description": "Концентрированная добавка для производства высокоэффективной холодной асфальтовой смеси с водостойкостью, работоспособностью при низких температурах и длительной стабильностью хранения.",
       "features": [
-        "100% active ingredients",
-        "All-weather construction",
-        "Water-reactive performance",
-        "Acid, alkali, and salt resistant",
-        "6–12+ month cold mix storage",
-        "Simple production with forced-action mixers"
+        "100% активных компонентов",
+        "Всепогодное применение",
+        "Реакция с водой улучшает эксплуатационные свойства",
+        "Стойкость к кислотам, щелочам и солям",
+        "Хранение холодной смеси 6–12+ месяцев",
+        "Простое производство в смесителях принудительного действия"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "100% active cold mix additive"
+          "label": "Тип",
+          "value": "100% активная добавка для холодной смеси"
         },
         {
-          "label": "Dosage Rate",
-          "value": "2–3% of binder weight"
+          "label": "Дозировка",
+          "value": "2–3% от массы битума"
         },
         {
-          "label": "Binder Temperature",
+          "label": "Температура битума",
           "value": "100–120°C"
         },
         {
-          "label": "Storage Life",
-          "value": "3 years sealed"
+          "label": "Срок хранения",
+          "value": "3 года в закрытой упаковке"
         },
         {
-          "label": "Packaging",
-          "value": "50 kg drum"
+          "label": "Упаковка",
+          "value": "Бочка 50 кг"
         },
         {
-          "label": "Cold Mix Storage",
-          "value": "6–12+ months bagged"
+          "label": "Хранение холодной смеси",
+          "value": "6–12+ месяцев в мешках"
         }
       ]
     },
     "asphalt-recycling-agent": {
       "title": "Регенератор асфальта — восстановление старого покрытия",
       "category": "Асфальтовые добавки",
-      "description": "Recycling agent for rejuvenating aged asphalt binder in reclaimed asphalt pavement and old asphalt surfaces.",
+      "description": "Регенератор для восстановления старого битумного вяжущего в переработанном асфальтобетоне и старых асфальтовых поверхностях.",
       "features": [
-        "Restores aged binder flexibility",
-        "Improves RAP binder blending",
-        "For hot in-place and plant-mix recycling",
-        "Reduces brittleness and raveling risk",
-        "Supports higher RAP usage",
-        "Dosage support by lab design"
+        "Восстанавливает гибкость старого вяжущего",
+        "Улучшает смешивание вяжущего RAP",
+        "Для горячей регенерации на месте и заводского ресайклинга",
+        "Снижает риск хрупкости и выкрашивания",
+        "Поддерживает повышенное содержание RAP",
+        "Подбор дозировки по лабораторному проектированию"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Asphalt rejuvenator"
+          "label": "Тип",
+          "value": "Регенератор битума"
         },
         {
-          "label": "Application",
-          "value": "HIR / plant recycling / RAP treatment"
+          "label": "Применение",
+          "value": "HIR / заводской ресайклинг / обработка RAP"
         },
         {
-          "label": "Typical Dosage",
-          "value": "2–8% of aged binder weight"
+          "label": "Типичная дозировка",
+          "value": "2–8% от массы старого вяжущего"
         },
         {
-          "label": "Mixing Temperature",
+          "label": "Температура смешивания",
           "value": "120–170°C"
         },
         {
-          "label": "Packaging",
-          "value": "200 kg drum / IBC / bulk"
+          "label": "Упаковка",
+          "value": "Бочка 200 кг / IBC / наливом"
         },
         {
-          "label": "Support",
-          "value": "Binder and mix testing"
+          "label": "Поддержка",
+          "value": "Испытания вяжущего и смеси"
         }
       ]
     },
     "warm-mix-additive": {
-      "title": "Добавка Warm Mix Asphalt — снижение температуры производства",
+      "title": "Добавка для теплого асфальта — снижение температуры производства",
       "category": "Асфальтовые добавки",
-      "description": "Warm mix additive reduces asphalt mixture production temperature by 30–50°C to save energy, lower emissions, and improve workability.",
+      "description": "Добавка для теплого асфальта снижает температуру производства смеси на 30–50°C, помогает экономить энергию, сокращать выбросы и улучшать удобоукладываемость.",
       "features": [
-        "30–50°C temperature reduction",
-        "Lower fuel consumption",
-        "Improved lower-temperature compaction",
-        "Extended paving season",
-        "Less smoke and odor",
-        "Compatible with high-RAP mixes"
+        "Снижение температуры на 30–50°C",
+        "Меньший расход топлива",
+        "Улучшенное уплотнение при пониженной температуре",
+        "Продление строительного сезона",
+        "Меньше дыма и запаха",
+        "Совместимость со смесями с высоким содержанием RAP"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Warm mix asphalt additive"
+          "label": "Тип",
+          "value": "Добавка для теплой асфальтовой смеси"
         },
         {
-          "label": "Temperature Reduction",
+          "label": "Снижение температуры",
           "value": "30–50°C"
         },
         {
-          "label": "Typical Dosage",
-          "value": "0.3–0.8% of binder weight"
+          "label": "Типичная дозировка",
+          "value": "0,3–0,8% от массы битума"
         },
         {
-          "label": "Compatible Mixes",
-          "value": "Dense-graded, SMA, high-RAP"
+          "label": "Совместимые смеси",
+          "value": "Плотные смеси, SMA, смеси с высоким RAP"
         },
         {
-          "label": "Packaging",
-          "value": "25 kg bag / 200 kg drum"
+          "label": "Упаковка",
+          "value": "Мешок 25 кг / бочка 200 кг"
         },
         {
-          "label": "Benefits",
-          "value": "Energy saving and lower emissions"
+          "label": "Преимущества",
+          "value": "Экономия энергии и снижение выбросов"
         }
       ]
     }

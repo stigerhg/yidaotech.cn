@@ -2,12 +2,16 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
+const defaultLocale = 'en';
+const locales = ['en', 'ru', 'ar', 'id', 'zh'];
+const sitemapLocales = Object.fromEntries(locales.map((locale) => [locale, locale]));
+
 function addXDefaultSitemapLink(item) {
   if (!item.links?.length || item.links.some((link) => link.lang === 'x-default')) {
     return item;
   }
 
-  const defaultLink = item.links.find((link) => link.lang === 'en');
+  const defaultLink = item.links.find((link) => link.lang === defaultLocale);
   if (!defaultLink) return item;
 
   return {
@@ -39,7 +43,7 @@ const productRedirectTargets = {
 };
 
 const localizedProductRedirects = Object.fromEntries(
-  ['', '/ru', '/ar', '/id', '/zh'].flatMap((prefix) =>
+  ['', ...locales.filter((locale) => locale !== defaultLocale).map((locale) => `/${locale}`)].flatMap((prefix) =>
     Object.entries(productRedirectTargets).map(([oldSlug, newSlug]) => [
       `${prefix}/products/${oldSlug}/`,
       { status: 301, destination: `${prefix}/products/${newSlug}/` },
@@ -52,20 +56,14 @@ export default defineConfig({
   redirects: localizedProductRedirects,
   integrations: [tailwind(), sitemap({
     i18n: {
-      defaultLocale: 'en',
-      locales: {
-        en: 'en',
-        ru: 'ru',
-        ar: 'ar',
-        id: 'id',
-        zh: 'zh',
-      },
+      defaultLocale,
+      locales: sitemapLocales,
     },
     serialize: addXDefaultSitemapLink,
   })],
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'ru', 'ar', 'id', 'zh'],
+    defaultLocale,
+    locales,
     routing: {
       prefixDefaultLocale: false,
     },

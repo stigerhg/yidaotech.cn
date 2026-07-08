@@ -148,273 +148,273 @@
     "standard-cold-patch": {
       "title": "Aspal Campuran Dingin Standar — Perbaikan Lubang Segala Cuaca",
       "category": "Aspal Campuran Dingin",
-      "description": "High-performance cold mix asphalt for permanent pothole and utility cut repairs. Ready to use straight from the bag with no heating, mixing, or tack coat required.",
+      "description": "Aspal campuran dingin berkinerja tinggi untuk perbaikan lubang dan galian utilitas secara permanen. Siap digunakan langsung dari kantong tanpa pemanasan, pencampuran, atau tack coat.",
       "features": [
-        "Permanent repair, not a temporary patch",
-        "No heating or mixing required",
-        "Works in wet conditions",
-        "No tack coat needed",
-        "Traffic-ready after compaction",
-        "12+ month sealed bag shelf life"
+        "Perbaikan permanen, bukan tambalan sementara",
+        "Tidak perlu pemanasan atau pencampuran",
+        "Dapat digunakan pada kondisi basah",
+        "Tidak membutuhkan tack coat",
+        "Siap dilalui setelah pemadatan",
+        "Masa simpan kantong tertutup lebih dari 12 bulan"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Cold mix asphalt"
+          "label": "Jenis",
+          "value": "Aspal campuran dingin"
         },
         {
-          "label": "Aggregate Size",
+          "label": "Ukuran Agregat",
           "value": "0–6 mm / 0–10 mm"
         },
         {
-          "label": "Application Temperature",
-          "value": "-20°C to +40°C"
+          "label": "Suhu Aplikasi",
+          "value": "-20°C hingga +40°C"
         },
         {
-          "label": "Compaction Method",
-          "value": "Hand tamper / vibratory plate"
+          "label": "Metode Pemadatan",
+          "value": "Tamper tangan / plate compactor"
         },
         {
-          "label": "Coverage",
-          "value": "~0.025 m³ per 25 kg bag"
+          "label": "Daya Tutup",
+          "value": "~0,025 m³ per kantong 25 kg"
         },
         {
-          "label": "Packaging",
-          "value": "25 kg bag / 1 ton bulk bag"
+          "label": "Kemasan",
+          "value": "Kantong 25 kg / jumbo bag 1 ton"
         }
       ]
     },
     "capsule-pressure-cold-patch": {
-      "title": "Capsule Pressure-Sensitive Cold Patch — Teknologi Perbaikan Cerdas",
+      "title": "Tambalan Dingin Kapsul Peka Tekanan — Teknologi Perbaikan Cerdas",
       "category": "Aspal Campuran Dingin",
-      "description": "Smart cold patch with pressure-sensitive capsules that release binder under compaction, so repairs strengthen under traffic while reducing sticking to tires and tools.",
+      "description": "Tambalan dingin cerdas dengan kapsul peka tekanan yang melepaskan binder saat dipadatkan, sehingga perbaikan semakin kuat di bawah lalu lintas dan mengurangi lengket pada ban serta alat.",
       "features": [
-        "Pressure-activated binder release",
-        "Traffic compaction improves density",
-        "Reduced sticking to tires and tools",
-        "Longer storage stability",
-        "Suitable for wet and cold repairs",
-        "Immediate traffic opening"
+        "Pelepasan binder aktif oleh tekanan",
+        "Pemadatan lalu lintas meningkatkan kepadatan",
+        "Lebih sedikit lengket pada ban dan alat",
+        "Stabilitas penyimpanan lebih lama",
+        "Cocok untuk perbaikan basah dan dingin",
+        "Lalu lintas dapat dibuka segera setelah pemadatan"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Pressure-sensitive capsule cold mix"
+          "label": "Jenis",
+          "value": "Campuran dingin kapsul peka tekanan"
         },
         {
-          "label": "Activation",
-          "value": "Vehicle load / compactor pressure"
+          "label": "Aktivasi",
+          "value": "Beban kendaraan / tekanan compactor"
         },
         {
-          "label": "Aggregate Size",
+          "label": "Ukuran Agregat",
           "value": "0–6 mm / 0–10 mm"
         },
         {
-          "label": "Application Temperature",
-          "value": "-20°C to +45°C"
+          "label": "Suhu Aplikasi",
+          "value": "-20°C hingga +45°C"
         },
         {
-          "label": "Storage Life",
-          "value": "12–18+ months sealed"
+          "label": "Masa Simpan",
+          "value": "12–18+ bulan dalam kemasan tertutup"
         },
         {
-          "label": "Packaging",
-          "value": "25 kg bag / 1 ton bulk bag"
+          "label": "Kemasan",
+          "value": "Kantong 25 kg / jumbo bag 1 ton"
         }
       ]
     },
     "black-pavement-sealcoat": {
-      "title": "Black Pavement Sealcoat — Coal Tar & Emulsi Aspal",
-      "category": "Pavement Sealcoat",
-      "description": "Professional black pavement sealcoat for asphalt protection and beautification, available in coal tar and asphalt-emulsion formulas.",
+      "title": "Sealcoat Perkerasan Hitam — Coal Tar & Emulsi Aspal",
+      "category": "Pelapis Pelindung Perkerasan",
+      "description": "Sealcoat hitam profesional untuk melindungi dan memperindah permukaan aspal, tersedia dalam formula coal tar dan emulsi aspal.",
       "features": [
-        "Coal tar and asphalt-emulsion options",
-        "Sand-filled or concentrate grades",
-        "Fast-dry additive available",
-        "Deep black finish",
-        "UV and oxidation resistance",
-        "Spray and squeegee compatible"
+        "Pilihan coal tar dan emulsi aspal",
+        "Grade berisi pasir atau konsentrat",
+        "Aditif cepat kering tersedia",
+        "Hasil akhir hitam pekat",
+        "Tahan UV dan oksidasi",
+        "Kompatibel dengan spray dan squeegee"
       ],
       "specifications": [
         {
-          "label": "Base Type",
-          "value": "Coal tar emulsion / asphalt emulsion"
+          "label": "Jenis Dasar",
+          "value": "Emulsi coal tar / emulsi aspal"
         },
         {
-          "label": "Solids Content",
-          "value": "45–55% concentrate / 60–70% ready-mix"
+          "label": "Kadar Padatan",
+          "value": "45–55% konsentrat / 60–70% siap pakai"
         },
         {
-          "label": "Viscosity @ 25°C",
+          "label": "Viskositas @ 25°C",
           "value": "80–120 KU"
         },
         {
-          "label": "Drying Time",
-          "value": "2–6 hours"
+          "label": "Waktu Kering",
+          "value": "2–6 jam"
         },
         {
-          "label": "Coverage",
-          "value": "0.4–0.6 L/m² per coat"
+          "label": "Daya Tutup",
+          "value": "0,4–0,6 L/m² per lapis"
         },
         {
-          "label": "Packaging",
-          "value": "55 gal drum / IBC / bulk"
+          "label": "Kemasan",
+          "value": "Drum 55 gal / IBC / curah"
         }
       ]
     },
     "color-pavement-sealcoat": {
-      "title": "Color Pavement Sealcoat — Coating Anti-Selip & Dekoratif",
-      "category": "Pavement Sealcoat",
-      "description": "Color anti-skid pavement sealcoat for asphalt and concrete surfaces. A 0.5–1.5 mm decorative protective coating with multiple colors.",
+      "title": "Sealcoat Perkerasan Warna — Lapisan Anti-Selip & Dekoratif",
+      "category": "Pelapis Pelindung Perkerasan",
+      "description": "Sealcoat perkerasan warna anti-selip untuk permukaan aspal dan beton. Lapisan pelindung dekoratif 0,5–1,5 mm dengan beberapa pilihan warna.",
       "features": [
-        "0.5–1.5 mm ultra-thin coating",
-        "Spray or squeegee application",
-        "Decorative and traffic-guidance colors",
-        "Strong adhesion to asphalt and concrete",
-        "UV-resistant pigments",
-        "Optional anti-skid aggregate"
+        "Lapisan ultra-tipis 0,5–1,5 mm",
+        "Aplikasi spray atau squeegee",
+        "Warna dekoratif dan panduan lalu lintas",
+        "Daya lekat kuat pada aspal dan beton",
+        "Pigmen tahan UV",
+        "Agregat anti-selip opsional"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Acrylic-polymer color sealcoat"
+          "label": "Jenis",
+          "value": "Sealcoat warna polimer akrilik"
         },
         {
-          "label": "Film Thickness",
-          "value": "0.5–1.5 mm"
+          "label": "Ketebalan Film",
+          "value": "0,5–1,5 mm"
         },
         {
-          "label": "Anti-Skid Aggregate",
+          "label": "Agregat Anti-Selip",
           "value": "1–2 kg/m²"
         },
         {
-          "label": "Coverage",
-          "value": "0.3–0.8 kg/m² per coat"
+          "label": "Daya Tutup",
+          "value": "0,3–0,8 kg/m² per lapis"
         },
         {
-          "label": "Cure Time",
-          "value": "1–3 hours"
+          "label": "Waktu Curing",
+          "value": "1–3 jam"
         },
         {
-          "label": "Colors",
-          "value": "Red, green, blue, yellow, black, custom"
+          "label": "Warna",
+          "value": "Merah, hijau, biru, kuning, hitam, custom"
         }
       ]
     },
     "cold-mix-additive": {
-      "title": "Cold Mix Asphalt Additive — Konsentrat Generasi ke-3",
+      "title": "Aditif Aspal Campuran Dingin — Konsentrat Generasi ke-3",
       "category": "Aditif Aspal",
-      "description": "Concentrated additive for manufacturing high-performance cold mix asphalt with water resistance, low-temperature workability, and long storage stability.",
+      "description": "Aditif konsentrat untuk memproduksi aspal campuran dingin berkinerja tinggi dengan ketahanan air, kemudahan kerja suhu rendah, dan stabilitas penyimpanan panjang.",
       "features": [
-        "100% active ingredients",
-        "All-weather construction",
-        "Water-reactive performance",
-        "Acid, alkali, and salt resistant",
-        "6–12+ month cold mix storage",
-        "Simple production with forced-action mixers"
+        "100% bahan aktif",
+        "Konstruksi segala cuaca",
+        "Kinerja reaktif terhadap air",
+        "Tahan asam, alkali, dan garam",
+        "Penyimpanan campuran dingin 6–12+ bulan",
+        "Produksi sederhana dengan forced-action mixer"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "100% active cold mix additive"
+          "label": "Jenis",
+          "value": "Aditif campuran dingin 100% aktif"
         },
         {
-          "label": "Dosage Rate",
-          "value": "2–3% of binder weight"
+          "label": "Dosis",
+          "value": "2–3% dari berat binder"
         },
         {
-          "label": "Binder Temperature",
+          "label": "Suhu Binder",
           "value": "100–120°C"
         },
         {
-          "label": "Storage Life",
-          "value": "3 years sealed"
+          "label": "Masa Simpan",
+          "value": "3 tahun dalam kemasan tertutup"
         },
         {
-          "label": "Packaging",
-          "value": "50 kg drum"
+          "label": "Kemasan",
+          "value": "Drum 50 kg"
         },
         {
-          "label": "Cold Mix Storage",
-          "value": "6–12+ months bagged"
+          "label": "Penyimpanan Campuran Dingin",
+          "value": "6–12+ bulan dalam kantong"
         }
       ]
     },
     "asphalt-recycling-agent": {
-      "title": "Asphalt Recycling Agent — Rejuvenasi Perkerasan Tua",
+      "title": "Agen Daur Ulang Aspal — Meremajakan Perkerasan Tua",
       "category": "Aditif Aspal",
-      "description": "Recycling agent for rejuvenating aged asphalt binder in reclaimed asphalt pavement and old asphalt surfaces.",
+      "description": "Agen daur ulang untuk meremajakan binder aspal yang menua pada reclaimed asphalt pavement dan permukaan aspal lama.",
       "features": [
-        "Restores aged binder flexibility",
-        "Improves RAP binder blending",
-        "For hot in-place and plant-mix recycling",
-        "Reduces brittleness and raveling risk",
-        "Supports higher RAP usage",
-        "Dosage support by lab design"
+        "Mengembalikan kelenturan binder tua",
+        "Meningkatkan pencampuran binder RAP",
+        "Untuk daur ulang panas di tempat dan plant-mix",
+        "Mengurangi risiko getas dan raveling",
+        "Mendukung penggunaan RAP lebih tinggi",
+        "Dukungan dosis melalui desain laboratorium"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Asphalt rejuvenator"
+          "label": "Jenis",
+          "value": "Rejuvenator aspal"
         },
         {
-          "label": "Application",
-          "value": "HIR / plant recycling / RAP treatment"
+          "label": "Aplikasi",
+          "value": "HIR / daur ulang plant / perawatan RAP"
         },
         {
-          "label": "Typical Dosage",
-          "value": "2–8% of aged binder weight"
+          "label": "Dosis Umum",
+          "value": "2–8% dari berat binder tua"
         },
         {
-          "label": "Mixing Temperature",
+          "label": "Suhu Pencampuran",
           "value": "120–170°C"
         },
         {
-          "label": "Packaging",
-          "value": "200 kg drum / IBC / bulk"
+          "label": "Kemasan",
+          "value": "Drum 200 kg / IBC / curah"
         },
         {
-          "label": "Support",
-          "value": "Binder and mix testing"
+          "label": "Dukungan",
+          "value": "Pengujian binder dan campuran"
         }
       ]
     },
     "warm-mix-additive": {
-      "title": "Warm Mix Asphalt Additive — Turunkan Suhu Produksi",
+      "title": "Aditif Warm Mix Asphalt — Menurunkan Suhu Produksi",
       "category": "Aditif Aspal",
-      "description": "Warm mix additive reduces asphalt mixture production temperature by 30–50°C to save energy, lower emissions, and improve workability.",
+      "description": "Aditif warm mix menurunkan suhu produksi campuran aspal sebesar 30–50°C untuk menghemat energi, menurunkan emisi, dan meningkatkan kemudahan kerja.",
       "features": [
-        "30–50°C temperature reduction",
-        "Lower fuel consumption",
-        "Improved lower-temperature compaction",
-        "Extended paving season",
-        "Less smoke and odor",
-        "Compatible with high-RAP mixes"
+        "Penurunan suhu 30–50°C",
+        "Konsumsi bahan bakar lebih rendah",
+        "Pemadatan suhu rendah lebih baik",
+        "Memperpanjang musim pengaspalan",
+        "Asap dan bau lebih sedikit",
+        "Kompatibel dengan campuran RAP tinggi"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Warm mix asphalt additive"
+          "label": "Jenis",
+          "value": "Aditif warm mix asphalt"
         },
         {
-          "label": "Temperature Reduction",
+          "label": "Penurunan Suhu",
           "value": "30–50°C"
         },
         {
-          "label": "Typical Dosage",
-          "value": "0.3–0.8% of binder weight"
+          "label": "Dosis Umum",
+          "value": "0,3–0,8% dari berat binder"
         },
         {
-          "label": "Compatible Mixes",
-          "value": "Dense-graded, SMA, high-RAP"
+          "label": "Campuran Kompatibel",
+          "value": "Dense-graded, SMA, RAP tinggi"
         },
         {
-          "label": "Packaging",
-          "value": "25 kg bag / 200 kg drum"
+          "label": "Kemasan",
+          "value": "Kantong 25 kg / drum 200 kg"
         },
         {
-          "label": "Benefits",
-          "value": "Energy saving and lower emissions"
+          "label": "Manfaat",
+          "value": "Hemat energi dan emisi lebih rendah"
         }
       ]
     }

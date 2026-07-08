@@ -148,273 +148,273 @@
     "standard-cold-patch": {
       "title": "الخلطة الباردة القياسية — إصلاح الحفر في جميع الأحوال الجوية",
       "category": "خلطة إسفلت باردة",
-      "description": "High-performance cold mix asphalt for permanent pothole and utility cut repairs. Ready to use straight from the bag with no heating, mixing, or tack coat required.",
+      "description": "خلطة إسفلتية باردة عالية الأداء لإصلاح الحفر وقطوع الخدمات بشكل دائم. جاهزة للاستخدام مباشرة من الكيس، بدون تسخين أو خلط إضافي أو طبقة ربط.",
       "features": [
-        "Permanent repair, not a temporary patch",
-        "No heating or mixing required",
-        "Works in wet conditions",
-        "No tack coat needed",
-        "Traffic-ready after compaction",
-        "12+ month sealed bag shelf life"
+        "إصلاح دائم وليس ترقيعا مؤقتا",
+        "لا تحتاج إلى تسخين أو خلط",
+        "تعمل في الظروف الرطبة",
+        "لا تحتاج إلى طبقة ربط",
+        "جاهزة لفتح المرور بعد الدمك",
+        "مدة تخزين في كيس محكم تتجاوز 12 شهرا"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Cold mix asphalt"
+          "label": "النوع",
+          "value": "خلطة إسفلتية باردة"
         },
         {
-          "label": "Aggregate Size",
-          "value": "0–6 mm / 0–10 mm"
+          "label": "مقاس الركام",
+          "value": "0–6 مم / 0–10 مم"
         },
         {
-          "label": "Application Temperature",
-          "value": "-20°C to +40°C"
+          "label": "درجة حرارة التطبيق",
+          "value": "-20°C إلى +40°C"
         },
         {
-          "label": "Compaction Method",
-          "value": "Hand tamper / vibratory plate"
+          "label": "طريقة الدمك",
+          "value": "مدك يدوي / صفيحة اهتزازية"
         },
         {
-          "label": "Coverage",
-          "value": "~0.025 m³ per 25 kg bag"
+          "label": "التغطية",
+          "value": "حوالي 0.025 م³ لكل كيس 25 كجم"
         },
         {
-          "label": "Packaging",
-          "value": "25 kg bag / 1 ton bulk bag"
+          "label": "التعبئة",
+          "value": "كيس 25 كجم / كيس جامبو 1 طن"
         }
       ]
     },
     "capsule-pressure-cold-patch": {
       "title": "خلطة باردة بكبسولات حساسة للضغط — تقنية إصلاح ذكية",
       "category": "خلطة إسفلت باردة",
-      "description": "Smart cold patch with pressure-sensitive capsules that release binder under compaction, so repairs strengthen under traffic while reducing sticking to tires and tools.",
+      "description": "خلطة باردة ذكية بكبسولات حساسة للضغط تطلق المادة الرابطة أثناء الدمك، فتزداد قوة الإصلاح تحت حركة المرور مع تقليل الالتصاق بالإطارات والأدوات.",
       "features": [
-        "Pressure-activated binder release",
-        "Traffic compaction improves density",
-        "Reduced sticking to tires and tools",
-        "Longer storage stability",
-        "Suitable for wet and cold repairs",
-        "Immediate traffic opening"
+        "إطلاق المادة الرابطة بتنشيط الضغط",
+        "دمك حركة المرور يحسن الكثافة",
+        "التصاق أقل بالإطارات والأدوات",
+        "ثبات تخزين أطول",
+        "مناسبة للإصلاح في الرطوبة والبرودة",
+        "فتح فوري للمرور بعد الدمك"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Pressure-sensitive capsule cold mix"
+          "label": "النوع",
+          "value": "خلطة باردة بكبسولات حساسة للضغط"
         },
         {
-          "label": "Activation",
-          "value": "Vehicle load / compactor pressure"
+          "label": "التنشيط",
+          "value": "حمل المركبات / ضغط آلة الدمك"
         },
         {
-          "label": "Aggregate Size",
-          "value": "0–6 mm / 0–10 mm"
+          "label": "مقاس الركام",
+          "value": "0–6 مم / 0–10 مم"
         },
         {
-          "label": "Application Temperature",
-          "value": "-20°C to +45°C"
+          "label": "درجة حرارة التطبيق",
+          "value": "-20°C إلى +45°C"
         },
         {
-          "label": "Storage Life",
-          "value": "12–18+ months sealed"
+          "label": "مدة التخزين",
+          "value": "12–18+ شهرا في عبوة محكمة"
         },
         {
-          "label": "Packaging",
-          "value": "25 kg bag / 1 ton bulk bag"
+          "label": "التعبئة",
+          "value": "كيس 25 كجم / كيس جامبو 1 طن"
         }
       ]
     },
     "black-pavement-sealcoat": {
       "title": "طلاء حماية أسود — قطران الفحم ومستحلب الإسفلت",
       "category": "طلاء حماية الرصف",
-      "description": "Professional black pavement sealcoat for asphalt protection and beautification, available in coal tar and asphalt-emulsion formulas.",
+      "description": "طلاء حماية أسود احترافي لحماية وتجميل الأسطح الإسفلتية، متوفر بتركيبات قطران الفحم أو مستحلب الإسفلت.",
       "features": [
-        "Coal tar and asphalt-emulsion options",
-        "Sand-filled or concentrate grades",
-        "Fast-dry additive available",
-        "Deep black finish",
-        "UV and oxidation resistance",
-        "Spray and squeegee compatible"
+        "خيارات قطران الفحم ومستحلب الإسفلت",
+        "درجات مملوءة بالرمل أو مركزة",
+        "إضافة تجفيف سريع متاحة",
+        "تشطيب أسود عميق",
+        "مقاومة للأشعة فوق البنفسجية والأكسدة",
+        "متوافق مع الرش والمساحة المطاطية"
       ],
       "specifications": [
         {
-          "label": "Base Type",
-          "value": "Coal tar emulsion / asphalt emulsion"
+          "label": "نوع الأساس",
+          "value": "مستحلب قطران الفحم / مستحلب إسفلت"
         },
         {
-          "label": "Solids Content",
-          "value": "45–55% concentrate / 60–70% ready-mix"
+          "label": "محتوى المواد الصلبة",
+          "value": "45–55% مركز / 60–70% جاهز للاستخدام"
         },
         {
-          "label": "Viscosity @ 25°C",
+          "label": "اللزوجة عند 25°C",
           "value": "80–120 KU"
         },
         {
-          "label": "Drying Time",
-          "value": "2–6 hours"
+          "label": "وقت الجفاف",
+          "value": "2–6 ساعات"
         },
         {
-          "label": "Coverage",
-          "value": "0.4–0.6 L/m² per coat"
+          "label": "معدل التغطية",
+          "value": "0.4–0.6 لتر/م² لكل طبقة"
         },
         {
-          "label": "Packaging",
-          "value": "55 gal drum / IBC / bulk"
+          "label": "التعبئة",
+          "value": "برميل 55 جالونا / IBC / سائب"
         }
       ]
     },
     "color-pavement-sealcoat": {
       "title": "طلاء حماية ملون — طبقة زخرفية ومضادة للانزلاق",
       "category": "طلاء حماية الرصف",
-      "description": "Color anti-skid pavement sealcoat for asphalt and concrete surfaces. A 0.5–1.5 mm decorative protective coating with multiple colors.",
+      "description": "طلاء حماية ملون ومضاد للانزلاق للأسفلت والخرسانة. طبقة زخرفية واقية بسماكة 0.5–1.5 مم مع ألوان متعددة.",
       "features": [
-        "0.5–1.5 mm ultra-thin coating",
-        "Spray or squeegee application",
-        "Decorative and traffic-guidance colors",
-        "Strong adhesion to asphalt and concrete",
-        "UV-resistant pigments",
-        "Optional anti-skid aggregate"
+        "طبقة فائقة الرقة 0.5–1.5 مم",
+        "تطبيق بالرش أو المساحة المطاطية",
+        "ألوان زخرفية وإرشادية لحركة المرور",
+        "التصاق قوي بالأسفلت والخرسانة",
+        "أصباغ مقاومة للأشعة فوق البنفسجية",
+        "ركام مضاد للانزلاق اختياري"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Acrylic-polymer color sealcoat"
+          "label": "النوع",
+          "value": "طلاء حماية ملون ببوليمر أكريليك"
         },
         {
-          "label": "Film Thickness",
-          "value": "0.5–1.5 mm"
+          "label": "سماكة الغشاء",
+          "value": "0.5–1.5 مم"
         },
         {
-          "label": "Anti-Skid Aggregate",
-          "value": "1–2 kg/m²"
+          "label": "الركام المضاد للانزلاق",
+          "value": "1–2 كجم/م²"
         },
         {
-          "label": "Coverage",
-          "value": "0.3–0.8 kg/m² per coat"
+          "label": "التغطية",
+          "value": "0.3–0.8 كجم/م² لكل طبقة"
         },
         {
-          "label": "Cure Time",
-          "value": "1–3 hours"
+          "label": "وقت التصلب",
+          "value": "1–3 ساعات"
         },
         {
-          "label": "Colors",
-          "value": "Red, green, blue, yellow, black, custom"
+          "label": "الألوان",
+          "value": "أحمر، أخضر، أزرق، أصفر، أسود، حسب الطلب"
         }
       ]
     },
     "cold-mix-additive": {
       "title": "مضاف الخلطة الإسفلتية الباردة — مركز الجيل الثالث",
       "category": "إضافات الإسفلت",
-      "description": "Concentrated additive for manufacturing high-performance cold mix asphalt with water resistance, low-temperature workability, and long storage stability.",
+      "description": "مضاف مركز لإنتاج خلطة إسفلتية باردة عالية الأداء مع مقاومة للماء وقابلية تشغيل في درجات الحرارة المنخفضة وثبات تخزين طويل.",
       "features": [
-        "100% active ingredients",
-        "All-weather construction",
-        "Water-reactive performance",
-        "Acid, alkali, and salt resistant",
-        "6–12+ month cold mix storage",
-        "Simple production with forced-action mixers"
+        "مكونات فعالة بنسبة 100%",
+        "إنشاء في جميع الأحوال الجوية",
+        "أداء متفاعل مع الماء",
+        "مقاوم للأحماض والقلويات والأملاح",
+        "تخزين الخلطة الباردة 6–12+ شهرا",
+        "إنتاج بسيط بخلاطات قسرية"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "100% active cold mix additive"
+          "label": "النوع",
+          "value": "مضاف خلطة باردة فعال 100%"
         },
         {
-          "label": "Dosage Rate",
-          "value": "2–3% of binder weight"
+          "label": "معدل الجرعة",
+          "value": "2–3% من وزن البيتومين"
         },
         {
-          "label": "Binder Temperature",
+          "label": "درجة حرارة البيتومين",
           "value": "100–120°C"
         },
         {
-          "label": "Storage Life",
-          "value": "3 years sealed"
+          "label": "مدة التخزين",
+          "value": "3 سنوات في عبوة محكمة"
         },
         {
-          "label": "Packaging",
-          "value": "50 kg drum"
+          "label": "التعبئة",
+          "value": "برميل 50 كجم"
         },
         {
-          "label": "Cold Mix Storage",
-          "value": "6–12+ months bagged"
+          "label": "تخزين الخلطة الباردة",
+          "value": "6–12+ شهرا في أكياس"
         }
       ]
     },
     "asphalt-recycling-agent": {
       "title": "عامل إعادة تدوير الإسفلت — تجديد الرصف المتقادم",
       "category": "إضافات الإسفلت",
-      "description": "Recycling agent for rejuvenating aged asphalt binder in reclaimed asphalt pavement and old asphalt surfaces.",
+      "description": "عامل تجديد لإحياء الرابط الإسفلتي المتقادم في الأسفلت المستصلح والأسطح الإسفلتية القديمة.",
       "features": [
-        "Restores aged binder flexibility",
-        "Improves RAP binder blending",
-        "For hot in-place and plant-mix recycling",
-        "Reduces brittleness and raveling risk",
-        "Supports higher RAP usage",
-        "Dosage support by lab design"
+        "يعيد مرونة الرابط المتقادم",
+        "يحسن امتزاج رابط RAP",
+        "لإعادة التدوير الساخن في الموقع أو في الخلاطة",
+        "يقلل خطر الهشاشة والتفتت",
+        "يدعم استخدام نسب أعلى من RAP",
+        "دعم تحديد الجرعة بالتصميم المختبري"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Asphalt rejuvenator"
+          "label": "النوع",
+          "value": "مجدد إسفلت"
         },
         {
-          "label": "Application",
-          "value": "HIR / plant recycling / RAP treatment"
+          "label": "التطبيق",
+          "value": "HIR / إعادة تدوير في الخلاطة / معالجة RAP"
         },
         {
-          "label": "Typical Dosage",
-          "value": "2–8% of aged binder weight"
+          "label": "الجرعة النموذجية",
+          "value": "2–8% من وزن الرابط المتقادم"
         },
         {
-          "label": "Mixing Temperature",
+          "label": "درجة حرارة الخلط",
           "value": "120–170°C"
         },
         {
-          "label": "Packaging",
-          "value": "200 kg drum / IBC / bulk"
+          "label": "التعبئة",
+          "value": "برميل 200 كجم / IBC / سائب"
         },
         {
-          "label": "Support",
-          "value": "Binder and mix testing"
+          "label": "الدعم",
+          "value": "اختبارات الرابط والخلطة"
         }
       ]
     },
     "warm-mix-additive": {
       "title": "مضاف الخلطة الإسفلتية الدافئة — خفض درجة حرارة الإنتاج",
       "category": "إضافات الإسفلت",
-      "description": "Warm mix additive reduces asphalt mixture production temperature by 30–50°C to save energy, lower emissions, and improve workability.",
+      "description": "مضاف للخلطة الإسفلتية الدافئة يخفض درجة حرارة إنتاج الخلطة بمقدار 30–50°C لتوفير الطاقة وتقليل الانبعاثات وتحسين قابلية التشغيل.",
       "features": [
-        "30–50°C temperature reduction",
-        "Lower fuel consumption",
-        "Improved lower-temperature compaction",
-        "Extended paving season",
-        "Less smoke and odor",
-        "Compatible with high-RAP mixes"
+        "خفض درجة الحرارة 30–50°C",
+        "استهلاك وقود أقل",
+        "دمك أفضل عند درجات حرارة منخفضة",
+        "تمديد موسم الرصف",
+        "دخان ورائحة أقل",
+        "متوافق مع الخلطات ذات محتوى RAP مرتفع"
       ],
       "specifications": [
         {
-          "label": "Type",
-          "value": "Warm mix asphalt additive"
+          "label": "النوع",
+          "value": "مضاف خلطة إسفلتية دافئة"
         },
         {
-          "label": "Temperature Reduction",
+          "label": "خفض الحرارة",
           "value": "30–50°C"
         },
         {
-          "label": "Typical Dosage",
-          "value": "0.3–0.8% of binder weight"
+          "label": "الجرعة النموذجية",
+          "value": "0.3–0.8% من وزن البيتومين"
         },
         {
-          "label": "Compatible Mixes",
-          "value": "Dense-graded, SMA, high-RAP"
+          "label": "الخلطات المتوافقة",
+          "value": "كثيفة التدرج، SMA، خلطات RAP عالية"
         },
         {
-          "label": "Packaging",
-          "value": "25 kg bag / 200 kg drum"
+          "label": "التعبئة",
+          "value": "كيس 25 كجم / برميل 200 كجم"
         },
         {
-          "label": "Benefits",
-          "value": "Energy saving and lower emissions"
+          "label": "الفوائد",
+          "value": "توفير الطاقة وتقليل الانبعاثات"
         }
       ]
     }

@@ -1,5 +1,5 @@
 ---
-import { defaultLocale, locales, localizedPath, t } from '../i18n';
+import { defaultLocale, languages, locales, localizedPath, t, unprefixedPath } from '../i18n';
 import type { Locale } from '../i18n';
 import { alternateLinks, breadcrumbSchema, productTitle, productMetaDescription, productImageAlt } from '../utils/seo';
 
@@ -27,7 +27,7 @@ const lang = _lang || defaultLocale;
 const copy = t(lang);
 const dir = lang === 'ar' ? 'rtl' : 'ltr';
 const stripTags = (s: string) => s.replace(/<[^>]+>/g, '');
-const localeNames: {[key: string]: string} = { en: 'English', ru: 'Русский', ar: 'العربية', id: 'Bahasa Indonesia', zh: '中文' };
+const languageSwitcherPath = unprefixedPath(Astro.url.pathname);
 
 // Hreflang
 const currentPath = canonicalURL ? new URL(canonicalURL).pathname : Astro.url.pathname;
@@ -147,19 +147,21 @@ schemas.push(breadCrumb);
             <label class="sr-only" for="language-switcher">Language</label>
             <select id="language-switcher" class="rounded-md border border-gray-200 bg-white px-2 py-1.5 text-sm font-medium text-gray-700 outline-none transition-colors hover:border-primary focus:border-primary" data-language-switcher>
               {locales.map(locale => (
-                <option value={localizedPath(locale, Astro.url.pathname.replace(/^\/(en|ru|ar|id|zh)\//, '/').replace(/^\/(en|ru|ar|id|zh)$/, '/'))} selected={locale === lang}>
-                  {localeNames[locale]}
+                <option value={localizedPath(locale, languageSwitcherPath)} selected={locale === lang}>
+                  {languages[locale].native}
                 </option>
               ))}
             </select>
           </div>
           <script type="module">
-            document.querySelectorAll("[data-language-switcher]").forEach(e => {{
-              e.addEventListener("change", t => {{
-                const a = t.currentTarget as HTMLSelectElement;
-                window.location.href = a.value;
-              }});
-            }});
+            document.querySelectorAll("[data-language-switcher]").forEach((select) => {
+              select.addEventListener("change", (event) => {
+                const target = event.currentTarget;
+                if (target instanceof HTMLSelectElement) {
+                  window.location.href = target.value;
+                }
+              });
+            });
           </script>
           <button class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100" id="mobile-menu-btn" aria-label="Menu">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
