@@ -11,6 +11,37 @@ const lang = getLocale(Astro.params.lang);
 const copy = t(lang);
 const allProducts = (await getCollection('products', ({ data }) => !data.draft))
   .sort((a, b) => a.data.order - b.data.order);
+
+// Group by category
+const categoryOrder = ['Cold Mix Asphalt', 'Pavement Sealcoat', 'Asphalt Additives'];
+const categoryLabels: Record<string, { en: string; zh: string }> = {
+  'Cold Mix Asphalt': { en: 'Cold Mix Asphalt', zh: '冷补料类' },
+  'Pavement Sealcoat': { en: 'Pavement Sealcoat', zh: '路面封层类' },
+  'Asphalt Additives': { en: 'Asphalt Additives', zh: '沥青添加剂类' },
+};
+const grouped = new Map<string, typeof allProducts>();
+for (const cat of categoryOrder) grouped.set(cat, []);
+for (const p of allProducts) {
+  const cat = p.data.category;
+  if (grouped.has(cat)) grouped.get(cat)!.push(p);
+}
+const categoryIcon: Record<string, string> = {
+  'Cold Mix Asphalt': 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4',
+  'Pavement Sealcoat': 'M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01',
+  'Asphalt Additives': 'M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z',
+};
+const catBgColors: Record<string, string> = {
+  'Cold Mix Asphalt': 'bg-amber-100 text-amber-600',
+  'Pavement Sealcoat': 'bg-blue-100 text-blue-600',
+  'Asphalt Additives': 'bg-purple-100 text-purple-600',
+};
+const catCardBorder: Record<string, string> = {
+  'Cold Mix Asphalt': 'border-amber-200',
+  'Pavement Sealcoat': 'border-blue-200',
+  'Asphalt Additives': 'border-purple-200',
+};
+const isZh = lang === 'zh';
+const labelKey = isZh ? 'zh' : 'en';
 ---
 
 <BaseLayout
@@ -30,30 +61,50 @@ const allProducts = (await getCollection('products', ({ data }) => !data.draft))
           <p>{copy.productsPage.emptyContact}</p>
         </div>
       ) : (
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-          {allProducts.map(product => {
-            const data = translateProduct(lang, product);
-            return (
-              <a href={localizedPath(lang, `/products/${product.slug}/`)} class="card group">
-                {data.image && (
-                  <div class="aspect-video bg-gray-100 rounded-lg border border-gray-200 shadow-sm overflow-hidden">
-                    <img src={data.image} alt={`${data.title} - ${data.category} by Shining Road Technology`}
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-                  </div>
-                )}
-                <div class="p-6">
-                  <span class="text-xs font-medium text-primary bg-blue-50 px-2 py-1 rounded-full">
-                    {data.category}
-                  </span>
-                  <h3 class="text-lg font-semibold mt-3 mb-2 group-hover:text-primary transition-colors">
-                    {data.title}
-                  </h3>
-                  <p class="text-gray-600 text-sm line-clamp-2">{data.description}</p>
+        categoryOrder.map(catKey => {
+          const catProducts = grouped.get(catKey);
+          if (!catProducts || catProducts.length === 0) return null;
+          const label = categoryLabels[catKey][labelKey] || catKey;
+          const icon = categoryIcon[catKey];
+          const badgeColor = catBgColors[catKey];
+          const borderColor = catCardBorder[catKey];
+          return (
+            <div class="mb-16 last:mb-0">
+              <div class="flex items-center gap-3 mb-8 pb-4 border-b-2 border-gray-100">
+                <div class={`w-10 h-10 rounded-lg flex items-center justify-center ${badgeColor}`}>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={icon} />
+                  </svg>
                 </div>
-              </a>
-            );
-          })}
-        </div>
+                <h2 class="text-2xl font-bold text-gray-900">{label}</h2>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {catProducts.map(product => {
+                  const data = translateProduct(lang, product);
+                  return (
+                    <a href={localizedPath(lang, `/products/${product.slug}/`)} class={`card group border ${borderColor} hover:shadow-lg transition-all rounded-xl overflow-hidden bg-white`}>
+                      {data.image && (
+                        <div class="aspect-video bg-gray-100 overflow-hidden">
+                          <img src={data.image} alt={`${data.title} - ${catKey} by Shining Road Technology`}
+                               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                        </div>
+                      )}
+                      <div class="p-6">
+                        <span class="text-xs font-medium text-primary bg-blue-50 px-2 py-1 rounded-full">
+                          {data.category}
+                        </span>
+                        <h3 class="text-lg font-semibold mt-3 mb-2 group-hover:text-primary transition-colors">
+                          {data.title}
+                        </h3>
+                        <p class="text-gray-600 text-sm line-clamp-2">{data.description}</p>
+                      </div>
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })
       )}
     </div>
   </section>
