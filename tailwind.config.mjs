@@ -4,12 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#1e40af',
-        'primary-dark': '#1e3a8a',
-        accent: '#f59e0b',
+        primary: '#1c841c',
+        'primary-dark': '#146214',
+        'primary-light': '#e8f5e8',
+        accent: '#f5a623',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'Microsoft YaHei', '微软雅黑', 'system-ui', 'sans-serif'],
       },
     },
   },

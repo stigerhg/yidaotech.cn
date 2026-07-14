@@ -26,12 +26,12 @@ const catIcons: Record<string, string> = {
 };
 const catColors: Record<string, string> = {
   'cold-mix-asphalt': 'bg-amber-100 text-amber-600',
-  'pavement-sealcoat': 'bg-blue-100 text-blue-600',
+  'pavement-sealcoat': 'bg-green-100 text-blue-600',
   'asphalt-additives': 'bg-purple-100 text-purple-600',
 };
 const catBorders: Record<string, string> = {
   'cold-mix-asphalt': 'border-amber-200',
-  'pavement-sealcoat': 'border-blue-200',
+  'pavement-sealcoat': 'border-green-200',
   'asphalt-additives': 'border-purple-200',
 };
 
@@ -41,8 +41,8 @@ const allProducts = (await getCollection('products', ({ data }) => !data.draft))
   .sort((a, b) => a.data.order - b.data.order);
 const displayName = displayNames[category] || categoryName;
 const icon = catIcons[category] || '';
-const color = catColors[category] || 'bg-blue-100 text-blue-600';
-const borderColor = catBorders[category] || 'border-blue-200';
+const color = catColors[category] || 'bg-green-100 text-blue-600';
+const borderColor = catBorders[category] || 'border-green-200';
 ---
 
 <BaseLayout
@@ -76,7 +76,7 @@ const borderColor = catBorders[category] || 'border-blue-200';
               </div>
             )}
             <div class="p-6">
-              <span class="text-xs font-medium text-primary bg-blue-50 px-2 py-1 rounded-full">
+              <span class="text-xs font-medium text-primary bg-green-50 px-2 py-1 rounded-full">
                 {product.data.category}
               </span>
               <h3 class="text-lg font-semibold mt-3 mb-2 group-hover:text-primary transition-colors">
