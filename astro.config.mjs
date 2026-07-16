@@ -2,6 +2,8 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
+import cloudflare from "@astrojs/cloudflare";
+
 const defaultLocale = 'en';
 const locales = ['en', 'ru', 'ar', 'id', 'zh'];
 const sitemapLocales = Object.fromEntries(locales.map((locale) => [locale, locale]));
@@ -54,6 +56,7 @@ const localizedProductRedirects = Object.fromEntries(
 export default defineConfig({
   site: 'https://yidaotech.xyz',
   redirects: localizedProductRedirects,
+
   integrations: [tailwind(), sitemap({
     i18n: {
       defaultLocale,
@@ -61,6 +64,7 @@ export default defineConfig({
     },
     serialize: addXDefaultSitemapLink,
   })],
+
   i18n: {
     defaultLocale,
     locales,
@@ -68,7 +72,10 @@ export default defineConfig({
       prefixDefaultLocale: false,
     },
   },
+
   markdown: {
     shikiConfig: { theme: 'github-light' },
   },
+
+  adapter: cloudflare()
 });
