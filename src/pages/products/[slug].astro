@@ -9,6 +9,7 @@ export async function getStaticPaths() {
 }
 
 const { product } = Astro.props;
+const { Content } = await product.render();
 const { title, category, description, image, gallery, features, specifications } = product.data;
 const slug = product.slug;
 const productUrl = `https://yidaotech.xyz/products/${slug}/`;
@@ -125,6 +126,14 @@ const schemas = [productSchema, breadcrumbSchema];
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <article class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-primary">
+        <Content />
+      </article>
     </div>
   </section>
 

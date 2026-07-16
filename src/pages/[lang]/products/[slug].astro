@@ -1,12 +1,12 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { getLocale, localizedPath, nonDefaultLocales, t, translateProduct } from '../../../i18n';
+import { getLocale, locales, localizedPath, t, translateProduct } from '../../../i18n';
 import { absoluteUrl, productImageAlt, productMetaDescription, productTitle } from '../../../utils/seo';
 
 export async function getStaticPaths() {
   const products = await getCollection('products', ({ data }) => !data.draft);
-  return nonDefaultLocales.flatMap(lang => products.map(product => ({
+  return locales.flatMap(lang => products.map(product => ({
     params: { lang, slug: product.slug },
     props: { product },
   })));
@@ -15,6 +15,7 @@ export async function getStaticPaths() {
 const lang = getLocale(Astro.params.lang);
 const copy = t(lang);
 const { product } = Astro.props;
+const { Content } = await product.render();
 const data = translateProduct(lang, product);
 const { title, category, description, image, gallery, features, specifications } = data;
 const slug = product.slug;
@@ -131,6 +132,14 @@ const breadcrumbSchema = {
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="pb-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <article class="prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-primary">
+        <Content />
+      </article>
     </div>
   </section>
 

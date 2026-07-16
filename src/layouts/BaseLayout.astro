@@ -29,6 +29,7 @@ const copy = t(lang);
 const dir = lang === 'ar' ? 'rtl' : 'ltr';
 const stripTags = (s: string) => s.replace(/<[^>]+>/g, '');
 const languageSwitcherPath = unprefixedPath(Astro.url.pathname);
+const cloudflareWebAnalyticsToken = import.meta.env.PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
 
 // Hreflang
 const currentPath = canonicalURL ? new URL(canonicalURL).pathname : Astro.url.pathname;
@@ -124,6 +125,14 @@ schemas.push(breadCrumb);
   {schemas.map((s, i) => (
     <script type="application/ld+json" set:html={JSON.stringify(s)}></script>
   ))}
+
+  {cloudflareWebAnalyticsToken && (
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon={JSON.stringify({ token: cloudflareWebAnalyticsToken })}
+    ></script>
+  )}
 
 </head>
 <body class="bg-white text-gray-900 font-sans" dir={dir}>
