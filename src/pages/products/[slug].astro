@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { absoluteUrl, productImageAlt, productMetaDescription, productTitle } from '../../utils/seo';
+import { alternateLinks, absoluteUrl, productImageAlt, productMetaDescription, productTitle } from '../../utils/seo';
 
 export async function getStaticPaths() {
   const products = await getCollection('products', ({ data }) => !data.draft);
